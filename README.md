@@ -12,3 +12,10 @@ Each project lives in its own dated folder with:
 
 | Day | Date | Project |
 |-----|------|---------|
+
+## Weekly series (Nov 2026 – Oct 2027)
+
+52 deeper projects, one every Sunday, spanning audit, PCI/privacy, vulnerability management, patching, detection, financial crime, critical infrastructure (OT/ICS), cloud and AI security. See the [roadmap](weekly/ROADMAP.md).
+
+| Week | Date | Project |
+|------|------|---------|
