@@ -1,0 +1,93 @@
+control_id,control_name,applicable,justification,implementation_status,evidence_refs,owner,last_reviewed
+5.1,Policies for information security,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-51,Head of Engineering,2026-08-23
+5.2,Information security roles and responsibilities,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-52,Privacy Officer,2026-04-10
+5.3,Segregation of duties,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-53,Facilities Lead,2026-06-17
+5.4,Management responsibilities,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-54,Head of Engineering,2026-08-12
+5.5,Contact with authorities,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-55,HR Director,2026-04-12
+5.6,Contact with special interest groups,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-56,HR Director,2026-05-14
+5.7,Threat intelligence,Yes,Required to treat identified risks and regulatory obligations.,implemented,,Facilities Lead,2026-08-15
+5.8,Information security in project management,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-58,CISO,2026-09-18
+5.9,Inventory of information and other associated assets,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-59,Head of Engineering,2026-07-26
+5.10,Acceptable use of information and other associated assets,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-510,Privacy Officer,2026-03-21
+5.11,Return of assets,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-511,Facilities Lead,2025-03-14
+5.12,Classification of information,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-512,Head of Engineering,2026-07-21
+5.13,Labelling of information,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-513,IT Ops Manager,2026-07-14
+5.14,Information transfer,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-514,Facilities Lead,2026-03-14
+5.15,Access control,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-515,Facilities Lead,2026-09-19
+5.16,Identity management,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-516,IT Ops Manager,2026-09-24
+5.17,Authentication information,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-517,Facilities Lead,2026-06-17
+5.18,Access rights,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-518,Compliance Officer,2026-08-22
+5.19,Information security in supplier relationships,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-519,Head of Engineering,2026-06-25
+5.20,Addressing information security within supplier agreements,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-520,Compliance Officer,2026-03-28
+5.21,Managing information security in the ICT supply chain,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-521,Head of Engineering,2026-05-26
+5.22,"Monitoring, review and change management of supplier services",Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-522,Head of Engineering,2026-03-26
+5.23,Information security for use of cloud services,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-999,Head of Engineering,2026-04-24
+5.24,Information security incident management planning and preparation,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-524,Privacy Officer,2026-05-21
+5.25,Assessment and decision on information security events,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-525,Head of Engineering,2026-04-23
+5.26,Response to information security incidents,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-526,HR Director,2026-09-13
+5.27,Learning from information security incidents,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-527,CISO,2026-09-11
+5.28,Collection of evidence,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-528,HR Director,2026-08-27
+5.29,Information security during disruption,Yes,Required to treat identified risks and regulatory obligations.,not implemented,,Head of Engineering,2026-04-17
+5.30,ICT readiness for business continuity,Yes,,planned,,Facilities Lead,2026-07-27
+5.31,"Legal, statutory, regulatory and contractual requirements",Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-531,CISO,2026-07-17
+5.33,Protection of records,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-533,Compliance Officer,2026-08-20
+5.34,Privacy and protection of PII,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-534,Head of Engineering,2026-08-28
+5.35,Independent review of information security,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-535,Facilities Lead,2026-05-23
+5.36,"Compliance with policies, rules and standards for information security",Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-536,HR Director,2026-08-24
+5.37,Documented operating procedures,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-537,Head of Engineering,2026-05-22
+6.1,Screening,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-61,Privacy Officer,2025-03-14
+6.2,Terms and conditions of employment,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-62,Privacy Officer,2026-03-14
+6.3,"Information security awareness, education and training",Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-63,Privacy Officer,2026-05-18
+6.4,Disciplinary process,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-64,Compliance Officer,2026-05-28
+6.5,Responsibilities after termination or change of employment,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-65,Privacy Officer,2026-07-24
+6.6,Confidentiality or non-disclosure agreements,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-66,HR Director,2026-07-14
+6.7,Remote working,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-67,CISO,2026-08-22
+6.8,Information security event reporting,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-68,Facilities Lead,2026-07-19
+7.1,Physical security perimeters,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-71,IT Ops Manager,2025-03-14
+7.2,Physical entry,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-72,Facilities Lead,2025-03-14
+7.3,"Securing offices, rooms and facilities",Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-73,Head of Engineering,2026-06-24
+7.4,Physical security monitoring,No,,,,Privacy Officer,2026-08-28
+7.5,Protecting against physical and environmental threats,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-75,Head of Engineering,2026-07-20
+7.6,Working in secure areas,No,No secure areas exist; all servers are hosted in a third-party cloud region.,,,Privacy Officer,2026-04-19
+7.7,Clear desk and clear screen,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-77,Compliance Officer,2026-04-10
+7.8,Equipment siting and protection,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-78,Compliance Officer,2026-09-17
+7.9,Security of assets off-premises,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-79,CISO,2026-05-11
+7.10,Storage media,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-710,HR Director,2026-03-18
+7.11,Supporting utilities,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-711,Compliance Officer,2026-05-14
+7.13,Equipment maintenance,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-713,Head of Engineering,2026-07-24
+7.14,Secure disposal or re-use of equipment,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-714,IT Ops Manager,2026-05-16
+8.1,User endpoint devices,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-81,Facilities Lead,2026-06-21
+8.2,Privileged access rights,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-82,Compliance Officer,2026-04-20
+8.3,Information access restriction,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-83,Compliance Officer,2026-06-24
+8.4,Access to source code,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-84,Privacy Officer,2026-03-22
+8.5,Secure authentication,Yes,Required to treat identified risks and regulatory obligations.,partially implemented,EV-805,Compliance Officer,2026-06-18
+8.6,Capacity management,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-86,Head of Engineering,2026-07-20
+8.7,Protection against malware,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-87,Compliance Officer,2026-05-23
+8.8,Management of technical vulnerabilities,No,Handled by vendor,,,Facilities Lead,2026-07-17
+8.9,Configuration management,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-89,HR Director,2026-09-21
+8.10,Information deletion,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-810,HR Director,2026-05-12
+8.11,Data masking,No,No production data is used outside production systems.,,,Privacy Officer,2026-04-14
+8.12,Data leakage prevention,Yes,,planned,,Compliance Officer,2026-05-15
+8.13,Information backup,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-813,Head of Engineering,2026-03-12
+8.14,Redundancy of information processing facilities,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-814,HR Director,2026-03-25
+8.15,Logging,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-815,Compliance Officer,2026-05-20
+8.16,Monitoring activities,Yes,Required to treat identified risks and regulatory obligations.,implemented,,IT Ops Manager,2026-05-20
+8.18,Use of privileged utility programs,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-818,IT Ops Manager,2026-06-21
+8.19,Installation of software on operational systems,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-819,CISO,2026-03-19
+8.20,Networks security,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-820,Facilities Lead,2026-05-22
+8.21,Security of network services,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-821,Head of Engineering,2026-07-20
+8.22,Segregation of networks,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-822,Compliance Officer,2026-04-27
+8.23,Web filtering,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-823,,2026-06-24
+8.24,Use of cryptography,Yes,Required to treat identified risks and regulatory obligations.,planned,,Privacy Officer,2026-03-26
+8.25,Secure development life cycle,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-825,Privacy Officer,2026-09-18
+8.26,Application security requirements,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-826,Privacy Officer,2026-04-10
+8.27,Secure system architecture and engineering principles,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-827,Facilities Lead,2026-09-28
+8.28,Secure coding,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-828,Privacy Officer,2026-07-11
+8.29,Security testing in development and acceptance,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-829,Privacy Officer,2026-07-23
+8.30,Outsourced development,No,All software development is performed in-house; no development is outsourced.,,,HR Director,2026-03-14
+8.31,"Separation of development, test and production environments",Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-831,Head of Engineering,2026-09-15
+8.32,Change management,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-832,CISO,2026-06-15
+8.33,Test information,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-833,Head of Engineering,2026-07-13
+8.34,Protection of information systems during audit testing,Yes,Required to treat identified risks and regulatory obligations.,implemented,EV-834,HR Director,2026-05-17
+5.15,Access control,Yes,Duplicate row from old template.,implemented,EV-515,CISO,2026-05-02
+A.12.6.1,Management of technical vulnerabilities (2013),Yes,Carried over from the 2013 SoA.,implemented,,IT Ops Manager,2024-11-01

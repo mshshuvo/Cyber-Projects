@@ -1,0 +1,11 @@
+risk_id,description,likelihood,impact,treatment,controls,owner
+R-001,Ransomware encrypts member account systems,4,5,Mitigate,8.7;8.13;5.29,CISO
+R-002,Unpatched internet-facing servers exploited,4,4,Mitigate,8.8;8.9,IT Ops Manager
+R-003,Credential stuffing against online banking,4,4,Mitigate,8.5;8.16,Head of Engineering
+R-004,Member PII leaked via email,3,5,Mitigate,8.12;8.24,Privacy Officer
+R-005,Network cabling tapped in branch offices,2,3,Mitigate,7.12,Facilities Lead
+R-006,Card processor outage disrupts payments,3,4,Transfer,5.19;5.20,Compliance Officer
+R-007,Real member data copied into test environments,3,4,Mitigate,8.11;8.33,Head of Engineering
+R-008,Insider fraud by privileged staff,2,5,Mitigate,,Compliance Officer
+R-009,Legacy core banking platform cannot be encrypted,4,4,Accept,,CISO
+R-010,Phishing leads to account takeover of staff,4,3,Mitigate,6.3;8.5;8.23,CISO

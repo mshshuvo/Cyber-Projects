@@ -1,0 +1,79 @@
+evidence_id,control_id,description,collected,valid_until
+EV-51,5.1,Evidence for policies for information security,2026-07-01,2027-06-30
+EV-52,5.2,Evidence for information security roles and responsibilities,2026-07-01,2027-06-30
+EV-53,5.3,Evidence for segregation of duties,2026-07-01,2027-06-30
+EV-54,5.4,Evidence for management responsibilities,2026-07-01,2027-06-30
+EV-55,5.5,Evidence for contact with authorities,2026-07-01,2027-06-30
+EV-56,5.6,Evidence for contact with special interest groups,2026-07-01,2027-06-30
+EV-58,5.8,Evidence for information security in project management,2026-07-01,2027-06-30
+EV-59,5.9,Evidence for inventory of information and other associated assets,2026-07-01,2027-06-30
+EV-510,5.10,Evidence for acceptable use of information and other associated assets,2026-07-01,2027-06-30
+EV-511,5.11,Evidence for return of assets,2026-07-01,2027-06-30
+EV-512,5.12,Evidence for classification of information,2026-07-01,2027-06-30
+EV-513,5.13,Evidence for labelling of information,2026-07-01,2027-06-30
+EV-514,5.14,Evidence for information transfer,2026-07-01,2027-06-30
+EV-515,5.15,Evidence for access control,2026-07-01,2027-06-30
+EV-516,5.16,Evidence for identity management,2026-07-01,2027-06-30
+EV-517,5.17,Evidence for authentication information,2026-07-01,2027-06-30
+EV-518,5.18,Evidence for access rights,2026-07-01,2027-06-30
+EV-519,5.19,Evidence for information security in supplier relationships,2026-07-01,2027-06-30
+EV-520,5.20,Evidence for addressing information security within supplier agreements,2026-07-01,2027-06-30
+EV-521,5.21,Evidence for managing information security in the ict supply chain,2026-07-01,2027-06-30
+EV-522,5.22,"Evidence for monitoring, review and change management of supplier services",2026-07-01,2027-06-30
+EV-524,5.24,Evidence for information security incident management planning and preparation,2026-07-01,2027-06-30
+EV-525,5.25,Evidence for assessment and decision on information security events,2026-07-01,2027-06-30
+EV-526,5.26,Evidence for response to information security incidents,2026-07-01,2027-06-30
+EV-527,5.27,Evidence for learning from information security incidents,2026-07-01,2027-06-30
+EV-528,5.28,Evidence for collection of evidence,2026-07-01,2027-06-30
+EV-531,5.31,"Evidence for legal, statutory, regulatory and contractual requirements",2026-07-01,2027-06-30
+EV-533,5.33,Evidence for protection of records,2026-07-01,2027-06-30
+EV-534,5.34,Evidence for privacy and protection of pii,2026-07-01,2027-06-30
+EV-535,5.35,Evidence for independent review of information security,2026-07-01,2027-06-30
+EV-536,5.36,"Evidence for compliance with policies, rules and standards for information security",2026-07-01,2027-06-30
+EV-537,5.37,Evidence for documented operating procedures,2026-07-01,2027-06-30
+EV-61,6.1,Evidence for screening,2026-07-01,2027-06-30
+EV-62,6.2,Evidence for terms and conditions of employment,2026-07-01,2027-06-30
+EV-63,6.3,"Evidence for information security awareness, education and training",2026-07-01,2027-06-30
+EV-64,6.4,Evidence for disciplinary process,2026-07-01,2027-06-30
+EV-65,6.5,Evidence for responsibilities after termination or change of employment,2026-07-01,2027-06-30
+EV-66,6.6,Evidence for confidentiality or non-disclosure agreements,2026-07-01,2027-06-30
+EV-67,6.7,Evidence for remote working,2026-07-01,2027-06-30
+EV-68,6.8,Evidence for information security event reporting,2026-07-01,2027-06-30
+EV-71,7.1,Evidence for physical security perimeters,2026-07-01,2027-06-30
+EV-72,7.2,Evidence for physical entry,2026-07-01,2027-06-30
+EV-73,7.3,"Evidence for securing offices, rooms and facilities",2026-07-01,2027-06-30
+EV-75,7.5,Evidence for protecting against physical and environmental threats,2026-07-01,2027-06-30
+EV-77,7.7,Evidence for clear desk and clear screen,2026-07-01,2027-06-30
+EV-78,7.8,Evidence for equipment siting and protection,2026-07-01,2027-06-30
+EV-79,7.9,Evidence for security of assets off-premises,2026-07-01,2027-06-30
+EV-710,7.10,Evidence for storage media,2026-07-01,2027-06-30
+EV-711,7.11,Evidence for supporting utilities,2026-07-01,2027-06-30
+EV-713,7.13,Evidence for equipment maintenance,2026-07-01,2027-06-30
+EV-714,7.14,Evidence for secure disposal or re-use of equipment,2026-07-01,2027-06-30
+EV-81,8.1,Evidence for user endpoint devices,2026-07-01,2027-06-30
+EV-82,8.2,Evidence for privileged access rights,2026-07-01,2027-06-30
+EV-83,8.3,Evidence for information access restriction,2026-07-01,2027-06-30
+EV-84,8.4,Evidence for access to source code,2026-07-01,2027-06-30
+EV-805,8.5,Evidence for secure authentication,2026-07-01,2027-06-30
+EV-86,8.6,Evidence for capacity management,2026-07-01,2027-06-30
+EV-87,8.7,Evidence for protection against malware,2026-07-01,2027-06-30
+EV-89,8.9,Evidence for configuration management,2026-07-01,2027-06-30
+EV-810,8.10,Evidence for information deletion,2026-07-01,2027-06-30
+EV-813,8.13,Evidence for information backup,2026-07-01,2026-06-30
+EV-814,8.14,Evidence for redundancy of information processing facilities,2026-07-01,2027-06-30
+EV-815,8.15,Evidence for logging,2026-07-01,2027-06-30
+EV-818,8.18,Evidence for use of privileged utility programs,2026-07-01,2027-06-30
+EV-819,8.19,Evidence for installation of software on operational systems,2026-07-01,2027-06-30
+EV-820,8.20,Evidence for networks security,2026-07-01,2027-06-30
+EV-821,8.21,Evidence for security of network services,2026-07-01,2027-06-30
+EV-822,8.22,Evidence for segregation of networks,2026-07-01,2027-06-30
+EV-823,8.23,Evidence for web filtering,2026-07-01,2027-06-30
+EV-825,8.25,Evidence for secure development life cycle,2026-07-01,2027-06-30
+EV-826,8.26,Evidence for application security requirements,2026-07-01,2027-06-30
+EV-827,8.27,Evidence for secure system architecture and engineering principles,2026-07-01,2027-06-30
+EV-828,8.28,Evidence for secure coding,2026-07-01,2027-06-30
+EV-829,8.29,Evidence for security testing in development and acceptance,2026-07-01,2027-06-30
+EV-831,8.31,"Evidence for separation of development, test and production environments",2026-07-01,2027-06-30
+EV-832,8.32,Evidence for change management,2026-07-01,2027-06-30
+EV-833,8.33,Evidence for test information,2026-07-01,2027-06-30
+EV-834,8.34,Evidence for protection of information systems during audit testing,2026-07-01,2027-06-30
