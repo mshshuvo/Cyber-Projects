@@ -2,6 +2,8 @@
 
 A command-line tool that audits an **ISO/IEC 27001:2022 Statement of Applicability (SoA)** the way a certification auditor would. It checks the SoA against the 93 Annex A controls, the **risk register** and the **evidence log**, and then reports every inconsistency with the clause it relates to.
 
+![Sample run](screenshot.png)
+
 ## Why this matters
 
 The SoA is the document certification auditors read first, and it is where many ISMS programs quietly fall apart:
