@@ -1,0 +1,71 @@
+{
+  "tool": "audit_sampling",
+  "organization": "Maple Ridge Credit Union (fictional)",
+  "as_of": "2026-10-16",
+  "control_id": "ITGC-CM-02",
+  "control_description": "Production changes are approved by the CAB before deployment",
+  "sample_design": {
+    "n": 44,
+    "allowed_deviations": 1,
+    "method": "attribute-hypergeometric",
+    "confidence": 0.95,
+    "tolerable_rate": 0.1,
+    "expected_rate": 0.01,
+    "population": 410,
+    "test_all": false,
+    "basis": "95% confidence that the deviation rate is below 10.0% if no more than 1 deviation(s) are found"
+  },
+  "seed": "MRCU-ITGC-CM02-FY26",
+  "population_sha256": "1bb3104cb1ccf6dae0445010f17f67b7939d458ffd8ff77aba1f399a8610374f",
+  "reperformance": {
+    "passed": true,
+    "problems": []
+  },
+  "evaluation": {
+    "planned": 44,
+    "status_counts": {
+      "tested": 36,
+      "requested": 3,
+      "received": 1,
+      "not started": 3
+    },
+    "tested": 36,
+    "passed": 34,
+    "exceptions": 2,
+    "allowed_deviations": 1,
+    "conclusion": "NOT EFFECTIVE",
+    "rationale": "2 exception(s) found, more than the 1 the sample design allows. Further testing cannot change this outcome; stop, report the deficiency and assess compensating controls.",
+    "upper_limit": 0.16097560975609757,
+    "exceptions_by_stratum": {
+      "High": 1,
+      "Low": 1
+    },
+    "progress": 0.8182,
+    "issues": [
+      {
+        "check": "NOT_IN_SAMPLE",
+        "severity": "High",
+        "ref": "CHG-26-0008",
+        "message": "Item is in the tracker but was not selected by the sample; substituted or added items break randomness."
+      },
+      {
+        "check": "SAMPLE_ITEM_MISSING",
+        "severity": "High",
+        "ref": "CHG-26-0081",
+        "message": "Selected item is missing from the tracker (dropped or replaced)."
+      },
+      {
+        "check": "NO_EVIDENCE_REF",
+        "severity": "Medium",
+        "ref": "CHG-26-0274",
+        "message": "Result recorded with no evidence reference; the conclusion cannot be re-performed by a reviewer."
+      },
+      {
+        "check": "EVIDENCE_OVERDUE",
+        "severity": "Low",
+        "ref": "CHG-26-0087",
+        "message": "Evidence requested 15 days ago (2026-10-01) and not yet received."
+      }
+    ]
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "control_id": "ITGC-CM-02",
+  "control_description": "Production changes are approved by the CAB before deployment",
+  "seed": "MRCU-ITGC-CM02-FY26",
+  "drawn_on": "2026-10-05",
+  "population_file": "change_tickets.csv",
+  "population_sha256": "1bb3104cb1ccf6dae0445010f17f67b7939d458ffd8ff77aba1f399a8610374f",
+  "population_rows": 412,
+  "frame_size": 410,
+  "id_column": "change_id",
+  "sample_size": {
+    "n": 44,
+    "allowed_deviations": 1,
+    "method": "attribute-hypergeometric",
+    "confidence": 0.95,
+    "tolerable_rate": 0.1,
+    "expected_rate": 0.01,
+    "population": 410,
+    "test_all": false,
+    "basis": "95% confidence that the deviation rate is below 10.0% if no more than 1 deviation(s) are found"
+  },
+  "stratify_by": "risk_tier",
+  "allocation": {
+    "Low": 17,
+    "Medium": 19,
+    "High": 8
+  },
+  "selected": [
+    {
+      "item_id": "CHG-26-0298",
+      "stratum": "High"
+    },
+    {
+      "item_id": "CHG-26-0178",
+      "stratum": "High"
+    },
+    {
+      "item_id": "CHG-26-0367",
+      "stratum": "High"
+    },
+    {
+      "item_id": "CHG-26-0203",
+      "stratum": "High"
+    },
+    {
+      "item_id": "CHG-26-0371",
+      "stratum": "High"
+    },
+    {
+      "item_id": "CHG-26-0302",
+      "stratum": "High"
+    },
+    {
+      "item_id": "CHG-26-0260",
+      "stratum": "High"
+    },
+    {
+      "item_id": "CHG-26-0030",
+      "stratum": "High"
+    },
+    {
+      "item_id": "CHG-26-0226",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0274",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0376",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0347",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0313",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0194",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0332",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0341",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0238",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0031",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0289",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0017",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0279",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0372",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0081",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0047",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0377",
+      "stratum": "Low"
+    },
+    {
+      "item_id": "CHG-26-0035",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0121",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0159",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0167",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0174",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0109",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0342",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0065",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0045",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0356",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0387",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0087",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0128",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0104",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0039",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0360",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0100",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0078",
+      "stratum": "Medium"
+    },
+    {
+      "item_id": "CHG-26-0095",
+      "stratum": "Medium"
+    }
+  ],
+  "population_issues": [
+    {
+      "check": "OUT_OF_PERIOD",
+      "severity": "Medium",
+      "ref": "CHG-25-0987",
+      "message": "Dated 2025-12-29, outside the audit period 2026-01-01 to 2026-09-30; excluded."
+    },
+    {
+      "check": "OUT_OF_PERIOD",
+      "severity": "Medium",
+      "ref": "CHG-26-0411",
+      "message": "Dated 2026-10-02, outside the audit period 2026-01-01 to 2026-09-30; excluded."
+    }
+  ],
+  "version": 1
+}

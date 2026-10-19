@@ -19,3 +19,4 @@ See the full plan in [weekly/ROADMAP.md](weekly/ROADMAP.md).
 | Week | Date | Project | Description |
 |------|------|---------|-------------|
 | 01 | 2026-10-12 | [ISO 27001 SoA Auditor](weekly/week01-iso27001-soa-auditor/) | Cross-checks a Statement of Applicability against Annex A, the risk register and evidence, with clause-referenced findings |
+| 02 | 2026-10-18 | [Audit Sampling Calculator & Evidence Tracker](weekly/week02-audit-sampling-calculator/) | Sizes control-test samples with exact attribute-sampling math, draws re-performable hash-ranked samples, checks the population and evaluates the evidence tracker |

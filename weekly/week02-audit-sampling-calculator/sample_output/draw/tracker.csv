@@ -1,0 +1,45 @@
+sample_no,item_id,stratum,status,result,evidence_ref,requested_on,received_on,tester,notes,deployed_on,system,risk_tier,change_type,cab_ref
+1,CHG-26-0298,High,not started,,,,,,,2026-01-26,AML monitoring,High,Standard,CAB-1056
+2,CHG-26-0178,High,not started,,,,,,,2026-06-23,Active Directory,High,Emergency,CAB-1344
+3,CHG-26-0367,High,not started,,,,,,,2026-09-18,Card management,High,Standard,CAB-9081
+4,CHG-26-0203,High,not started,,,,,,,2026-05-01,Loan origination,High,Emergency,CAB-7448
+5,CHG-26-0371,High,not started,,,,,,,2026-05-17,Loan origination,High,Normal,CAB-8193
+6,CHG-26-0302,High,not started,,,,,,,2026-08-03,Data warehouse,High,Standard,CAB-3453
+7,CHG-26-0260,High,not started,,,,,,,2026-04-14,Core banking,High,Standard,CAB-4310
+8,CHG-26-0030,High,not started,,,,,,,2026-04-11,Firewall,High,Standard,CAB-7379
+9,CHG-26-0226,Low,not started,,,,,,,2026-07-12,Online banking,Low,Normal,CAB-8420
+10,CHG-26-0274,Low,not started,,,,,,,2026-07-23,Firewall,Low,Standard,CAB-9906
+11,CHG-26-0376,Low,not started,,,,,,,2026-06-03,Data warehouse,Low,Emergency,CAB-7457
+12,CHG-26-0347,Low,not started,,,,,,,2026-06-16,AML monitoring,Low,Standard,CAB-3299
+13,CHG-26-0313,Low,not started,,,,,,,2026-05-16,Loan origination,Low,Normal,CAB-7480
+14,CHG-26-0194,Low,not started,,,,,,,2026-05-15,Active Directory,Low,Normal,CAB-4974
+15,CHG-26-0332,Low,not started,,,,,,,2026-08-31,Online banking,Low,Standard,CAB-3769
+16,CHG-26-0341,Low,not started,,,,,,,2026-09-28,Card management,Low,Emergency,CAB-7597
+17,CHG-26-0238,Low,not started,,,,,,,2026-05-27,Firewall,Low,Emergency,CAB-8228
+18,CHG-26-0031,Low,not started,,,,,,,2026-02-07,Core banking,Low,Standard,CAB-1422
+19,CHG-26-0289,Low,not started,,,,,,,2026-01-29,Core banking,Low,Standard,CAB-6136
+20,CHG-26-0017,Low,not started,,,,,,,2026-03-18,Data warehouse,Low,Normal,CAB-6897
+21,CHG-26-0279,Low,not started,,,,,,,2026-05-29,Online banking,Low,Standard,CAB-8608
+22,CHG-26-0372,Low,not started,,,,,,,2026-05-20,Firewall,Low,Normal,CAB-5446
+23,CHG-26-0081,Low,not started,,,,,,,2026-01-05,Data warehouse,Low,Standard,CAB-9804
+24,CHG-26-0047,Low,not started,,,,,,,2026-05-31,AML monitoring,Low,Standard,CAB-2662
+25,CHG-26-0377,Low,not started,,,,,,,2026-08-13,Card management,Low,Standard,CAB-2033
+26,CHG-26-0035,Medium,not started,,,,,,,2026-04-30,Online banking,Medium,Standard,CAB-4202
+27,CHG-26-0121,Medium,not started,,,,,,,2026-09-27,Card management,Medium,Standard,CAB-9004
+28,CHG-26-0159,Medium,not started,,,,,,,2026-04-22,Online banking,Medium,Normal,CAB-7642
+29,CHG-26-0167,Medium,not started,,,,,,,2026-04-15,Core banking,Medium,Standard,CAB-8723
+30,CHG-26-0174,Medium,not started,,,,,,,2026-02-17,Core banking,Medium,Standard,CAB-9467
+31,CHG-26-0109,Medium,not started,,,,,,,2026-02-25,Core banking,Medium,Normal,CAB-1728
+32,CHG-26-0342,Medium,not started,,,,,,,2026-02-03,Loan origination,Medium,Standard,CAB-2865
+33,CHG-26-0065,Medium,not started,,,,,,,2026-05-11,Card management,Medium,Standard,CAB-5535
+34,CHG-26-0045,Medium,not started,,,,,,,2026-04-04,Core banking,Medium,Standard,CAB-6762
+35,CHG-26-0356,Medium,not started,,,,,,,2026-07-19,Data warehouse,Medium,Standard,CAB-7574
+36,CHG-26-0387,Medium,not started,,,,,,,2026-08-07,AML monitoring,Medium,Standard,CAB-2272
+37,CHG-26-0087,Medium,not started,,,,,,,2026-03-02,Active Directory,Medium,Normal,CAB-2981
+38,CHG-26-0128,Medium,not started,,,,,,,2026-01-15,AML monitoring,Medium,Standard,CAB-9892
+39,CHG-26-0104,Medium,not started,,,,,,,2026-03-03,AML monitoring,Medium,Standard,CAB-8489
+40,CHG-26-0039,Medium,not started,,,,,,,2026-03-24,Card management,Medium,Normal,CAB-9732
+41,CHG-26-0360,Medium,not started,,,,,,,2026-07-19,Core banking,Medium,Normal,CAB-9254
+42,CHG-26-0100,Medium,not started,,,,,,,2026-09-11,Loan origination,Medium,Standard,CAB-1983
+43,CHG-26-0078,Medium,not started,,,,,,,2026-03-14,Firewall,Medium,Standard,CAB-6085
+44,CHG-26-0095,Medium,not started,,,,,,,2026-08-09,AML monitoring,Medium,Standard,CAB-6243
