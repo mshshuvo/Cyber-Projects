@@ -1,0 +1,421 @@
+{
+  "summary": {
+    "documents": 10,
+    "by_status": {
+      "approved": 8,
+      "draft": 1,
+      "retired": 1
+    },
+    "approved_overdue": 1,
+    "approved_current_pct": 88,
+    "annex_a_controls_mapped": 29,
+    "annex_a_controls_total": 93,
+    "findings": {
+      "High": 9,
+      "Medium": 12,
+      "Low": 10,
+      "Info": 0
+    },
+    "health_score": 53,
+    "as_of": "2026-10-25",
+    "suppressed": 2
+  },
+  "review_calendar": [
+    {
+      "id": "STD-CR-001",
+      "title": "Cryptography Standard",
+      "owner": "Security Architect",
+      "version": "1.4",
+      "next_review": "2026-06-30",
+      "days": -117
+    },
+    {
+      "id": "POL-BC-001",
+      "title": "Business Continuity Policy",
+      "owner": "Head of Business Continuity",
+      "version": "1.3",
+      "next_review": "2026-11-20",
+      "days": 26
+    },
+    {
+      "id": "POL-AU-001",
+      "title": "Acceptable Use Policy",
+      "owner": "Head of HR",
+      "version": "1.1",
+      "next_review": "2027-01-08",
+      "days": 75
+    },
+    {
+      "id": "POL-IS-001",
+      "title": "Information Security Policy",
+      "owner": "CISO",
+      "version": "3.0",
+      "next_review": "2027-02-10",
+      "days": 108
+    },
+    {
+      "id": "POL-AC-001",
+      "title": "Access Control Policy",
+      "owner": "Head of IT Operations",
+      "version": "2.1",
+      "next_review": "2027-03-14",
+      "days": 140
+    },
+    {
+      "id": "STD-CR-001",
+      "title": "Logging and Monitoring Standard",
+      "owner": "CISO",
+      "version": "1.1",
+      "next_review": "2027-04-01",
+      "days": 158
+    },
+    {
+      "id": "POL-IR-001",
+      "title": "Incident Response Policy",
+      "owner": "Incident Response Manager",
+      "version": "2.0",
+      "next_review": "2027-04-22",
+      "days": 179
+    },
+    {
+      "id": "POL-TP-001",
+      "title": "Third-Party Risk Management Policy",
+      "owner": "Vendor Manager",
+      "version": "1.0",
+      "next_review": "2027-05-12",
+      "days": 199
+    }
+  ],
+  "documents": [
+    {
+      "file": "acceptable-use-policy.md",
+      "id": "POL-AU-001",
+      "title": "Acceptable Use Policy",
+      "status": "approved",
+      "version": "1.1",
+      "owner": "Head of HR"
+    },
+    {
+      "file": "access-control-policy.md",
+      "id": "POL-AC-001",
+      "title": "Access Control Policy",
+      "status": "approved",
+      "version": "2.1",
+      "owner": "Head of IT Operations"
+    },
+    {
+      "file": "business-continuity-policy.md",
+      "id": "POL-BC-001",
+      "title": "Business Continuity Policy",
+      "status": "approved",
+      "version": "1.3",
+      "owner": "Head of Business Continuity"
+    },
+    {
+      "file": "cryptography-standard.md",
+      "id": "STD-CR-001",
+      "title": "Cryptography Standard",
+      "status": "approved",
+      "version": "1.4",
+      "owner": "Security Architect"
+    },
+    {
+      "file": "data-classification-policy.md",
+      "id": "POL-DC-001",
+      "title": "Data Classification and Handling Policy",
+      "status": "draft",
+      "version": "0.3",
+      "owner": ""
+    },
+    {
+      "file": "incident-response-policy.md",
+      "id": "POL-IR-001",
+      "title": "Incident Response Policy",
+      "status": "approved",
+      "version": "2.0",
+      "owner": "Incident Response Manager"
+    },
+    {
+      "file": "information-security-policy.md",
+      "id": "POL-IS-001",
+      "title": "Information Security Policy",
+      "status": "approved",
+      "version": "3.0",
+      "owner": "CISO"
+    },
+    {
+      "file": "logging-monitoring-standard.md",
+      "id": "STD-CR-001",
+      "title": "Logging and Monitoring Standard",
+      "status": "approved",
+      "version": "1.1",
+      "owner": "CISO"
+    },
+    {
+      "file": "remote-access-policy.md",
+      "id": "POL-RA-001",
+      "title": "Remote Access Policy",
+      "status": "retired",
+      "version": "1.2",
+      "owner": "Head of IT Operations"
+    },
+    {
+      "file": "third-party-risk-policy.md",
+      "id": "POL-TP-001",
+      "title": "Third-Party Risk Management Policy",
+      "status": "approved",
+      "version": "1.0",
+      "owner": "Vendor Manager"
+    }
+  ],
+  "findings": [
+    {
+      "code": "VERSION_DRIFT",
+      "severity": "High",
+      "file": "access-control-policy.md",
+      "line": 4,
+      "policy_id": "POL-AC-001",
+      "message": "Front matter says v2.1 but the revision history ends at v2.2 (line 66)."
+    },
+    {
+      "code": "UNAPPROVED_CHANGE",
+      "severity": "High",
+      "file": "access-control-policy.md",
+      "line": 66,
+      "policy_id": "POL-AC-001",
+      "message": "v2.2 is dated 2026-07-03, after the last approval on 2026-03-14; the text in force has not been approved."
+    },
+    {
+      "code": "BROKEN_LINK",
+      "severity": "High",
+      "file": "business-continuity-policy.md",
+      "line": 28,
+      "policy_id": "POL-BC-001",
+      "message": "Link 'BIA procedure' points to 'procedures/bia-procedure.md', which does not exist."
+    },
+    {
+      "code": "DUPLICATE_ID",
+      "severity": "High",
+      "file": "cryptography-standard.md",
+      "line": 2,
+      "policy_id": "STD-CR-001",
+      "message": "Id STD-CR-001 is used by 2 documents (cryptography-standard.md, logging-monitoring-standard.md); references are ambiguous."
+    },
+    {
+      "code": "OWNER_VACANT",
+      "severity": "High",
+      "file": "cryptography-standard.md",
+      "line": 6,
+      "policy_id": "STD-CR-001",
+      "message": "Owner role 'Security Architect' is vacant; the document is effectively unowned."
+    },
+    {
+      "code": "REVIEW_OVERDUE",
+      "severity": "High",
+      "file": "cryptography-standard.md",
+      "line": 9,
+      "policy_id": "STD-CR-001",
+      "message": "Review was due 2026-06-30 (117 days overdue)."
+    },
+    {
+      "code": "MISSING_OWNER",
+      "severity": "High",
+      "file": "data-classification-policy.md",
+      "line": 1,
+      "policy_id": "POL-DC-001",
+      "message": "No owner; nobody is accountable for keeping this document current (ISO 27001 5.3, A.5.1)."
+    },
+    {
+      "code": "BROKEN_REFERENCE",
+      "severity": "High",
+      "file": "incident-response-policy.md",
+      "line": 39,
+      "policy_id": "POL-IR-001",
+      "message": "References POL-VM-002, which is not in the library."
+    },
+    {
+      "code": "DUPLICATE_ID",
+      "severity": "High",
+      "file": "logging-monitoring-standard.md",
+      "line": 2,
+      "policy_id": "STD-CR-001",
+      "message": "Id STD-CR-001 is used by 2 documents (cryptography-standard.md, logging-monitoring-standard.md); references are ambiguous."
+    },
+    {
+      "code": "MISSING_SECTION",
+      "severity": "Medium",
+      "file": "acceptable-use-policy.md",
+      "line": 1,
+      "policy_id": "POL-AU-001",
+      "message": "No 'Exceptions' section."
+    },
+    {
+      "code": "SELF_APPROVED",
+      "severity": "Medium",
+      "file": "acceptable-use-policy.md",
+      "line": 7,
+      "policy_id": "POL-AU-001",
+      "message": "Owner and approver are both 'Head of HR'; approval is not independent."
+    },
+    {
+      "code": "REFERENCE_TO_RETIRED",
+      "severity": "Medium",
+      "file": "acceptable-use-policy.md",
+      "line": 30,
+      "policy_id": "POL-AU-001",
+      "message": "Relies on POL-RA-001 (Remote Access Policy), which is retired."
+    },
+    {
+      "code": "PLACEHOLDER_TEXT",
+      "severity": "Medium",
+      "file": "acceptable-use-policy.md",
+      "line": 31,
+      "policy_id": "POL-AU-001",
+      "message": "Unfinished text '[Insert helpdesk extension]'."
+    },
+    {
+      "code": "INVALID_CONTROL_REF",
+      "severity": "Medium",
+      "file": "access-control-policy.md",
+      "line": 12,
+      "policy_id": "POL-AC-001",
+      "message": "'A.9.2.3' is not an ISO/IEC 27001:2022 Annex A control (2013 numbering, or a typo?)."
+    },
+    {
+      "code": "REFERENCE_TO_RETIRED",
+      "severity": "Medium",
+      "file": "access-control-policy.md",
+      "line": 34,
+      "policy_id": "POL-AC-001",
+      "message": "Relies on POL-RA-001 (Remote Access Policy), which is retired."
+    },
+    {
+      "code": "DUPLICATE_TERM",
+      "severity": "Medium",
+      "file": "glossary.md",
+      "line": 29,
+      "policy_id": "",
+      "message": "Glossary defines 'Information Asset' more than once."
+    },
+    {
+      "code": "CONFLICTING_DEFINITION",
+      "severity": "Medium",
+      "file": "incident-response-policy.md",
+      "line": 29,
+      "policy_id": "POL-IR-001",
+      "message": "Defines 'Security Incident' differently from the glossary. Here: \"Any alert raised by the security monitoring platform.\" Glossary: \"An event that actually or potentially compromises the confidentiality,\""
+    },
+    {
+      "code": "BROKEN_ANCHOR",
+      "severity": "Medium",
+      "file": "incident-response-policy.md",
+      "line": 34,
+      "policy_id": "POL-IR-001",
+      "message": "Link 'escalation matrix' points to section '#escalation-matix', which does not exist in incident-response-policy.md."
+    },
+    {
+      "code": "STALE_PINNED_REFERENCE",
+      "severity": "Medium",
+      "file": "incident-response-policy.md",
+      "line": 38,
+      "policy_id": "POL-IR-001",
+      "message": "Cites POL-BC-001 v1.0 but the current version is v1.3."
+    },
+    {
+      "code": "NO_REVISION_HISTORY",
+      "severity": "Medium",
+      "file": "third-party-risk-policy.md",
+      "line": 1,
+      "policy_id": "POL-TP-001",
+      "message": "No revision history table; changes to the document cannot be traced (ISO 27001 7.5.3)."
+    },
+    {
+      "code": "OWNER_NOT_IN_REGISTER",
+      "severity": "Medium",
+      "file": "third-party-risk-policy.md",
+      "line": 6,
+      "policy_id": "POL-TP-001",
+      "message": "Owner 'Vendor Manager' is not a role in the owner register."
+    },
+    {
+      "code": "UNDEFINED_TERM",
+      "severity": "Low",
+      "file": "access-control-policy.md",
+      "line": 31,
+      "policy_id": "POL-AC-001",
+      "message": "Acronym 'PAM' is used but not expanded here or defined in the glossary."
+    },
+    {
+      "code": "UNDEFINED_TERM",
+      "severity": "Low",
+      "file": "access-control-policy.md",
+      "line": 66,
+      "policy_id": "POL-AC-001",
+      "message": "Acronym 'SLA' is used but not expanded here or defined in the glossary."
+    },
+    {
+      "code": "REVIEW_DUE_SOON",
+      "severity": "Low",
+      "file": "business-continuity-policy.md",
+      "line": 9,
+      "policy_id": "POL-BC-001",
+      "message": "Review due 2026-11-20 (in 26 days)."
+    },
+    {
+      "code": "HISTORY_ORDER",
+      "severity": "Low",
+      "file": "business-continuity-policy.md",
+      "line": 54,
+      "policy_id": "POL-BC-001",
+      "message": "Revision history versions are not in strictly increasing order."
+    },
+    {
+      "code": "UNDEFINED_TERM",
+      "severity": "Low",
+      "file": "cryptography-standard.md",
+      "line": 31,
+      "policy_id": "STD-CR-001",
+      "message": "Acronym 'KMS' is used but not expanded here or defined in the glossary."
+    },
+    {
+      "code": "STALE_DRAFT",
+      "severity": "Low",
+      "file": "data-classification-policy.md",
+      "line": 1,
+      "policy_id": "POL-DC-001",
+      "message": "Draft not updated since 2026-03-20 (219 days); approve it or withdraw it."
+    },
+    {
+      "code": "PLACEHOLDER_TEXT",
+      "severity": "Low",
+      "file": "data-classification-policy.md",
+      "line": 27,
+      "policy_id": "POL-DC-001",
+      "message": "Unfinished text 'TBD'."
+    },
+    {
+      "code": "UNDEFINED_TERM",
+      "severity": "Low",
+      "file": "data-classification-policy.md",
+      "line": 27,
+      "policy_id": "POL-DC-001",
+      "message": "Acronym 'FINTRAC' is used but not expanded here or defined in the glossary."
+    },
+    {
+      "code": "REFERENCE_TO_DRAFT",
+      "severity": "Low",
+      "file": "information-security-policy.md",
+      "line": 33,
+      "policy_id": "POL-IS-001",
+      "message": "Relies on POL-DC-001 (Data Classification and Handling Policy), which is still a draft."
+    },
+    {
+      "code": "UNDEFINED_TERM",
+      "severity": "Low",
+      "file": "logging-monitoring-standard.md",
+      "line": 28,
+      "policy_id": "STD-CR-001",
+      "message": "Acronym 'SIEM' is used but not expanded here or defined in the glossary."
+    }
+  ]
+}
