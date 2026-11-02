@@ -1,0 +1,42 @@
+control_id,title,domain,owner,frequency
+CTL-GOV-01,Information security policy set approved and reviewed annually,Governance,CISO,Annual
+CTL-GOV-02,"Security roles, responsibilities and reporting lines defined",Governance,CISO,Annual
+CTL-GOV-03,Internal audit programme and management review,Governance,Head of Risk,Annual
+CTL-GOV-04,"ISMS scope, context, interested parties and objectives",Governance,CISO,Annual
+CTL-GOV-05,"Legal, regulatory and contractual obligations register",Governance,General Counsel,Semi-annual
+CTL-RSK-01,Annual information security risk assessment,Risk,Head of Risk,Annual
+CTL-RSK-02,Risk treatment plan and formal risk acceptance,Risk,Head of Risk,Quarterly
+CTL-AST-01,Hardware asset inventory reconciled to MDM and cloud accounts,Assets,IT Operations Manager,Monthly
+CTL-AST-02,Software inventory and authorised software list,Assets,IT Operations Manager,Quarterly
+CTL-DAT-01,Data classification and handling standard,Data,Privacy Officer,Annual
+CTL-DAT-02,Data retention schedule and secure disposal,Data,Privacy Officer,Quarterly
+CTL-DAT-03,Access to production data stores restricted by ACLs,Data,Head of Engineering,Quarterly
+CTL-IAM-01,Joiner/mover/leaver provisioning through HR-driven workflow,Identity,IT Operations Manager,Per event
+CTL-IAM-02,Quarterly user access review,Identity,IT Operations Manager,Quarterly
+CTL-IAM-03,"MFA enforced for workforce, remote and administrative access",Identity,Security Engineering Lead,Continuous
+CTL-IAM-04,Privileged access through dedicated admin accounts,Identity,Security Engineering Lead,Quarterly
+CTL-IAM-05,Password and authentication standard enforced by the IdP,Identity,Security Engineering Lead,Annual
+CTL-IAM-06,Account inventory with automatic disablement of dormant accounts,Identity,IT Operations Manager,Monthly
+CTL-CFG-01,Hardened configuration baselines (CIS Benchmark based),Configuration,Security Engineering Lead,Quarterly
+CTL-CFG-02,Endpoint detection and response on all endpoints and servers,Endpoint,IT Operations Manager,Continuous
+CTL-CFG-03,Endpoint session lock and host firewall enforced by MDM,Endpoint,IT Operations Manager,Continuous
+CTL-CFG-04,Default accounts disabled and unnecessary services removed,Configuration,Security Engineering Lead,Quarterly
+CTL-VUL-01,Vulnerability scanning and risk-based patching within SLA,Vulnerability,Security Engineering Lead,Monthly
+CTL-VUL-02,Annual independent penetration test with retest,Vulnerability,CISO,Annual
+CTL-LOG-01,Centralised logging with 13-month retention,Logging,Security Operations Lead,Continuous
+CTL-LOG-02,24x7 security monitoring and alert triage,Logging,Security Operations Lead,Continuous
+CTL-LOG-03,Clock synchronisation to approved time sources,Logging,IT Operations Manager,Continuous
+CTL-NET-01,Network segmentation and semi-annual firewall rule review,Network,Head of Engineering,Semi-annual
+CTL-NET-02,DNS filtering and email security gateway,Network,IT Operations Manager,Continuous
+CTL-CRY-01,Encryption of data at rest and in transit,Cryptography,Security Engineering Lead,Annual
+CTL-BCK-01,"Automated, immutable backups of production data",Resilience,Head of Engineering,Daily
+CTL-BCK-02,Restore testing of backups,Resilience,Head of Engineering,Semi-annual
+CTL-BCP-01,Business continuity and DR plan exercised annually,Resilience,Head of Risk,Annual
+CTL-IR-01,"Incident response plan, roles and annual tabletop exercise",Incident,Security Operations Lead,Annual
+CTL-TPR-01,Third-party security risk assessment and contract clauses,Third party,Vendor Risk Manager,Annual
+CTL-HR-01,Security awareness training and phishing simulation,People,CISO,Annual
+CTL-HR-02,Pre-employment background screening,People,People Operations Lead,Per hire
+CTL-CHG-01,Change management with peer review and approval,Change,Head of Engineering,Per change
+CTL-SDL-01,"Secure SDLC: code review, SAST and dependency scanning",Development,Head of Engineering,Per release
+CTL-PHY-01,Office physical access control and visitor log,Physical,Office Manager,Monthly
+CTL-LEG-01,Offsite backup tape rotation (legacy),Resilience,,Weekly

@@ -1,0 +1,31 @@
+{
+  "org": "Harbourline Payments Inc. (fictional)",
+  "frameworks": {
+    "ISO27001": {
+      "include": [
+        "clauses",
+        "annex_a"
+      ],
+      "exclude": {
+        "A.8.30": "No outsourced development; all software is built by employees.",
+        "A.7.4": "No data centre; production is hosted in a cloud region.",
+        "A.5.32": ""
+      }
+    },
+    "SOC2": {
+      "include": [
+        "cc",
+        "a1",
+        "c1"
+      ]
+    },
+    "CSF2": {
+      "include": "all"
+    },
+    "CIS8": {
+      "include": [
+        "ig1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5882 @@
+{
+  "as_of": "2026-11-01",
+  "org": "Harbourline Payments Inc. (fictional)",
+  "test_once_ratio": 7.03,
+  "frameworks": {
+    "ISO27001": {
+      "name": "ISO/IEC 27001:2022",
+      "coverage_pct": 43.3,
+      "summary": {
+        "Satisfied": 49,
+        "Satisfied with exceptions": 3,
+        "Partial": 20,
+        "Deficient": 2,
+        "Evidence stale": 3,
+        "Not tested": 5,
+        "No evidence": 0,
+        "Unmapped": 38,
+        "Excluded": 3
+      }
+    },
+    "SOC2": {
+      "name": "SOC 2 (TSC 2017)",
+      "coverage_pct": 47.4,
+      "summary": {
+        "Satisfied": 18,
+        "Satisfied with exceptions": 0,
+        "Partial": 10,
+        "Deficient": 2,
+        "Evidence stale": 1,
+        "Not tested": 1,
+        "No evidence": 0,
+        "Unmapped": 6,
+        "Excluded": 0
+      }
+    },
+    "CSF2": {
+      "name": "NIST CSF 2.0",
+      "coverage_pct": 31.1,
+      "summary": {
+        "Satisfied": 31,
+        "Satisfied with exceptions": 2,
+        "Partial": 12,
+        "Deficient": 1,
+        "Evidence stale": 3,
+        "Not tested": 3,
+        "No evidence": 0,
+        "Unmapped": 54,
+        "Excluded": 0
+      }
+    },
+    "CIS8": {
+      "name": "CIS Controls v8.1",
+      "coverage_pct": 82.1,
+      "summary": {
+        "Satisfied": 37,
+        "Satisfied with exceptions": 9,
+        "Partial": 5,
+        "Deficient": 2,
+        "Evidence stale": 1,
+        "Not tested": 1,
+        "No evidence": 0,
+        "Unmapped": 1,
+        "Excluded": 0
+      }
+    }
+  },
+  "controls": {
+    "CTL-GOV-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-001"
+      ]
+    },
+    "CTL-GOV-02": {
+      "state": "Effective",
+      "evidence": [
+        "EV-002"
+      ]
+    },
+    "CTL-GOV-03": {
+      "state": "Effective",
+      "evidence": [
+        "EV-003"
+      ]
+    },
+    "CTL-GOV-04": {
+      "state": "Effective",
+      "evidence": [
+        "EV-039"
+      ]
+    },
+    "CTL-GOV-05": {
+      "state": "Effective",
+      "evidence": [
+        "EV-040"
+      ]
+    },
+    "CTL-RSK-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-004"
+      ]
+    },
+    "CTL-RSK-02": {
+      "state": "Effective",
+      "evidence": [
+        "EV-005"
+      ]
+    },
+    "CTL-AST-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-006"
+      ]
+    },
+    "CTL-AST-02": {
+      "state": "Effective",
+      "evidence": [
+        "EV-007"
+      ]
+    },
+    "CTL-DAT-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-008"
+      ]
+    },
+    "CTL-DAT-02": {
+      "state": "Effective",
+      "evidence": [
+        "EV-009"
+      ]
+    },
+    "CTL-DAT-03": {
+      "state": "Stale",
+      "evidence": [
+        "EV-010"
+      ]
+    },
+    "CTL-IAM-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-011"
+      ]
+    },
+    "CTL-IAM-02": {
+      "state": "Failed",
+      "evidence": [
+        "EV-012"
+      ]
+    },
+    "CTL-IAM-03": {
+      "state": "Exception",
+      "evidence": [
+        "EV-013"
+      ]
+    },
+    "CTL-IAM-04": {
+      "state": "Effective",
+      "evidence": [
+        "EV-014"
+      ]
+    },
+    "CTL-IAM-05": {
+      "state": "Effective",
+      "evidence": [
+        "EV-015"
+      ]
+    },
+    "CTL-IAM-06": {
+      "state": "Effective",
+      "evidence": [
+        "EV-016"
+      ]
+    },
+    "CTL-CFG-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-017"
+      ]
+    },
+    "CTL-CFG-02": {
+      "state": "Effective",
+      "evidence": [
+        "EV-018"
+      ]
+    },
+    "CTL-CFG-03": {
+      "state": "Effective",
+      "evidence": [
+        "EV-019"
+      ]
+    },
+    "CTL-CFG-04": {
+      "state": "Effective",
+      "evidence": [
+        "EV-017"
+      ]
+    },
+    "CTL-VUL-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-020"
+      ]
+    },
+    "CTL-VUL-02": {
+      "state": "Effective",
+      "evidence": [
+        "EV-021"
+      ]
+    },
+    "CTL-LOG-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-022"
+      ]
+    },
+    "CTL-LOG-02": {
+      "state": "Effective",
+      "evidence": [
+        "EV-023"
+      ]
+    },
+    "CTL-LOG-03": {
+      "state": "Effective",
+      "evidence": [
+        "EV-022"
+      ]
+    },
+    "CTL-NET-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-024"
+      ]
+    },
+    "CTL-NET-02": {
+      "state": "Effective",
+      "evidence": [
+        "EV-025"
+      ]
+    },
+    "CTL-CRY-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-026"
+      ]
+    },
+    "CTL-BCK-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-027"
+      ]
+    },
+    "CTL-BCK-02": {
+      "state": "Stale",
+      "evidence": [
+        "EV-028"
+      ]
+    },
+    "CTL-BCP-01": {
+      "state": "Stale",
+      "evidence": [
+        "EV-029",
+        "EV-030"
+      ]
+    },
+    "CTL-IR-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-031"
+      ]
+    },
+    "CTL-TPR-01": {
+      "state": "Untested",
+      "evidence": [
+        "EV-032"
+      ]
+    },
+    "CTL-HR-01": {
+      "state": "Exception",
+      "evidence": [
+        "EV-033"
+      ]
+    },
+    "CTL-HR-02": {
+      "state": "Effective",
+      "evidence": [
+        "EV-034"
+      ]
+    },
+    "CTL-CHG-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-035"
+      ]
+    },
+    "CTL-SDL-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-035",
+        "EV-036"
+      ]
+    },
+    "CTL-PHY-01": {
+      "state": "Effective",
+      "evidence": [
+        "EV-037"
+      ]
+    },
+    "CTL-LEG-01": {
+      "state": "No evidence",
+      "evidence": []
+    }
+  },
+  "evidence": [
+    {
+      "id": "EV-001",
+      "title": "Information Security Policy v4.0 and board approval minutes",
+      "state": "Effective",
+      "controls": [
+        "CTL-GOV-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "5.2",
+          "7.5.2",
+          "7.5.3",
+          "A.5.1"
+        ],
+        "SOC2": [
+          "CC2.2",
+          "CC5.3"
+        ],
+        "CSF2": [
+          "GV.PO-01",
+          "GV.PO-02"
+        ]
+      },
+      "supports_total": 8,
+      "affected": {}
+    },
+    {
+      "id": "EV-002",
+      "title": "Security organisation chart and RACI",
+      "state": "Effective",
+      "controls": [
+        "CTL-GOV-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "5.3",
+          "A.5.2",
+          "A.5.4"
+        ],
+        "SOC2": [
+          "CC1.3"
+        ],
+        "CSF2": [
+          "GV.RR-01",
+          "GV.RR-02"
+        ]
+      },
+      "supports_total": 6,
+      "affected": {}
+    },
+    {
+      "id": "EV-003",
+      "title": "2026 internal audit report and management review minutes",
+      "state": "Effective",
+      "controls": [
+        "CTL-GOV-03"
+      ],
+      "supports": {
+        "ISO27001": [
+          "9.2.1",
+          "9.2.2",
+          "9.3.1",
+          "9.3.2",
+          "9.3.3",
+          "10.2",
+          "A.5.35"
+        ],
+        "SOC2": [
+          "CC1.2",
+          "CC4.1",
+          "CC4.2"
+        ],
+        "CSF2": [
+          "GV.OV-01",
+          "GV.OV-02",
+          "ID.IM-01"
+        ]
+      },
+      "supports_total": 13,
+      "affected": {}
+    },
+    {
+      "id": "EV-039",
+      "title": "ISMS manual: scope, context and 2026 objectives",
+      "state": "Effective",
+      "controls": [
+        "CTL-GOV-04"
+      ],
+      "supports": {
+        "ISO27001": [
+          "4.1",
+          "4.2",
+          "4.3",
+          "4.4",
+          "6.1.1",
+          "6.2"
+        ],
+        "SOC2": [
+          "CC3.1"
+        ],
+        "CSF2": [
+          "GV.OC-01",
+          "GV.OC-02"
+        ]
+      },
+      "supports_total": 9,
+      "affected": {}
+    },
+    {
+      "id": "EV-040",
+      "title": "Obligations register (PIPEDA, PCI DSS, contracts), H2 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-GOV-05"
+      ],
+      "supports": {
+        "ISO27001": [
+          "4.2",
+          "A.5.31",
+          "A.5.34"
+        ],
+        "CSF2": [
+          "GV.OC-03"
+        ]
+      },
+      "supports_total": 4,
+      "affected": {}
+    },
+    {
+      "id": "EV-004",
+      "title": "2026 information security risk assessment report",
+      "state": "Effective",
+      "controls": [
+        "CTL-RSK-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "6.1.2",
+          "8.2"
+        ],
+        "SOC2": [
+          "CC3.1",
+          "CC3.2",
+          "CC3.3"
+        ],
+        "CSF2": [
+          "ID.RA-03",
+          "ID.RA-04",
+          "ID.RA-05"
+        ]
+      },
+      "supports_total": 8,
+      "affected": {}
+    },
+    {
+      "id": "EV-005",
+      "title": "Risk treatment plan tracker, Q3 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-RSK-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "6.1.3",
+          "8.3"
+        ],
+        "SOC2": [
+          "CC9.1"
+        ],
+        "CSF2": [
+          "GV.RM-02",
+          "ID.RA-06"
+        ]
+      },
+      "supports_total": 5,
+      "affected": {}
+    },
+    {
+      "id": "EV-006",
+      "title": "MDM-to-CMDB reconciliation, September 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-AST-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.9",
+          "A.5.11"
+        ],
+        "SOC2": [
+          "CC6.1"
+        ],
+        "CSF2": [
+          "ID.AM-01"
+        ],
+        "CIS8": [
+          "1.1",
+          "1.2"
+        ]
+      },
+      "supports_total": 6,
+      "affected": {}
+    },
+    {
+      "id": "EV-007",
+      "title": "Authorised software list and EDR software inventory export",
+      "state": "Effective",
+      "controls": [
+        "CTL-AST-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.9",
+          "A.8.19"
+        ],
+        "CSF2": [
+          "ID.AM-02",
+          "PR.PS-02"
+        ],
+        "CIS8": [
+          "2.1",
+          "2.2",
+          "2.3"
+        ]
+      },
+      "supports_total": 7,
+      "affected": {}
+    },
+    {
+      "id": "EV-008",
+      "title": "Data classification standard and sensitivity label report",
+      "state": "Effective",
+      "controls": [
+        "CTL-DAT-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.12",
+          "A.5.13"
+        ],
+        "SOC2": [
+          "C1.1"
+        ],
+        "CSF2": [
+          "ID.AM-07"
+        ],
+        "CIS8": [
+          "3.1",
+          "3.2"
+        ]
+      },
+      "supports_total": 6,
+      "affected": {}
+    },
+    {
+      "id": "EV-009",
+      "title": "Retention job logs and disposal certificates, Q3 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-DAT-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.33",
+          "A.7.14",
+          "A.8.10"
+        ],
+        "SOC2": [
+          "CC6.5",
+          "C1.2"
+        ],
+        "CIS8": [
+          "3.4",
+          "3.5"
+        ]
+      },
+      "supports_total": 7,
+      "affected": {}
+    },
+    {
+      "id": "EV-010",
+      "title": "Production data store ACL export",
+      "state": "Stale",
+      "controls": [
+        "CTL-DAT-03"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.15",
+          "A.8.3"
+        ],
+        "SOC2": [
+          "CC6.1"
+        ],
+        "CSF2": [
+          "PR.AA-05"
+        ],
+        "CIS8": [
+          "3.3"
+        ]
+      },
+      "supports_total": 5,
+      "affected": {
+        "ISO27001": [
+          "A.8.3"
+        ],
+        "CIS8": [
+          "3.3"
+        ]
+      }
+    },
+    {
+      "id": "EV-011",
+      "title": "JML sample test: 25 joiners, 25 leavers (Q3)",
+      "state": "Effective",
+      "controls": [
+        "CTL-IAM-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.16",
+          "A.5.18",
+          "A.6.5"
+        ],
+        "SOC2": [
+          "CC6.2",
+          "CC6.3"
+        ],
+        "CSF2": [
+          "PR.AA-01"
+        ],
+        "CIS8": [
+          "6.1",
+          "6.2"
+        ]
+      },
+      "supports_total": 8,
+      "affected": {}
+    },
+    {
+      "id": "EV-012",
+      "title": "Q3 2026 user access review",
+      "state": "Failed",
+      "controls": [
+        "CTL-IAM-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.15",
+          "A.5.18"
+        ],
+        "SOC2": [
+          "CC6.2",
+          "CC6.3"
+        ],
+        "CSF2": [
+          "PR.AA-05"
+        ],
+        "CIS8": [
+          "5.1",
+          "5.3"
+        ]
+      },
+      "supports_total": 7,
+      "affected": {
+        "ISO27001": [
+          "A.5.15",
+          "A.5.18"
+        ],
+        "SOC2": [
+          "CC6.2",
+          "CC6.3"
+        ],
+        "CSF2": [
+          "PR.AA-05"
+        ],
+        "CIS8": [
+          "5.1",
+          "5.3"
+        ]
+      }
+    },
+    {
+      "id": "EV-013",
+      "title": "IdP conditional access policy export (MFA)",
+      "state": "Exception",
+      "controls": [
+        "CTL-IAM-03"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.5"
+        ],
+        "SOC2": [
+          "CC6.1"
+        ],
+        "CSF2": [
+          "PR.AA-03"
+        ],
+        "CIS8": [
+          "6.3",
+          "6.4",
+          "6.5"
+        ]
+      },
+      "supports_total": 6,
+      "affected": {
+        "ISO27001": [
+          "A.8.5"
+        ],
+        "CSF2": [
+          "PR.AA-03"
+        ],
+        "CIS8": [
+          "6.3",
+          "6.4",
+          "6.5"
+        ]
+      }
+    },
+    {
+      "id": "EV-014",
+      "title": "Privileged account list vs admin group membership",
+      "state": "Effective",
+      "controls": [
+        "CTL-IAM-04"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.2",
+          "A.8.18"
+        ],
+        "SOC2": [
+          "CC6.3"
+        ],
+        "CSF2": [
+          "PR.AA-05"
+        ],
+        "CIS8": [
+          "5.4"
+        ]
+      },
+      "supports_total": 5,
+      "affected": {}
+    },
+    {
+      "id": "EV-015",
+      "title": "IdP password policy export",
+      "state": "Effective",
+      "controls": [
+        "CTL-IAM-05"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.17"
+        ],
+        "SOC2": [
+          "CC6.1"
+        ],
+        "CSF2": [
+          "PR.AA-03"
+        ],
+        "CIS8": [
+          "5.2"
+        ]
+      },
+      "supports_total": 4,
+      "affected": {}
+    },
+    {
+      "id": "EV-016",
+      "title": "Dormant account report (45 days), October 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-IAM-06"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.16"
+        ],
+        "SOC2": [
+          "CC6.2"
+        ],
+        "CSF2": [
+          "PR.AA-01"
+        ],
+        "CIS8": [
+          "5.1",
+          "5.3"
+        ]
+      },
+      "supports_total": 5,
+      "affected": {}
+    },
+    {
+      "id": "EV-017",
+      "title": "CIS Benchmark compliance scan, production servers",
+      "state": "Effective",
+      "controls": [
+        "CTL-CFG-01",
+        "CTL-CFG-04"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.9"
+        ],
+        "SOC2": [
+          "CC5.2",
+          "CC7.1"
+        ],
+        "CSF2": [
+          "PR.PS-01"
+        ],
+        "CIS8": [
+          "4.1",
+          "4.2",
+          "4.6",
+          "4.7"
+        ]
+      },
+      "supports_total": 8,
+      "affected": {}
+    },
+    {
+      "id": "EV-018",
+      "title": "EDR console coverage report",
+      "state": "Effective",
+      "controls": [
+        "CTL-CFG-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.7"
+        ],
+        "SOC2": [
+          "CC6.8"
+        ],
+        "CSF2": [
+          "PR.PS-05",
+          "DE.CM-09"
+        ],
+        "CIS8": [
+          "10.1",
+          "10.2",
+          "10.3"
+        ]
+      },
+      "supports_total": 7,
+      "affected": {}
+    },
+    {
+      "id": "EV-019",
+      "title": "MDM compliance policy export",
+      "state": "Effective",
+      "controls": [
+        "CTL-CFG-03"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.7.7",
+          "A.8.1"
+        ],
+        "CSF2": [
+          "PR.PS-01"
+        ],
+        "CIS8": [
+          "4.3",
+          "4.5"
+        ]
+      },
+      "supports_total": 5,
+      "affected": {}
+    },
+    {
+      "id": "EV-020",
+      "title": "Vulnerability scan and patch SLA report, October 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-VUL-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.8"
+        ],
+        "SOC2": [
+          "CC7.1"
+        ],
+        "CSF2": [
+          "ID.RA-01",
+          "ID.RA-08",
+          "PR.PS-02"
+        ],
+        "CIS8": [
+          "7.1",
+          "7.2",
+          "7.3",
+          "7.4"
+        ]
+      },
+      "supports_total": 9,
+      "affected": {}
+    },
+    {
+      "id": "EV-021",
+      "title": "2026 external penetration test report and retest letter",
+      "state": "Effective",
+      "controls": [
+        "CTL-VUL-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.35",
+          "A.8.8",
+          "A.8.29"
+        ],
+        "SOC2": [
+          "CC4.1",
+          "CC7.1"
+        ],
+        "CSF2": [
+          "ID.RA-01",
+          "ID.IM-02"
+        ]
+      },
+      "supports_total": 7,
+      "affected": {}
+    },
+    {
+      "id": "EV-022",
+      "title": "SIEM log source coverage, retention and NTP settings",
+      "state": "Effective",
+      "controls": [
+        "CTL-LOG-01",
+        "CTL-LOG-03"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.15",
+          "A.8.17"
+        ],
+        "SOC2": [
+          "CC7.2"
+        ],
+        "CSF2": [
+          "PR.PS-04"
+        ],
+        "CIS8": [
+          "8.1",
+          "8.2",
+          "8.3"
+        ]
+      },
+      "supports_total": 7,
+      "affected": {}
+    },
+    {
+      "id": "EV-023",
+      "title": "SOC alert triage sample (40 alerts), Q3 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-LOG-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.25",
+          "A.6.8",
+          "A.8.16"
+        ],
+        "SOC2": [
+          "CC7.2",
+          "CC7.3"
+        ],
+        "CSF2": [
+          "DE.CM-01",
+          "DE.CM-03",
+          "DE.AE-02",
+          "DE.AE-03",
+          "DE.AE-06"
+        ]
+      },
+      "supports_total": 10,
+      "affected": {}
+    },
+    {
+      "id": "EV-024",
+      "title": "Firewall rule review, H1 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-NET-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.20",
+          "A.8.21",
+          "A.8.22"
+        ],
+        "SOC2": [
+          "CC6.6"
+        ],
+        "CSF2": [
+          "PR.IR-01"
+        ],
+        "CIS8": [
+          "4.4"
+        ]
+      },
+      "supports_total": 6,
+      "affected": {}
+    },
+    {
+      "id": "EV-025",
+      "title": "DNS filtering and email gateway policy export",
+      "state": "Effective",
+      "controls": [
+        "CTL-NET-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.23"
+        ],
+        "SOC2": [
+          "CC6.8"
+        ],
+        "CIS8": [
+          "9.1",
+          "9.2"
+        ]
+      },
+      "supports_total": 4,
+      "affected": {}
+    },
+    {
+      "id": "EV-026",
+      "title": "KMS key policy and TLS configuration export",
+      "state": "Effective",
+      "controls": [
+        "CTL-CRY-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.14",
+          "A.8.24"
+        ],
+        "SOC2": [
+          "CC6.1",
+          "CC6.7"
+        ],
+        "CSF2": [
+          "PR.DS-01",
+          "PR.DS-02"
+        ],
+        "CIS8": [
+          "3.6"
+        ]
+      },
+      "supports_total": 7,
+      "affected": {}
+    },
+    {
+      "id": "EV-027",
+      "title": "Backup job success report, October 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-BCK-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.13"
+        ],
+        "SOC2": [
+          "A1.2"
+        ],
+        "CSF2": [
+          "PR.DS-11"
+        ],
+        "CIS8": [
+          "11.1",
+          "11.2",
+          "11.3",
+          "11.4"
+        ]
+      },
+      "supports_total": 7,
+      "affected": {}
+    },
+    {
+      "id": "EV-028",
+      "title": "Production database restore test",
+      "state": "Stale",
+      "controls": [
+        "CTL-BCK-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.13"
+        ],
+        "SOC2": [
+          "A1.3"
+        ],
+        "CSF2": [
+          "RC.RP-03"
+        ],
+        "CIS8": [
+          "11.1"
+        ]
+      },
+      "supports_total": 4,
+      "affected": {
+        "CSF2": [
+          "RC.RP-03"
+        ]
+      }
+    },
+    {
+      "id": "EV-029",
+      "title": "DR exercise 2025 (region failover)",
+      "state": "Stale",
+      "controls": [
+        "CTL-BCP-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.29",
+          "A.5.30"
+        ],
+        "SOC2": [
+          "CC7.5",
+          "CC9.1",
+          "A1.3"
+        ],
+        "CSF2": [
+          "ID.IM-04",
+          "PR.IR-03",
+          "RC.RP-01"
+        ]
+      },
+      "supports_total": 8,
+      "affected": {
+        "ISO27001": [
+          "A.5.29",
+          "A.5.30"
+        ],
+        "SOC2": [
+          "CC9.1",
+          "A1.3"
+        ],
+        "CSF2": [
+          "RC.RP-01"
+        ]
+      }
+    },
+    {
+      "id": "EV-030",
+      "title": "DR exercise 2026 (planned)",
+      "state": "Untested",
+      "controls": [
+        "CTL-BCP-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.29",
+          "A.5.30"
+        ],
+        "SOC2": [
+          "CC7.5",
+          "CC9.1",
+          "A1.3"
+        ],
+        "CSF2": [
+          "ID.IM-04",
+          "PR.IR-03",
+          "RC.RP-01"
+        ]
+      },
+      "supports_total": 8,
+      "affected": {
+        "ISO27001": [
+          "A.5.29",
+          "A.5.30"
+        ],
+        "SOC2": [
+          "CC9.1",
+          "A1.3"
+        ],
+        "CSF2": [
+          "RC.RP-01"
+        ]
+      }
+    },
+    {
+      "id": "EV-031",
+      "title": "Ransomware tabletop exercise report, June 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-IR-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.24",
+          "A.5.26",
+          "A.5.27"
+        ],
+        "SOC2": [
+          "CC7.4",
+          "CC7.5"
+        ],
+        "CSF2": [
+          "ID.IM-04",
+          "RS.MA-01",
+          "RS.CO-02"
+        ],
+        "CIS8": [
+          "17.1",
+          "17.2",
+          "17.3"
+        ]
+      },
+      "supports_total": 11,
+      "affected": {}
+    },
+    {
+      "id": "EV-032",
+      "title": "Vendor security assessments, 12 critical suppliers",
+      "state": "Untested",
+      "controls": [
+        "CTL-TPR-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.5.19",
+          "A.5.20",
+          "A.5.21",
+          "A.5.22",
+          "A.5.23"
+        ],
+        "SOC2": [
+          "CC9.2"
+        ],
+        "CSF2": [
+          "GV.SC-05",
+          "GV.SC-06",
+          "GV.SC-07"
+        ],
+        "CIS8": [
+          "15.1"
+        ]
+      },
+      "supports_total": 10,
+      "affected": {
+        "ISO27001": [
+          "A.5.19",
+          "A.5.20"
+        ],
+        "SOC2": [
+          "CC9.2"
+        ],
+        "CSF2": [
+          "GV.SC-06",
+          "GV.SC-07"
+        ],
+        "CIS8": [
+          "15.1"
+        ]
+      }
+    },
+    {
+      "id": "EV-033",
+      "title": "Awareness training completion and phishing simulation results",
+      "state": "Exception",
+      "controls": [
+        "CTL-HR-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "7.2",
+          "7.3",
+          "A.6.3"
+        ],
+        "SOC2": [
+          "CC1.4",
+          "CC2.2"
+        ],
+        "CSF2": [
+          "PR.AT-01"
+        ],
+        "CIS8": [
+          "14.1",
+          "14.2",
+          "14.3",
+          "14.4",
+          "14.5",
+          "14.6",
+          "14.7",
+          "14.8"
+        ]
+      },
+      "supports_total": 14,
+      "affected": {
+        "ISO27001": [
+          "7.3",
+          "A.6.3"
+        ],
+        "CSF2": [
+          "PR.AT-01"
+        ],
+        "CIS8": [
+          "14.1",
+          "14.2",
+          "14.3",
+          "14.4",
+          "14.5",
+          "14.6"
+        ]
+      }
+    },
+    {
+      "id": "EV-034",
+      "title": "Background check sample (15 hires)",
+      "state": "Effective",
+      "controls": [
+        "CTL-HR-02"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.6.1"
+        ],
+        "SOC2": [
+          "CC1.4"
+        ],
+        "CSF2": [
+          "GV.RR-04"
+        ]
+      },
+      "supports_total": 3,
+      "affected": {}
+    },
+    {
+      "id": "EV-035",
+      "title": "Change ticket sample (40 changes), Q3 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-CHG-01",
+        "CTL-SDL-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "6.3",
+          "A.8.4",
+          "A.8.25",
+          "A.8.28",
+          "A.8.29",
+          "A.8.32"
+        ],
+        "SOC2": [
+          "CC3.4",
+          "CC8.1"
+        ],
+        "CSF2": [
+          "ID.RA-07",
+          "PR.PS-06"
+        ]
+      },
+      "supports_total": 10,
+      "affected": {}
+    },
+    {
+      "id": "EV-036",
+      "title": "SAST and dependency scanning pipeline results",
+      "state": "Effective",
+      "controls": [
+        "CTL-SDL-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.8.4",
+          "A.8.25",
+          "A.8.28",
+          "A.8.29"
+        ],
+        "SOC2": [
+          "CC8.1"
+        ],
+        "CSF2": [
+          "PR.PS-06"
+        ]
+      },
+      "supports_total": 6,
+      "affected": {}
+    },
+    {
+      "id": "EV-037",
+      "title": "Badge access review and visitor log, Q3 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-PHY-01"
+      ],
+      "supports": {
+        "ISO27001": [
+          "A.7.1",
+          "A.7.2"
+        ],
+        "SOC2": [
+          "CC6.4"
+        ],
+        "CSF2": [
+          "PR.AA-06"
+        ]
+      },
+      "supports_total": 4,
+      "affected": {}
+    },
+    {
+      "id": "EV-038",
+      "title": "DLP incident report, Q3 2026",
+      "state": "Effective",
+      "controls": [
+        "CTL-DLP-01"
+      ],
+      "supports": {},
+      "supports_total": 0,
+      "affected": {}
+    }
+  ],
+  "requirements": {
+    "ISO27001": [
+      {
+        "id": "4.1",
+        "title": "Understanding the organization and its context",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-04",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-039"
+        ]
+      },
+      {
+        "id": "4.2",
+        "title": "Needs and expectations of interested parties",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-04",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-GOV-05",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-039",
+          "EV-040"
+        ]
+      },
+      {
+        "id": "4.3",
+        "title": "Scope of the ISMS",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-04",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-039"
+        ]
+      },
+      {
+        "id": "4.4",
+        "title": "Information security management system",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-04",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-039"
+        ]
+      },
+      {
+        "id": "5.1",
+        "title": "Leadership and commitment",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "5.2",
+        "title": "Information security policy",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-001"
+        ]
+      },
+      {
+        "id": "5.3",
+        "title": "Organizational roles, responsibilities and authorities",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-002"
+        ]
+      },
+      {
+        "id": "6.1.1",
+        "title": "Actions to address risks and opportunities: general",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-04",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-039"
+        ]
+      },
+      {
+        "id": "6.1.2",
+        "title": "Information security risk assessment (process)",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-RSK-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-004"
+        ]
+      },
+      {
+        "id": "6.1.3",
+        "title": "Information security risk treatment (process, SoA)",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-RSK-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-005"
+        ]
+      },
+      {
+        "id": "6.2",
+        "title": "Information security objectives and planning",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-04",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-039"
+        ]
+      },
+      {
+        "id": "6.3",
+        "title": "Planning of changes",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-CHG-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-035"
+        ]
+      },
+      {
+        "id": "7.1",
+        "title": "Resources",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "7.2",
+        "title": "Competence",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "7.3",
+        "title": "Awareness",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "7.4",
+        "title": "Communication",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "7.5.1",
+        "title": "Documented information: general",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "7.5.2",
+        "title": "Creating and updating documented information",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-001"
+        ]
+      },
+      {
+        "id": "7.5.3",
+        "title": "Control of documented information",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-001"
+        ]
+      },
+      {
+        "id": "8.1",
+        "title": "Operational planning and control",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "8.2",
+        "title": "Information security risk assessment (performed)",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-RSK-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-004"
+        ]
+      },
+      {
+        "id": "8.3",
+        "title": "Information security risk treatment (implemented)",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-RSK-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-005"
+        ]
+      },
+      {
+        "id": "9.1",
+        "title": "Monitoring, measurement, analysis and evaluation",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "9.2.1",
+        "title": "Internal audit: general",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "9.2.2",
+        "title": "Internal audit programme",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "9.3.1",
+        "title": "Management review: general",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "9.3.2",
+        "title": "Management review inputs",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "9.3.3",
+        "title": "Management review results",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "10.1",
+        "title": "Continual improvement",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "10.2",
+        "title": "Nonconformity and corrective action",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "A.5.1",
+        "title": "Policies for information security",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-001"
+        ]
+      },
+      {
+        "id": "A.5.2",
+        "title": "Information security roles and responsibilities",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-002"
+        ]
+      },
+      {
+        "id": "A.5.3",
+        "title": "Segregation of duties",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.5.4",
+        "title": "Management responsibilities",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-002"
+        ]
+      },
+      {
+        "id": "A.5.5",
+        "title": "Contact with authorities",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.5.6",
+        "title": "Contact with special interest groups",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.5.7",
+        "title": "Threat intelligence",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.5.8",
+        "title": "Information security in project management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.5.9",
+        "title": "Inventory of information and other associated assets",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-AST-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-AST-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-006",
+          "EV-007"
+        ]
+      },
+      {
+        "id": "A.5.10",
+        "title": "Acceptable use of information and other associated assets",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.5.11",
+        "title": "Return of assets",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-AST-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-006"
+        ]
+      },
+      {
+        "id": "A.5.12",
+        "title": "Classification of information",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-008"
+        ]
+      },
+      {
+        "id": "A.5.13",
+        "title": "Labelling of information",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-008"
+        ]
+      },
+      {
+        "id": "A.5.14",
+        "title": "Information transfer",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-CRY-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-026"
+        ]
+      },
+      {
+        "id": "A.5.15",
+        "title": "Access control",
+        "status": "Deficient",
+        "reason": "Mapped control failed testing: CTL-IAM-02.",
+        "controls": [
+          {
+            "id": "CTL-DAT-03",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-IAM-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-010",
+          "EV-012"
+        ]
+      },
+      {
+        "id": "A.5.16",
+        "title": "Identity management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IAM-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-IAM-06",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-011",
+          "EV-016"
+        ]
+      },
+      {
+        "id": "A.5.17",
+        "title": "Authentication information",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IAM-05",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-015"
+        ]
+      },
+      {
+        "id": "A.5.18",
+        "title": "Access rights",
+        "status": "Deficient",
+        "reason": "Mapped control failed testing: CTL-IAM-02.",
+        "controls": [
+          {
+            "id": "CTL-IAM-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-IAM-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-011",
+          "EV-012"
+        ]
+      },
+      {
+        "id": "A.5.19",
+        "title": "Information security in supplier relationships",
+        "status": "Not tested",
+        "reason": "Evidence exists but has not been tested yet.",
+        "controls": [
+          {
+            "id": "CTL-TPR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-032"
+        ]
+      },
+      {
+        "id": "A.5.20",
+        "title": "Addressing information security within supplier agreements",
+        "status": "Not tested",
+        "reason": "Evidence exists but has not been tested yet.",
+        "controls": [
+          {
+            "id": "CTL-TPR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-032"
+        ]
+      },
+      {
+        "id": "A.5.21",
+        "title": "Managing information security in the ICT supply chain",
+        "status": "Not tested",
+        "reason": "Evidence exists but has not been tested yet.",
+        "controls": [
+          {
+            "id": "CTL-TPR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-032"
+        ]
+      },
+      {
+        "id": "A.5.22",
+        "title": "Monitoring, review and change management of supplier services",
+        "status": "Not tested",
+        "reason": "Evidence exists but has not been tested yet.",
+        "controls": [
+          {
+            "id": "CTL-TPR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-032"
+        ]
+      },
+      {
+        "id": "A.5.23",
+        "title": "Information security for use of cloud services",
+        "status": "Not tested",
+        "reason": "Evidence exists but has not been tested yet.",
+        "controls": [
+          {
+            "id": "CTL-TPR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-032"
+        ]
+      },
+      {
+        "id": "A.5.24",
+        "title": "Information security incident management planning and preparation",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-031"
+        ]
+      },
+      {
+        "id": "A.5.25",
+        "title": "Assessment and decision on information security events",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-023"
+        ]
+      },
+      {
+        "id": "A.5.26",
+        "title": "Response to information security incidents",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-031"
+        ]
+      },
+      {
+        "id": "A.5.27",
+        "title": "Learning from information security incidents",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-IR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-031"
+        ]
+      },
+      {
+        "id": "A.5.28",
+        "title": "Collection of evidence",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.5.29",
+        "title": "Information security during disruption",
+        "status": "Evidence stale",
+        "reason": "Evidence for every mapped control is outside its validity window.",
+        "controls": [
+          {
+            "id": "CTL-BCP-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-029",
+          "EV-030"
+        ]
+      },
+      {
+        "id": "A.5.30",
+        "title": "ICT readiness for business continuity",
+        "status": "Evidence stale",
+        "reason": "Evidence for every mapped control is outside its validity window.",
+        "controls": [
+          {
+            "id": "CTL-BCP-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-029",
+          "EV-030"
+        ]
+      },
+      {
+        "id": "A.5.31",
+        "title": "Legal, statutory, regulatory and contractual requirements",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-05",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-040"
+        ]
+      },
+      {
+        "id": "A.5.32",
+        "title": "Intellectual property rights",
+        "status": "Excluded",
+        "reason": "",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.5.33",
+        "title": "Protection of records",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-DAT-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-009"
+        ]
+      },
+      {
+        "id": "A.5.34",
+        "title": "Privacy and protection of PII",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-05",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-040"
+        ]
+      },
+      {
+        "id": "A.5.35",
+        "title": "Independent review of information security",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-VUL-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-003",
+          "EV-021"
+        ]
+      },
+      {
+        "id": "A.5.36",
+        "title": "Compliance with policies, rules and standards for information security",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.5.37",
+        "title": "Documented operating procedures",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.6.1",
+        "title": "Screening",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-HR-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-034"
+        ]
+      },
+      {
+        "id": "A.6.2",
+        "title": "Terms and conditions of employment",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.6.3",
+        "title": "Information security awareness, education and training",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "A.6.4",
+        "title": "Disciplinary process",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.6.5",
+        "title": "Responsibilities after termination or change of employment",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-IAM-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-011"
+        ]
+      },
+      {
+        "id": "A.6.6",
+        "title": "Confidentiality or non-disclosure agreements",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.6.7",
+        "title": "Remote working",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.6.8",
+        "title": "Information security event reporting",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-LOG-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-023"
+        ]
+      },
+      {
+        "id": "A.7.1",
+        "title": "Physical security perimeters",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-PHY-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-037"
+        ]
+      },
+      {
+        "id": "A.7.2",
+        "title": "Physical entry",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-PHY-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-037"
+        ]
+      },
+      {
+        "id": "A.7.3",
+        "title": "Securing offices, rooms and facilities",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.7.4",
+        "title": "Physical security monitoring",
+        "status": "Excluded",
+        "reason": "No data centre; production is hosted in a cloud region.",
+        "controls": [
+          {
+            "id": "CTL-PHY-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-037"
+        ]
+      },
+      {
+        "id": "A.7.5",
+        "title": "Protecting against physical and environmental threats",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.7.6",
+        "title": "Working in secure areas",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.7.7",
+        "title": "Clear desk and clear screen",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-CFG-03",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-019"
+        ]
+      },
+      {
+        "id": "A.7.8",
+        "title": "Equipment siting and protection",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.7.9",
+        "title": "Security of assets off-premises",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.7.10",
+        "title": "Storage media",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.7.11",
+        "title": "Supporting utilities",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.7.12",
+        "title": "Cabling security",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.7.13",
+        "title": "Equipment maintenance",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.7.14",
+        "title": "Secure disposal or re-use of equipment",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-009"
+        ]
+      },
+      {
+        "id": "A.8.1",
+        "title": "User endpoint devices",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-019"
+        ]
+      },
+      {
+        "id": "A.8.2",
+        "title": "Privileged access rights",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IAM-04",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-014"
+        ]
+      },
+      {
+        "id": "A.8.3",
+        "title": "Information access restriction",
+        "status": "Evidence stale",
+        "reason": "Evidence for every mapped control is outside its validity window.",
+        "controls": [
+          {
+            "id": "CTL-DAT-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-010"
+        ]
+      },
+      {
+        "id": "A.8.4",
+        "title": "Access to source code",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-SDL-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-035",
+          "EV-036"
+        ]
+      },
+      {
+        "id": "A.8.5",
+        "title": "Secure authentication",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-IAM-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-013"
+        ]
+      },
+      {
+        "id": "A.8.6",
+        "title": "Capacity management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.8.7",
+        "title": "Protection against malware",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-018"
+        ]
+      },
+      {
+        "id": "A.8.8",
+        "title": "Management of technical vulnerabilities",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-VUL-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-VUL-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-020",
+          "EV-021"
+        ]
+      },
+      {
+        "id": "A.8.9",
+        "title": "Configuration management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-CFG-04",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-017"
+        ]
+      },
+      {
+        "id": "A.8.10",
+        "title": "Information deletion",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-009"
+        ]
+      },
+      {
+        "id": "A.8.11",
+        "title": "Data masking",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.8.12",
+        "title": "Data leakage prevention",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.8.13",
+        "title": "Information backup",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-BCK-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-BCK-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-027",
+          "EV-028"
+        ]
+      },
+      {
+        "id": "A.8.14",
+        "title": "Redundancy of information processing facilities",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.8.15",
+        "title": "Logging",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-022"
+        ]
+      },
+      {
+        "id": "A.8.16",
+        "title": "Monitoring activities",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-023"
+        ]
+      },
+      {
+        "id": "A.8.17",
+        "title": "Clock synchronization",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-022"
+        ]
+      },
+      {
+        "id": "A.8.18",
+        "title": "Use of privileged utility programs",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-IAM-04",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-014"
+        ]
+      },
+      {
+        "id": "A.8.19",
+        "title": "Installation of software on operational systems",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-AST-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-007"
+        ]
+      },
+      {
+        "id": "A.8.20",
+        "title": "Networks security",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-NET-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-024"
+        ]
+      },
+      {
+        "id": "A.8.21",
+        "title": "Security of network services",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-NET-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-024"
+        ]
+      },
+      {
+        "id": "A.8.22",
+        "title": "Segregation of networks",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-NET-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-024"
+        ]
+      },
+      {
+        "id": "A.8.23",
+        "title": "Web filtering",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-NET-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-025"
+        ]
+      },
+      {
+        "id": "A.8.24",
+        "title": "Use of cryptography",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CRY-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-026"
+        ]
+      },
+      {
+        "id": "A.8.25",
+        "title": "Secure development life cycle",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-SDL-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-035",
+          "EV-036"
+        ]
+      },
+      {
+        "id": "A.8.26",
+        "title": "Application security requirements",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.8.27",
+        "title": "Secure system architecture and engineering principles",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.8.28",
+        "title": "Secure coding",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-SDL-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-035",
+          "EV-036"
+        ]
+      },
+      {
+        "id": "A.8.29",
+        "title": "Security testing in development and acceptance",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-VUL-02",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-SDL-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-021",
+          "EV-035",
+          "EV-036"
+        ]
+      },
+      {
+        "id": "A.8.30",
+        "title": "Outsourced development",
+        "status": "Excluded",
+        "reason": "No outsourced development; all software is built by employees.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.8.31",
+        "title": "Separation of development, test and production environments",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.8.32",
+        "title": "Change management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CHG-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-035"
+        ]
+      },
+      {
+        "id": "A.8.33",
+        "title": "Test information",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A.8.34",
+        "title": "Protection of information systems during audit testing",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      }
+    ],
+    "SOC2": [
+      {
+        "id": "CC1.1",
+        "title": "Commitment to integrity and ethical values",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "CC1.2",
+        "title": "Board independence and oversight of internal control",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "CC1.3",
+        "title": "Structures, reporting lines and authorities",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-002"
+        ]
+      },
+      {
+        "id": "CC1.4",
+        "title": "Commitment to attract, develop and retain competent people",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-HR-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-033",
+          "EV-034"
+        ]
+      },
+      {
+        "id": "CC1.5",
+        "title": "Individuals held accountable for internal control",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "CC2.1",
+        "title": "Relevant, quality information supports internal control",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "CC2.2",
+        "title": "Internal communication of objectives and responsibilities",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-01",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-HR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-001",
+          "EV-033"
+        ]
+      },
+      {
+        "id": "CC2.3",
+        "title": "Communication with external parties",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "CC3.1",
+        "title": "Objectives specified clearly enough to identify risks",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-04",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-RSK-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-004",
+          "EV-039"
+        ]
+      },
+      {
+        "id": "CC3.2",
+        "title": "Risks identified and analysed",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-RSK-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-004"
+        ]
+      },
+      {
+        "id": "CC3.3",
+        "title": "Potential for fraud considered",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-RSK-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-004"
+        ]
+      },
+      {
+        "id": "CC3.4",
+        "title": "Significant changes identified and assessed",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-CHG-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-035"
+        ]
+      },
+      {
+        "id": "CC4.1",
+        "title": "Ongoing and/or separate evaluations of controls",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-VUL-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-003",
+          "EV-021"
+        ]
+      },
+      {
+        "id": "CC4.2",
+        "title": "Deficiencies evaluated and communicated",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "CC5.1",
+        "title": "Control activities selected and developed",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "CC5.2",
+        "title": "General controls over technology",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-CFG-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-017"
+        ]
+      },
+      {
+        "id": "CC5.3",
+        "title": "Controls deployed through policies and procedures",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-001"
+        ]
+      },
+      {
+        "id": "CC6.1",
+        "title": "Logical access security over protected information assets",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-AST-01",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-DAT-03",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-IAM-03",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-IAM-05",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-CRY-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-006",
+          "EV-010",
+          "EV-013",
+          "EV-015",
+          "EV-026"
+        ]
+      },
+      {
+        "id": "CC6.2",
+        "title": "Users registered and authorised before access is granted",
+        "status": "Deficient",
+        "reason": "Mapped control failed testing: CTL-IAM-02.",
+        "controls": [
+          {
+            "id": "CTL-IAM-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-IAM-02",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-IAM-06",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-011",
+          "EV-012",
+          "EV-016"
+        ]
+      },
+      {
+        "id": "CC6.3",
+        "title": "Access modified and removed; least privilege and segregation",
+        "status": "Deficient",
+        "reason": "Mapped control failed testing: CTL-IAM-02.",
+        "controls": [
+          {
+            "id": "CTL-IAM-01",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-IAM-02",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-IAM-04",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-011",
+          "EV-012",
+          "EV-014"
+        ]
+      },
+      {
+        "id": "CC6.4",
+        "title": "Physical access to facilities and assets restricted",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-PHY-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-037"
+        ]
+      },
+      {
+        "id": "CC6.5",
+        "title": "Protection maintained until assets are disposed of",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-009"
+        ]
+      },
+      {
+        "id": "CC6.6",
+        "title": "Protection against threats from outside system boundaries",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-NET-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-024"
+        ]
+      },
+      {
+        "id": "CC6.7",
+        "title": "Transmission and movement of information restricted and protected",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CRY-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-026"
+        ]
+      },
+      {
+        "id": "CC6.8",
+        "title": "Unauthorised or malicious software prevented or detected",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-02",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-NET-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-018",
+          "EV-025"
+        ]
+      },
+      {
+        "id": "CC7.1",
+        "title": "Configuration changes and new vulnerabilities detected",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-01",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-VUL-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-VUL-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-017",
+          "EV-020",
+          "EV-021"
+        ]
+      },
+      {
+        "id": "CC7.2",
+        "title": "System components monitored for anomalies",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-01",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-LOG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-022",
+          "EV-023"
+        ]
+      },
+      {
+        "id": "CC7.3",
+        "title": "Security events evaluated to determine if they are incidents",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-023"
+        ]
+      },
+      {
+        "id": "CC7.4",
+        "title": "Incidents responded to under a defined programme",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-031"
+        ]
+      },
+      {
+        "id": "CC7.5",
+        "title": "Recovery from identified incidents",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-BCP-01",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-IR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-029",
+          "EV-030",
+          "EV-031"
+        ]
+      },
+      {
+        "id": "CC8.1",
+        "title": "Changes authorised, designed, tested, approved and implemented",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CHG-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-SDL-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-035",
+          "EV-036"
+        ]
+      },
+      {
+        "id": "CC9.1",
+        "title": "Risk mitigation for business disruption",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective; full-strength control(s) CTL-BCP-01 are stale.",
+        "controls": [
+          {
+            "id": "CTL-RSK-02",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-BCP-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-005",
+          "EV-029",
+          "EV-030"
+        ]
+      },
+      {
+        "id": "CC9.2",
+        "title": "Vendor and business partner risk managed",
+        "status": "Not tested",
+        "reason": "Evidence exists but has not been tested yet.",
+        "controls": [
+          {
+            "id": "CTL-TPR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-032"
+        ]
+      },
+      {
+        "id": "A1.1",
+        "title": "Capacity managed to meet objectives",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "A1.2",
+        "title": "Environmental protections, backup and recovery infrastructure",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-BCK-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-027"
+        ]
+      },
+      {
+        "id": "A1.3",
+        "title": "Recovery plan procedures tested",
+        "status": "Evidence stale",
+        "reason": "Evidence for every mapped control is outside its validity window.",
+        "controls": [
+          {
+            "id": "CTL-BCK-02",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-BCP-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-028",
+          "EV-029",
+          "EV-030"
+        ]
+      },
+      {
+        "id": "C1.1",
+        "title": "Confidential information identified and protected",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-008"
+        ]
+      },
+      {
+        "id": "C1.2",
+        "title": "Confidential information disposed of",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-009"
+        ]
+      }
+    ],
+    "CSF2": [
+      {
+        "id": "GV.OC-01",
+        "title": "Organizational Context",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-04",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-039"
+        ]
+      },
+      {
+        "id": "GV.OC-02",
+        "title": "Organizational Context",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-04",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-039"
+        ]
+      },
+      {
+        "id": "GV.OC-03",
+        "title": "Organizational Context",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-05",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-040"
+        ]
+      },
+      {
+        "id": "GV.OC-04",
+        "title": "Organizational Context",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.OC-05",
+        "title": "Organizational Context",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.RM-01",
+        "title": "Risk Management Strategy",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.RM-02",
+        "title": "Risk Management Strategy",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-RSK-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-005"
+        ]
+      },
+      {
+        "id": "GV.RM-03",
+        "title": "Risk Management Strategy",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.RM-04",
+        "title": "Risk Management Strategy",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.RM-05",
+        "title": "Risk Management Strategy",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.RM-06",
+        "title": "Risk Management Strategy",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.RM-07",
+        "title": "Risk Management Strategy",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.RR-01",
+        "title": "Roles, Responsibilities, and Authorities",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-002"
+        ]
+      },
+      {
+        "id": "GV.RR-02",
+        "title": "Roles, Responsibilities, and Authorities",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-002"
+        ]
+      },
+      {
+        "id": "GV.RR-03",
+        "title": "Roles, Responsibilities, and Authorities",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.RR-04",
+        "title": "Roles, Responsibilities, and Authorities",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-HR-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-034"
+        ]
+      },
+      {
+        "id": "GV.PO-01",
+        "title": "Policy",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-001"
+        ]
+      },
+      {
+        "id": "GV.PO-02",
+        "title": "Policy",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-001"
+        ]
+      },
+      {
+        "id": "GV.OV-01",
+        "title": "Oversight",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "GV.OV-02",
+        "title": "Oversight",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "GV.OV-03",
+        "title": "Oversight",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.SC-01",
+        "title": "Cybersecurity Supply Chain Risk Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.SC-02",
+        "title": "Cybersecurity Supply Chain Risk Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.SC-03",
+        "title": "Cybersecurity Supply Chain Risk Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.SC-04",
+        "title": "Cybersecurity Supply Chain Risk Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.SC-05",
+        "title": "Cybersecurity Supply Chain Risk Management",
+        "status": "Not tested",
+        "reason": "Evidence exists but has not been tested yet.",
+        "controls": [
+          {
+            "id": "CTL-TPR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-032"
+        ]
+      },
+      {
+        "id": "GV.SC-06",
+        "title": "Cybersecurity Supply Chain Risk Management",
+        "status": "Not tested",
+        "reason": "Evidence exists but has not been tested yet.",
+        "controls": [
+          {
+            "id": "CTL-TPR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-032"
+        ]
+      },
+      {
+        "id": "GV.SC-07",
+        "title": "Cybersecurity Supply Chain Risk Management",
+        "status": "Not tested",
+        "reason": "Evidence exists but has not been tested yet.",
+        "controls": [
+          {
+            "id": "CTL-TPR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-032"
+        ]
+      },
+      {
+        "id": "GV.SC-08",
+        "title": "Cybersecurity Supply Chain Risk Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.SC-09",
+        "title": "Cybersecurity Supply Chain Risk Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "GV.SC-10",
+        "title": "Cybersecurity Supply Chain Risk Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "ID.AM-01",
+        "title": "Asset Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-AST-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-006"
+        ]
+      },
+      {
+        "id": "ID.AM-02",
+        "title": "Asset Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-AST-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-007"
+        ]
+      },
+      {
+        "id": "ID.AM-03",
+        "title": "Asset Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "ID.AM-04",
+        "title": "Asset Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "ID.AM-05",
+        "title": "Asset Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "ID.AM-07",
+        "title": "Asset Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-008"
+        ]
+      },
+      {
+        "id": "ID.AM-08",
+        "title": "Asset Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "ID.RA-01",
+        "title": "Risk Assessment",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-VUL-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-VUL-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-020",
+          "EV-021"
+        ]
+      },
+      {
+        "id": "ID.RA-02",
+        "title": "Risk Assessment",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "ID.RA-03",
+        "title": "Risk Assessment",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-RSK-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-004"
+        ]
+      },
+      {
+        "id": "ID.RA-04",
+        "title": "Risk Assessment",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-RSK-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-004"
+        ]
+      },
+      {
+        "id": "ID.RA-05",
+        "title": "Risk Assessment",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-RSK-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-004"
+        ]
+      },
+      {
+        "id": "ID.RA-06",
+        "title": "Risk Assessment",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-RSK-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-005"
+        ]
+      },
+      {
+        "id": "ID.RA-07",
+        "title": "Risk Assessment",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CHG-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-035"
+        ]
+      },
+      {
+        "id": "ID.RA-08",
+        "title": "Risk Assessment",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-VUL-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-020"
+        ]
+      },
+      {
+        "id": "ID.RA-09",
+        "title": "Risk Assessment",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "ID.RA-10",
+        "title": "Risk Assessment",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "ID.IM-01",
+        "title": "Improvement",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-GOV-03",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-003"
+        ]
+      },
+      {
+        "id": "ID.IM-02",
+        "title": "Improvement",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-VUL-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-021"
+        ]
+      },
+      {
+        "id": "ID.IM-03",
+        "title": "Improvement",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "ID.IM-04",
+        "title": "Improvement",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-BCP-01",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-IR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-029",
+          "EV-030",
+          "EV-031"
+        ]
+      },
+      {
+        "id": "PR.AA-01",
+        "title": "Identity Management, Authentication, and Access Control",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IAM-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-IAM-06",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-011",
+          "EV-016"
+        ]
+      },
+      {
+        "id": "PR.AA-02",
+        "title": "Identity Management, Authentication, and Access Control",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "PR.AA-03",
+        "title": "Identity Management, Authentication, and Access Control",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-IAM-03",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-IAM-05",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-013",
+          "EV-015"
+        ]
+      },
+      {
+        "id": "PR.AA-04",
+        "title": "Identity Management, Authentication, and Access Control",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "PR.AA-05",
+        "title": "Identity Management, Authentication, and Access Control",
+        "status": "Deficient",
+        "reason": "Mapped control failed testing: CTL-IAM-02.",
+        "controls": [
+          {
+            "id": "CTL-DAT-03",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-IAM-02",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-IAM-04",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-010",
+          "EV-012",
+          "EV-014"
+        ]
+      },
+      {
+        "id": "PR.AA-06",
+        "title": "Identity Management, Authentication, and Access Control",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-PHY-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-037"
+        ]
+      },
+      {
+        "id": "PR.AT-01",
+        "title": "Awareness and Training",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "PR.AT-02",
+        "title": "Awareness and Training",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "PR.DS-01",
+        "title": "Data Security",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CRY-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-026"
+        ]
+      },
+      {
+        "id": "PR.DS-02",
+        "title": "Data Security",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CRY-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-026"
+        ]
+      },
+      {
+        "id": "PR.DS-10",
+        "title": "Data Security",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "PR.DS-11",
+        "title": "Data Security",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-BCK-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-027"
+        ]
+      },
+      {
+        "id": "PR.PS-01",
+        "title": "Platform Security",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-01",
+            "strength": "full"
+          },
+          {
+            "id": "CTL-CFG-03",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-CFG-04",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-017",
+          "EV-019"
+        ]
+      },
+      {
+        "id": "PR.PS-02",
+        "title": "Platform Security",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-AST-02",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-VUL-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-007",
+          "EV-020"
+        ]
+      },
+      {
+        "id": "PR.PS-03",
+        "title": "Platform Security",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "PR.PS-04",
+        "title": "Platform Security",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-022"
+        ]
+      },
+      {
+        "id": "PR.PS-05",
+        "title": "Platform Security",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-CFG-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-018"
+        ]
+      },
+      {
+        "id": "PR.PS-06",
+        "title": "Platform Security",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-SDL-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-035",
+          "EV-036"
+        ]
+      },
+      {
+        "id": "PR.IR-01",
+        "title": "Technology Infrastructure Resilience",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-NET-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-024"
+        ]
+      },
+      {
+        "id": "PR.IR-02",
+        "title": "Technology Infrastructure Resilience",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "PR.IR-03",
+        "title": "Technology Infrastructure Resilience",
+        "status": "Evidence stale",
+        "reason": "Evidence for every mapped control is outside its validity window.",
+        "controls": [
+          {
+            "id": "CTL-BCP-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-029",
+          "EV-030"
+        ]
+      },
+      {
+        "id": "PR.IR-04",
+        "title": "Technology Infrastructure Resilience",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "DE.CM-01",
+        "title": "Continuous Monitoring",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-023"
+        ]
+      },
+      {
+        "id": "DE.CM-02",
+        "title": "Continuous Monitoring",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "DE.CM-03",
+        "title": "Continuous Monitoring",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-LOG-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-023"
+        ]
+      },
+      {
+        "id": "DE.CM-06",
+        "title": "Continuous Monitoring",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "DE.CM-09",
+        "title": "Continuous Monitoring",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-018"
+        ]
+      },
+      {
+        "id": "DE.AE-02",
+        "title": "Adverse Event Analysis",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-023"
+        ]
+      },
+      {
+        "id": "DE.AE-03",
+        "title": "Adverse Event Analysis",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-LOG-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-023"
+        ]
+      },
+      {
+        "id": "DE.AE-04",
+        "title": "Adverse Event Analysis",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "DE.AE-06",
+        "title": "Adverse Event Analysis",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-023"
+        ]
+      },
+      {
+        "id": "DE.AE-07",
+        "title": "Adverse Event Analysis",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "DE.AE-08",
+        "title": "Adverse Event Analysis",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.MA-01",
+        "title": "Incident Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-031"
+        ]
+      },
+      {
+        "id": "RS.MA-02",
+        "title": "Incident Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.MA-03",
+        "title": "Incident Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.MA-04",
+        "title": "Incident Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.MA-05",
+        "title": "Incident Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.AN-03",
+        "title": "Incident Analysis",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.AN-06",
+        "title": "Incident Analysis",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.AN-07",
+        "title": "Incident Analysis",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.AN-08",
+        "title": "Incident Analysis",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.CO-02",
+        "title": "Incident Response Reporting and Communication",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-IR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-031"
+        ]
+      },
+      {
+        "id": "RS.CO-03",
+        "title": "Incident Response Reporting and Communication",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.MI-01",
+        "title": "Incident Mitigation",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RS.MI-02",
+        "title": "Incident Mitigation",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RC.RP-01",
+        "title": "Incident Recovery Plan Execution",
+        "status": "Evidence stale",
+        "reason": "Evidence for every mapped control is outside its validity window.",
+        "controls": [
+          {
+            "id": "CTL-BCP-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-029",
+          "EV-030"
+        ]
+      },
+      {
+        "id": "RC.RP-02",
+        "title": "Incident Recovery Plan Execution",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RC.RP-03",
+        "title": "Incident Recovery Plan Execution",
+        "status": "Evidence stale",
+        "reason": "Evidence for every mapped control is outside its validity window.",
+        "controls": [
+          {
+            "id": "CTL-BCK-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-028"
+        ]
+      },
+      {
+        "id": "RC.RP-04",
+        "title": "Incident Recovery Plan Execution",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RC.RP-05",
+        "title": "Incident Recovery Plan Execution",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RC.RP-06",
+        "title": "Incident Recovery Plan Execution",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RC.CO-03",
+        "title": "Incident Recovery Communication",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "RC.CO-04",
+        "title": "Incident Recovery Communication",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      }
+    ],
+    "CIS8": [
+      {
+        "id": "1.1",
+        "title": "Inventory and Control of Enterprise Assets",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-AST-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-006"
+        ]
+      },
+      {
+        "id": "1.2",
+        "title": "Inventory and Control of Enterprise Assets",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-AST-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-006"
+        ]
+      },
+      {
+        "id": "2.1",
+        "title": "Inventory and Control of Software Assets",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-AST-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-007"
+        ]
+      },
+      {
+        "id": "2.2",
+        "title": "Inventory and Control of Software Assets",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-AST-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-007"
+        ]
+      },
+      {
+        "id": "2.3",
+        "title": "Inventory and Control of Software Assets",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-AST-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-007"
+        ]
+      },
+      {
+        "id": "3.1",
+        "title": "Data Protection",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-008"
+        ]
+      },
+      {
+        "id": "3.2",
+        "title": "Data Protection",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-DAT-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-008"
+        ]
+      },
+      {
+        "id": "3.3",
+        "title": "Data Protection",
+        "status": "Evidence stale",
+        "reason": "Evidence for every mapped control is outside its validity window.",
+        "controls": [
+          {
+            "id": "CTL-DAT-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-010"
+        ]
+      },
+      {
+        "id": "3.4",
+        "title": "Data Protection",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-009"
+        ]
+      },
+      {
+        "id": "3.5",
+        "title": "Data Protection",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-DAT-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-009"
+        ]
+      },
+      {
+        "id": "3.6",
+        "title": "Data Protection",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CRY-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-026"
+        ]
+      },
+      {
+        "id": "4.1",
+        "title": "Secure Configuration of Enterprise Assets and Software",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-017"
+        ]
+      },
+      {
+        "id": "4.2",
+        "title": "Secure Configuration of Enterprise Assets and Software",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-017"
+        ]
+      },
+      {
+        "id": "4.3",
+        "title": "Secure Configuration of Enterprise Assets and Software",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-019"
+        ]
+      },
+      {
+        "id": "4.4",
+        "title": "Secure Configuration of Enterprise Assets and Software",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-NET-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-024"
+        ]
+      },
+      {
+        "id": "4.5",
+        "title": "Secure Configuration of Enterprise Assets and Software",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-019"
+        ]
+      },
+      {
+        "id": "4.6",
+        "title": "Secure Configuration of Enterprise Assets and Software",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-04",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-017"
+        ]
+      },
+      {
+        "id": "4.7",
+        "title": "Secure Configuration of Enterprise Assets and Software",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-04",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-017"
+        ]
+      },
+      {
+        "id": "5.1",
+        "title": "Account Management",
+        "status": "Deficient",
+        "reason": "Mapped control failed testing: CTL-IAM-02.",
+        "controls": [
+          {
+            "id": "CTL-IAM-02",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-IAM-06",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-012",
+          "EV-016"
+        ]
+      },
+      {
+        "id": "5.2",
+        "title": "Account Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IAM-05",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-015"
+        ]
+      },
+      {
+        "id": "5.3",
+        "title": "Account Management",
+        "status": "Deficient",
+        "reason": "Mapped control failed testing: CTL-IAM-02.",
+        "controls": [
+          {
+            "id": "CTL-IAM-02",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-IAM-06",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-012",
+          "EV-016"
+        ]
+      },
+      {
+        "id": "5.4",
+        "title": "Account Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IAM-04",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-014"
+        ]
+      },
+      {
+        "id": "6.1",
+        "title": "Access Control Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IAM-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-011"
+        ]
+      },
+      {
+        "id": "6.2",
+        "title": "Access Control Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IAM-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-011"
+        ]
+      },
+      {
+        "id": "6.3",
+        "title": "Access Control Management",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-IAM-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-013"
+        ]
+      },
+      {
+        "id": "6.4",
+        "title": "Access Control Management",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-IAM-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-013"
+        ]
+      },
+      {
+        "id": "6.5",
+        "title": "Access Control Management",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-IAM-03",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-013"
+        ]
+      },
+      {
+        "id": "7.1",
+        "title": "Continuous Vulnerability Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-VUL-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-020"
+        ]
+      },
+      {
+        "id": "7.2",
+        "title": "Continuous Vulnerability Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-VUL-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-020"
+        ]
+      },
+      {
+        "id": "7.3",
+        "title": "Continuous Vulnerability Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-VUL-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-020"
+        ]
+      },
+      {
+        "id": "7.4",
+        "title": "Continuous Vulnerability Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-VUL-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-020"
+        ]
+      },
+      {
+        "id": "8.1",
+        "title": "Audit Log Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-022"
+        ]
+      },
+      {
+        "id": "8.2",
+        "title": "Audit Log Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-022"
+        ]
+      },
+      {
+        "id": "8.3",
+        "title": "Audit Log Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-LOG-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-022"
+        ]
+      },
+      {
+        "id": "9.1",
+        "title": "Email and Web Browser Protections",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-NET-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-025"
+        ]
+      },
+      {
+        "id": "9.2",
+        "title": "Email and Web Browser Protections",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-NET-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-025"
+        ]
+      },
+      {
+        "id": "10.1",
+        "title": "Malware Defenses",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-018"
+        ]
+      },
+      {
+        "id": "10.2",
+        "title": "Malware Defenses",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-018"
+        ]
+      },
+      {
+        "id": "10.3",
+        "title": "Malware Defenses",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-CFG-02",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-018"
+        ]
+      },
+      {
+        "id": "11.1",
+        "title": "Data Recovery",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-BCK-01",
+            "strength": "partial"
+          },
+          {
+            "id": "CTL-BCK-02",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-027",
+          "EV-028"
+        ]
+      },
+      {
+        "id": "11.2",
+        "title": "Data Recovery",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-BCK-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-027"
+        ]
+      },
+      {
+        "id": "11.3",
+        "title": "Data Recovery",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-BCK-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-027"
+        ]
+      },
+      {
+        "id": "11.4",
+        "title": "Data Recovery",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-BCK-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-027"
+        ]
+      },
+      {
+        "id": "12.1",
+        "title": "Network Infrastructure Management",
+        "status": "Unmapped",
+        "reason": "No common control is mapped to this requirement.",
+        "controls": [],
+        "evidence": []
+      },
+      {
+        "id": "14.1",
+        "title": "Security Awareness and Skills Training",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "14.2",
+        "title": "Security Awareness and Skills Training",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "14.3",
+        "title": "Security Awareness and Skills Training",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "14.4",
+        "title": "Security Awareness and Skills Training",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "14.5",
+        "title": "Security Awareness and Skills Training",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "14.6",
+        "title": "Security Awareness and Skills Training",
+        "status": "Satisfied with exceptions",
+        "reason": "Best full-strength control passed with exceptions.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "14.7",
+        "title": "Security Awareness and Skills Training",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "14.8",
+        "title": "Security Awareness and Skills Training",
+        "status": "Partial",
+        "reason": "Only partial-strength controls are effective.",
+        "controls": [
+          {
+            "id": "CTL-HR-01",
+            "strength": "partial"
+          }
+        ],
+        "evidence": [
+          "EV-033"
+        ]
+      },
+      {
+        "id": "15.1",
+        "title": "Service Provider Management",
+        "status": "Not tested",
+        "reason": "Evidence exists but has not been tested yet.",
+        "controls": [
+          {
+            "id": "CTL-TPR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-032"
+        ]
+      },
+      {
+        "id": "17.1",
+        "title": "Incident Response Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-031"
+        ]
+      },
+      {
+        "id": "17.2",
+        "title": "Incident Response Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-031"
+        ]
+      },
+      {
+        "id": "17.3",
+        "title": "Incident Response Management",
+        "status": "Satisfied",
+        "reason": "",
+        "controls": [
+          {
+            "id": "CTL-IR-01",
+            "strength": "full"
+          }
+        ],
+        "evidence": [
+          "EV-031"
+        ]
+      }
+    ]
+  },
+  "findings": [
+    {
+      "severity": "High",
+      "code": "EXCLUSION_NOT_JUSTIFIED",
+      "where": "ISO27001 A.5.32",
+      "message": "A.5.32 is excluded without a justification."
+    },
+    {
+      "severity": "High",
+      "code": "UNKNOWN_CONTROL",
+      "where": "evidence.csv:41",
+      "message": "EV-038 supports control CTL-DLP-01, which is not defined."
+    },
+    {
+      "severity": "High",
+      "code": "UNKNOWN_REQUIREMENT",
+      "where": "mappings.csv:104",
+      "message": "CSF2 'PR.AC-7' is not in the catalog: PR.AC is a CSF 1.1 category that CSF 2.0 removed; remap to the 2.0 subcategory."
+    },
+    {
+      "severity": "High",
+      "code": "UNKNOWN_REQUIREMENT",
+      "where": "mappings.csv:113",
+      "message": "CIS8 '5.7' is not in the catalog: CIS Control 5 has safeguards 5.1-5.6 in v8.1."
+    },
+    {
+      "severity": "High",
+      "code": "UNKNOWN_REQUIREMENT",
+      "where": "mappings.csv:124",
+      "message": "ISO27001 '8.9' is not in the catalog: clause 8.9 does not exist; did you mean Annex A control A.8.9?"
+    },
+    {
+      "severity": "High",
+      "code": "UNKNOWN_REQUIREMENT",
+      "where": "mappings.csv:166",
+      "message": "ISO27001 'A.12.4.1' is not in the catalog: looks like ISO/IEC 27001:2013 numbering; map it to the 2022 control."
+    },
+    {
+      "severity": "Medium",
+      "code": "CONTROL_NO_EVIDENCE",
+      "where": "CTL-LEG-01",
+      "message": "Control CTL-LEG-01 has no evidence in the register."
+    },
+    {
+      "severity": "Medium",
+      "code": "CONTROL_NO_OWNER",
+      "where": "controls.csv:42",
+      "message": "Control CTL-LEG-01 has no owner; nobody is accountable for its evidence."
+    },
+    {
+      "severity": "Medium",
+      "code": "CONTROL_UNMAPPED",
+      "where": "CTL-LEG-01",
+      "message": "Control CTL-LEG-01 maps to no framework requirement; its testing earns no credit."
+    },
+    {
+      "severity": "Medium",
+      "code": "EXCLUDED_BUT_OPERATING",
+      "where": "ISO27001 A.7.4",
+      "message": "A.7.4 is excluded from scope, yet a fully mapped control operates effectively. Check the justification (ISO 27001 6.1.3 d)."
+    },
+    {
+      "severity": "Medium",
+      "code": "FUTURE_DATE",
+      "where": "EV-030",
+      "message": "EV-030 is dated 2026-11-20, after the assessment date."
+    },
+    {
+      "severity": "Low",
+      "code": "DUPLICATE_MAPPING",
+      "where": "mappings.csv:155",
+      "message": "CTL-VUL-01 -> CIS8 7.1 already mapped on line 151."
+    }
+  ]
+}

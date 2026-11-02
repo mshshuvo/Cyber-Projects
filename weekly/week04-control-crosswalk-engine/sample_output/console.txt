@@ -1,0 +1,50 @@
+Control crosswalk assessment: Harbourline Payments Inc. (fictional)  (as of 2026-11-01)
+==============================================================================
+Inputs: 41 common controls, 276 valid mappings, 40 evidence items
+Evidence: 32 effective, 2 with exceptions, 1 failed, 3 stale, 2 untested
+Test once, satisfy many: each passing evidence item supports 7.0 in-scope requirements on average
+
+Framework            Scope Satisfied   w/ exc.   Partial Deficient     Stale  Untested  No evid.  Unmapped  Coverage
+--------------------------------------------------------------------------------------------------------------------
+ISO/IEC 27001:2022     120        49         3        20         2         3         5         0        38       43%
+SOC 2 (TSC 2017)        38        18         0        10         2         1         1         0         6       47%
+NIST CSF 2.0           106        31         2        12         1         3         3         0        54       31%
+CIS Controls v8.1       56        37         9         5         2         1         1         0         1       82%
+
+Evidence problems and their blast radius (requirements each one is pulling down)
+  [Failed   ] EV-012 Q3 2026 user access review                      7 req / 4 fw
+                ISO A.5.15, A.5.18 | SOC 2 CC6.2, CC6.3 | CSF PR.AA-05 | CIS 5.1, 5.3
+  [Stale    ] EV-029 DR exercise 2025 (region failover)              5 req / 3 fw
+                ISO A.5.29, A.5.30 | SOC 2 CC9.1, A1.3 | CSF RC.RP-01
+  [Stale    ] EV-010 Production data store ACL export                2 req / 2 fw
+                ISO A.8.3 | CIS 3.3
+  [Stale    ] EV-028 Production database restore test                1 req / 1 fw
+                CSF RC.RP-03
+  [Untested ] EV-032 Vendor security assessments, 12 critical suppl  6 req / 4 fw
+                ISO A.5.19, A.5.20 | SOC 2 CC9.2 | CSF GV.SC-06, GV.SC-07 | CIS 15.1
+  [Untested ] EV-030 DR exercise 2026 (planned)                      5 req / 3 fw
+                ISO A.5.29, A.5.30 | SOC 2 CC9.1, A1.3 | CSF RC.RP-01
+  [Exception] EV-033 Awareness training completion and phishing sim  9 req / 3 fw
+                ISO 7.3, A.6.3 | CSF PR.AT-01 | CIS 14.1, 14.2, 14.3, 14.4, 14.5, 14.6
+  [Exception] EV-013 IdP conditional access policy export (MFA)      5 req / 3 fw
+                ISO A.8.5 | CSF PR.AA-03 | CIS 6.3, 6.4, 6.5
+
+Most reused evidence
+  EV-033 Awareness training completion and phishing simulatio  14 requirements (ISO 3, SOC 2 2, CSF 1, CIS 8)
+  EV-003 2026 internal audit report and management review min  13 requirements (ISO 7, SOC 2 3, CSF 3)
+  EV-031 Ransomware tabletop exercise report, June 2026        11 requirements (ISO 3, SOC 2 2, CSF 3, CIS 3)
+  EV-023 SOC alert triage sample (40 alerts), Q3 2026          10 requirements (ISO 3, SOC 2 2, CSF 5)
+  EV-032 Vendor security assessments, 12 critical suppliers    10 requirements (ISO 5, SOC 2 1, CSF 3, CIS 1)
+
+Data-quality findings: 12  (High 6, Medium 5, Low 1)
+  [High  ] EXCLUSION_NOT_JUSTIFIED  ISO27001 A.5.32      A.5.32 is excluded without a justification.
+  [High  ] UNKNOWN_CONTROL          evidence.csv:41      EV-038 supports control CTL-DLP-01, which is not defined.
+  [High  ] UNKNOWN_REQUIREMENT      mappings.csv:104     CSF2 'PR.AC-7' is not in the catalog: PR.AC is a CSF 1.1 category that CSF 2.0 removed; remap to the 2.0 subcategory.
+  [High  ] UNKNOWN_REQUIREMENT      mappings.csv:113     CIS8 '5.7' is not in the catalog: CIS Control 5 has safeguards 5.1-5.6 in v8.1.
+  [High  ] UNKNOWN_REQUIREMENT      mappings.csv:124     ISO27001 '8.9' is not in the catalog: clause 8.9 does not exist; did you mean Annex A control A.8.9?
+  [High  ] UNKNOWN_REQUIREMENT      mappings.csv:166     ISO27001 'A.12.4.1' is not in the catalog: looks like ISO/IEC 27001:2013 numbering; map it to the 2022 control.
+  [Medium] CONTROL_NO_EVIDENCE      CTL-LEG-01           Control CTL-LEG-01 has no evidence in the register.
+  [Medium] CONTROL_NO_OWNER         controls.csv:42      Control CTL-LEG-01 has no owner; nobody is accountable for its evidence.
+  ... 4 more in report.md
+
+Reports written to sample_output/ (report.md, report.json, matrix.csv)

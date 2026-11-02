@@ -1,0 +1,41 @@
+evidence_id,title,controls,type,owner,collected_on,valid_until,result,tested_by,notes
+EV-001,Information Security Policy v4.0 and board approval minutes,CTL-GOV-01,Document,CISO,2026-03-12,2027-03-31,pass,Internal Audit,
+EV-002,Security organisation chart and RACI,CTL-GOV-02,Document,CISO,2026-02-01,2027-02-28,pass,Internal Audit,
+EV-003,2026 internal audit report and management review minutes,CTL-GOV-03,Report,Head of Risk,2026-06-20,2027-06-30,pass,External Auditor,
+EV-039,"ISMS manual: scope, context and 2026 objectives",CTL-GOV-04,Document,CISO,2026-01-20,2027-01-31,pass,External Auditor,
+EV-040,"Obligations register (PIPEDA, PCI DSS, contracts), H2 2026",CTL-GOV-05,Register,General Counsel,2026-07-15,2027-01-31,pass,Internal Audit,
+EV-004,2026 information security risk assessment report,CTL-RSK-01,Report,Head of Risk,2026-04-15,2027-04-30,pass,Internal Audit,
+EV-005,"Risk treatment plan tracker, Q3 2026",CTL-RSK-02,Register,Head of Risk,2026-10-05,2027-01-15,pass,Internal Audit,
+EV-006,"MDM-to-CMDB reconciliation, September 2026",CTL-AST-01,Reconciliation,IT Operations Manager,2026-09-30,2026-11-15,pass,Internal Audit,
+EV-007,Authorised software list and EDR software inventory export,CTL-AST-02,System export,IT Operations Manager,2026-08-14,2026-11-30,pass,Internal Audit,
+EV-008,Data classification standard and sensitivity label report,CTL-DAT-01,Document,Privacy Officer,2026-05-02,2027-05-31,pass,Internal Audit,
+EV-009,"Retention job logs and disposal certificates, Q3 2026",CTL-DAT-02,Log sample,Privacy Officer,2026-10-03,2027-01-10,pass,Internal Audit,
+EV-010,Production data store ACL export,CTL-DAT-03,System export,Head of Engineering,2026-07-20,2026-10-31,pass,Internal Audit,Quarterly re-export not yet received
+EV-011,"JML sample test: 25 joiners, 25 leavers (Q3)",CTL-IAM-01,Sample test,IT Operations Manager,2026-10-08,2027-01-15,pass,Internal Audit,
+EV-012,Q3 2026 user access review,CTL-IAM-02,Sample test,IT Operations Manager,2026-10-14,2027-01-15,fail,Internal Audit,4 leavers still active in the finance ERP; 2 reviewers approved their own access
+EV-013,IdP conditional access policy export (MFA),CTL-IAM-03,System export,Security Engineering Lead,2026-10-20,2027-01-31,pass_with_exceptions,Internal Audit,2 legacy service accounts excluded from MFA under risk acceptance RA-2026-07
+EV-014,Privileged account list vs admin group membership,CTL-IAM-04,Reconciliation,Security Engineering Lead,2026-09-12,2026-12-31,pass,Internal Audit,
+EV-015,IdP password policy export,CTL-IAM-05,System export,Security Engineering Lead,2026-03-02,2027-03-31,pass,Internal Audit,
+EV-016,"Dormant account report (45 days), October 2026",CTL-IAM-06,System export,IT Operations Manager,2026-10-02,2026-11-30,pass,Internal Audit,
+EV-017,"CIS Benchmark compliance scan, production servers",CTL-CFG-01; CTL-CFG-04,Scan report,Security Engineering Lead,2026-09-28,2026-12-31,pass,Internal Audit,
+EV-018,EDR console coverage report,CTL-CFG-02,System export,IT Operations Manager,2026-10-25,2026-11-30,pass,Internal Audit,
+EV-019,MDM compliance policy export,CTL-CFG-03,System export,IT Operations Manager,2026-10-25,2026-11-30,pass,Internal Audit,
+EV-020,"Vulnerability scan and patch SLA report, October 2026",CTL-VUL-01,Report,Security Engineering Lead,2026-10-28,2026-11-30,pass,Internal Audit,
+EV-021,2026 external penetration test report and retest letter,CTL-VUL-02,Report,CISO,2026-05-18,2027-05-31,pass,Internal Audit,
+EV-022,"SIEM log source coverage, retention and NTP settings",CTL-LOG-01; CTL-LOG-03,System export,Security Operations Lead,2026-10-10,2027-01-10,pass,Internal Audit,
+EV-023,"SOC alert triage sample (40 alerts), Q3 2026",CTL-LOG-02,Sample test,Security Operations Lead,2026-10-09,2027-01-10,pass,Internal Audit,
+EV-024,"Firewall rule review, H1 2026",CTL-NET-01,Review record,Head of Engineering,2026-07-06,2027-01-06,pass,Internal Audit,
+EV-025,DNS filtering and email gateway policy export,CTL-NET-02,System export,IT Operations Manager,2026-09-01,2026-12-01,pass,Internal Audit,
+EV-026,KMS key policy and TLS configuration export,CTL-CRY-01,System export,Security Engineering Lead,2026-08-30,2027-02-28,pass,Internal Audit,
+EV-027,"Backup job success report, October 2026",CTL-BCK-01,Report,Head of Engineering,2026-10-31,2026-11-30,pass,Internal Audit,
+EV-028,Production database restore test,CTL-BCK-02,Test record,Head of Engineering,2025-09-22,2026-03-31,pass,Internal Audit,H1 2026 restore test was not performed
+EV-029,DR exercise 2025 (region failover),CTL-BCP-01,Test record,Head of Risk,2025-10-15,2026-10-31,pass,Internal Audit,
+EV-030,DR exercise 2026 (planned),CTL-BCP-01,Test record,Head of Risk,2026-11-20,2027-11-30,not_tested,,Scheduled for 20 November
+EV-031,"Ransomware tabletop exercise report, June 2026",CTL-IR-01,Test record,Security Operations Lead,2026-06-11,2027-06-30,pass,Internal Audit,
+EV-032,"Vendor security assessments, 12 critical suppliers",CTL-TPR-01,Assessment,Vendor Risk Manager,2026-10-22,2027-10-31,not_tested,,Collected; testing scheduled for November
+EV-033,Awareness training completion and phishing simulation results,CTL-HR-01,Report,CISO,2026-09-30,2027-03-31,pass_with_exceptions,Internal Audit,Completion 94% against a 98% target
+EV-034,Background check sample (15 hires),CTL-HR-02,Sample test,People Operations Lead,2026-08-19,2027-08-31,pass,Internal Audit,
+EV-035,"Change ticket sample (40 changes), Q3 2026",CTL-CHG-01; CTL-SDL-01,Sample test,Head of Engineering,2026-10-12,2027-01-15,pass,Internal Audit,
+EV-036,SAST and dependency scanning pipeline results,CTL-SDL-01,System export,Head of Engineering,2026-10-12,2027-01-15,pass,Internal Audit,
+EV-037,"Badge access review and visitor log, Q3 2026",CTL-PHY-01,Review record,Office Manager,2026-10-06,2026-12-31,pass,Internal Audit,
+EV-038,"DLP incident report, Q3 2026",CTL-DLP-01,Report,Privacy Officer,2026-10-01,2026-12-31,pass,Internal Audit,Control not yet in the common control set

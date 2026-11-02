@@ -1,0 +1,324 @@
+framework,requirement_id,title,status,full_controls,partial_controls,evidence,equivalents_in_other_frameworks,reason
+ISO27001,4.1,Understanding the organization and its context,Satisfied,CTL-GOV-04,,EV-039,"CSF2 GV.OC-01,GV.OC-02 | SOC2 CC3.1",
+ISO27001,4.2,Needs and expectations of interested parties,Satisfied,CTL-GOV-04,CTL-GOV-05,EV-039;EV-040,"CSF2 GV.OC-01,GV.OC-02,GV.OC-03 | SOC2 CC3.1",
+ISO27001,4.3,Scope of the ISMS,Satisfied,CTL-GOV-04,,EV-039,"CSF2 GV.OC-01,GV.OC-02 | SOC2 CC3.1",
+ISO27001,4.4,Information security management system,Satisfied,CTL-GOV-04,,EV-039,"CSF2 GV.OC-01,GV.OC-02 | SOC2 CC3.1",
+ISO27001,5.1,Leadership and commitment,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,5.2,Information security policy,Satisfied,CTL-GOV-01,,EV-001,"CSF2 GV.PO-01,GV.PO-02 | SOC2 CC2.2,CC5.3",
+ISO27001,5.3,"Organizational roles, responsibilities and authorities",Satisfied,CTL-GOV-02,,EV-002,"CSF2 GV.RR-01,GV.RR-02 | SOC2 CC1.3",
+ISO27001,6.1.1,Actions to address risks and opportunities: general,Partial,,CTL-GOV-04,EV-039,"CSF2 GV.OC-01,GV.OC-02 | SOC2 CC3.1",Only partial-strength controls are effective.
+ISO27001,6.1.2,Information security risk assessment (process),Satisfied,CTL-RSK-01,,EV-004,"CSF2 ID.RA-03,ID.RA-04,ID.RA-05 | SOC2 CC3.1,CC3.2,CC3.3",
+ISO27001,6.1.3,"Information security risk treatment (process, SoA)",Satisfied,CTL-RSK-02,,EV-005,"CSF2 GV.RM-02,ID.RA-06 | SOC2 CC9.1",
+ISO27001,6.2,Information security objectives and planning,Satisfied,CTL-GOV-04,,EV-039,"CSF2 GV.OC-01,GV.OC-02 | SOC2 CC3.1",
+ISO27001,6.3,Planning of changes,Partial,,CTL-CHG-01,EV-035,"CSF2 ID.RA-07 | SOC2 CC3.4,CC8.1",Only partial-strength controls are effective.
+ISO27001,7.1,Resources,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,7.2,Competence,Partial,,CTL-HR-01,EV-033,"CIS8 14.1,14.2,14.3,14.4,14.5,14.6,14.7,14.8 | CSF2 PR.AT-01 | SOC2 CC1.4,CC2.2",Only partial-strength controls are effective.
+ISO27001,7.3,Awareness,Satisfied with exceptions,CTL-HR-01,,EV-033,"CIS8 14.1,14.2,14.3,14.4,14.5,14.6,14.7,14.8 | CSF2 PR.AT-01 | SOC2 CC1.4,CC2.2",Best full-strength control passed with exceptions.
+ISO27001,7.4,Communication,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,7.5.1,Documented information: general,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,7.5.2,Creating and updating documented information,Partial,,CTL-GOV-01,EV-001,"CSF2 GV.PO-01,GV.PO-02 | SOC2 CC2.2,CC5.3",Only partial-strength controls are effective.
+ISO27001,7.5.3,Control of documented information,Partial,,CTL-GOV-01,EV-001,"CSF2 GV.PO-01,GV.PO-02 | SOC2 CC2.2,CC5.3",Only partial-strength controls are effective.
+ISO27001,8.1,Operational planning and control,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,8.2,Information security risk assessment (performed),Satisfied,CTL-RSK-01,,EV-004,"CSF2 ID.RA-03,ID.RA-04,ID.RA-05 | SOC2 CC3.1,CC3.2,CC3.3",
+ISO27001,8.3,Information security risk treatment (implemented),Satisfied,CTL-RSK-02,,EV-005,"CSF2 GV.RM-02,ID.RA-06 | SOC2 CC9.1",
+ISO27001,9.1,"Monitoring, measurement, analysis and evaluation",Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,9.2.1,Internal audit: general,Satisfied,CTL-GOV-03,,EV-003,"CSF2 GV.OV-01,GV.OV-02,ID.IM-01 | SOC2 CC1.2,CC4.1,CC4.2",
+ISO27001,9.2.2,Internal audit programme,Satisfied,CTL-GOV-03,,EV-003,"CSF2 GV.OV-01,GV.OV-02,ID.IM-01 | SOC2 CC1.2,CC4.1,CC4.2",
+ISO27001,9.3.1,Management review: general,Satisfied,CTL-GOV-03,,EV-003,"CSF2 GV.OV-01,GV.OV-02,ID.IM-01 | SOC2 CC1.2,CC4.1,CC4.2",
+ISO27001,9.3.2,Management review inputs,Satisfied,CTL-GOV-03,,EV-003,"CSF2 GV.OV-01,GV.OV-02,ID.IM-01 | SOC2 CC1.2,CC4.1,CC4.2",
+ISO27001,9.3.3,Management review results,Satisfied,CTL-GOV-03,,EV-003,"CSF2 GV.OV-01,GV.OV-02,ID.IM-01 | SOC2 CC1.2,CC4.1,CC4.2",
+ISO27001,10.1,Continual improvement,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,10.2,Nonconformity and corrective action,Partial,,CTL-GOV-03,EV-003,"CSF2 GV.OV-01,GV.OV-02,ID.IM-01 | SOC2 CC1.2,CC4.1,CC4.2",Only partial-strength controls are effective.
+ISO27001,A.5.1,Policies for information security,Satisfied,CTL-GOV-01,,EV-001,"CSF2 GV.PO-01,GV.PO-02 | SOC2 CC2.2,CC5.3",
+ISO27001,A.5.2,Information security roles and responsibilities,Satisfied,CTL-GOV-02,,EV-002,"CSF2 GV.RR-01,GV.RR-02 | SOC2 CC1.3",
+ISO27001,A.5.3,Segregation of duties,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.5.4,Management responsibilities,Partial,,CTL-GOV-02,EV-002,"CSF2 GV.RR-01,GV.RR-02 | SOC2 CC1.3",Only partial-strength controls are effective.
+ISO27001,A.5.5,Contact with authorities,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.5.6,Contact with special interest groups,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.5.7,Threat intelligence,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.5.8,Information security in project management,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.5.9,Inventory of information and other associated assets,Satisfied,CTL-AST-01,CTL-AST-02,EV-006;EV-007,"CIS8 1.1,1.2,2.1,2.2,2.3 | CSF2 ID.AM-01,ID.AM-02,PR.PS-02 | SOC2 CC6.1",
+ISO27001,A.5.10,Acceptable use of information and other associated assets,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.5.11,Return of assets,Partial,,CTL-AST-01,EV-006,"CIS8 1.1,1.2 | CSF2 ID.AM-01 | SOC2 CC6.1",Only partial-strength controls are effective.
+ISO27001,A.5.12,Classification of information,Satisfied,CTL-DAT-01,,EV-008,"CIS8 3.1,3.2 | CSF2 ID.AM-07 | SOC2 C1.1",
+ISO27001,A.5.13,Labelling of information,Satisfied,CTL-DAT-01,,EV-008,"CIS8 3.1,3.2 | CSF2 ID.AM-07 | SOC2 C1.1",
+ISO27001,A.5.14,Information transfer,Partial,,CTL-CRY-01,EV-026,"CIS8 3.6,3.10,3.11 | CSF2 PR.DS-01,PR.DS-02 | SOC2 CC6.1,CC6.7",Only partial-strength controls are effective.
+ISO27001,A.5.15,Access control,Deficient,,CTL-DAT-03;CTL-IAM-02,EV-010;EV-012,"CIS8 3.3,5.1,5.3 | CSF2 PR.AA-05 | SOC2 CC6.1,CC6.2,CC6.3",Mapped control failed testing: CTL-IAM-02.
+ISO27001,A.5.16,Identity management,Satisfied,CTL-IAM-01,CTL-IAM-06,EV-011;EV-016,"CIS8 5.1,5.3,6.1,6.2 | CSF2 PR.AA-01 | SOC2 CC6.2,CC6.3",
+ISO27001,A.5.17,Authentication information,Satisfied,CTL-IAM-05,,EV-015,CIS8 5.2 | CSF2 PR.AA-03 | SOC2 CC6.1,
+ISO27001,A.5.18,Access rights,Deficient,CTL-IAM-01;CTL-IAM-02,,EV-011;EV-012,"CIS8 5.1,5.3,6.1,6.2 | CSF2 PR.AA-01,PR.AA-05 | SOC2 CC6.2,CC6.3",Mapped control failed testing: CTL-IAM-02.
+ISO27001,A.5.19,Information security in supplier relationships,Not tested,CTL-TPR-01,,EV-032,"CIS8 15.1 | CSF2 GV.SC-05,GV.SC-06,GV.SC-07 | SOC2 CC9.2",Evidence exists but has not been tested yet.
+ISO27001,A.5.20,Addressing information security within supplier agreements,Not tested,CTL-TPR-01,,EV-032,"CIS8 15.1 | CSF2 GV.SC-05,GV.SC-06,GV.SC-07 | SOC2 CC9.2",Evidence exists but has not been tested yet.
+ISO27001,A.5.21,Managing information security in the ICT supply chain,Not tested,,CTL-TPR-01,EV-032,"CIS8 15.1 | CSF2 GV.SC-05,GV.SC-06,GV.SC-07 | SOC2 CC9.2",Evidence exists but has not been tested yet.
+ISO27001,A.5.22,"Monitoring, review and change management of supplier services",Not tested,,CTL-TPR-01,EV-032,"CIS8 15.1 | CSF2 GV.SC-05,GV.SC-06,GV.SC-07 | SOC2 CC9.2",Evidence exists but has not been tested yet.
+ISO27001,A.5.23,Information security for use of cloud services,Not tested,,CTL-TPR-01,EV-032,"CIS8 15.1 | CSF2 GV.SC-05,GV.SC-06,GV.SC-07 | SOC2 CC9.2",Evidence exists but has not been tested yet.
+ISO27001,A.5.24,Information security incident management planning and preparation,Satisfied,CTL-IR-01,,EV-031,"CIS8 17.1,17.2,17.3 | CSF2 ID.IM-04,RS.MA-01,RS.CO-02 | SOC2 CC7.4,CC7.5",
+ISO27001,A.5.25,Assessment and decision on information security events,Satisfied,CTL-LOG-02,,EV-023,"CIS8 8.11,13.1 | CSF2 DE.CM-01,DE.CM-03,DE.AE-02,DE.AE-03,DE.AE-06 | SOC2 CC7.2,CC7.3",
+ISO27001,A.5.26,Response to information security incidents,Satisfied,CTL-IR-01,,EV-031,"CIS8 17.1,17.2,17.3 | CSF2 ID.IM-04,RS.MA-01,RS.CO-02 | SOC2 CC7.4,CC7.5",
+ISO27001,A.5.27,Learning from information security incidents,Partial,,CTL-IR-01,EV-031,"CIS8 17.1,17.2,17.3 | CSF2 ID.IM-04,RS.MA-01,RS.CO-02 | SOC2 CC7.4,CC7.5",Only partial-strength controls are effective.
+ISO27001,A.5.28,Collection of evidence,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.5.29,Information security during disruption,Evidence stale,CTL-BCP-01,,EV-029;EV-030,"CSF2 ID.IM-04,PR.IR-03,RC.RP-01 | SOC2 CC7.5,CC9.1,A1.3",Evidence for every mapped control is outside its validity window.
+ISO27001,A.5.30,ICT readiness for business continuity,Evidence stale,CTL-BCP-01,,EV-029;EV-030,"CSF2 ID.IM-04,PR.IR-03,RC.RP-01 | SOC2 CC7.5,CC9.1,A1.3",Evidence for every mapped control is outside its validity window.
+ISO27001,A.5.31,"Legal, statutory, regulatory and contractual requirements",Satisfied,CTL-GOV-05,,EV-040,CSF2 GV.OC-03,
+ISO27001,A.5.32,Intellectual property rights,Excluded,,,,,
+ISO27001,A.5.33,Protection of records,Partial,,CTL-DAT-02,EV-009,"CIS8 3.4,3.5 | SOC2 CC6.5,C1.2",Only partial-strength controls are effective.
+ISO27001,A.5.34,Privacy and protection of PII,Partial,,CTL-GOV-05,EV-040,CSF2 GV.OC-03,Only partial-strength controls are effective.
+ISO27001,A.5.35,Independent review of information security,Partial,,CTL-GOV-03;CTL-VUL-02,EV-003;EV-021,"CIS8 18.1,18.2 | CSF2 GV.OV-01,GV.OV-02,ID.RA-01,ID.IM-01,ID.IM-02 | SOC2 CC1.2,CC4.1,CC4.2,CC7.1",Only partial-strength controls are effective.
+ISO27001,A.5.36,"Compliance with policies, rules and standards for information security",Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.5.37,Documented operating procedures,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.6.1,Screening,Satisfied,CTL-HR-02,,EV-034,CSF2 GV.RR-04 | SOC2 CC1.4,
+ISO27001,A.6.2,Terms and conditions of employment,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.6.3,"Information security awareness, education and training",Satisfied with exceptions,CTL-HR-01,,EV-033,"CIS8 14.1,14.2,14.3,14.4,14.5,14.6,14.7,14.8 | CSF2 PR.AT-01 | SOC2 CC1.4,CC2.2",Best full-strength control passed with exceptions.
+ISO27001,A.6.4,Disciplinary process,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.6.5,Responsibilities after termination or change of employment,Partial,,CTL-IAM-01,EV-011,"CIS8 6.1,6.2 | CSF2 PR.AA-01 | SOC2 CC6.2,CC6.3",Only partial-strength controls are effective.
+ISO27001,A.6.6,Confidentiality or non-disclosure agreements,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.6.7,Remote working,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.6.8,Information security event reporting,Partial,,CTL-LOG-02,EV-023,"CIS8 8.11,13.1 | CSF2 DE.CM-01,DE.CM-03,DE.AE-02,DE.AE-03,DE.AE-06 | SOC2 CC7.2,CC7.3",Only partial-strength controls are effective.
+ISO27001,A.7.1,Physical security perimeters,Satisfied,CTL-PHY-01,,EV-037,CSF2 PR.AA-06 | SOC2 CC6.4,
+ISO27001,A.7.2,Physical entry,Satisfied,CTL-PHY-01,,EV-037,CSF2 PR.AA-06 | SOC2 CC6.4,
+ISO27001,A.7.3,"Securing offices, rooms and facilities",Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.7.4,Physical security monitoring,Excluded,CTL-PHY-01,,EV-037,CSF2 PR.AA-06 | SOC2 CC6.4,No data centre; production is hosted in a cloud region.
+ISO27001,A.7.5,Protecting against physical and environmental threats,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.7.6,Working in secure areas,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.7.7,Clear desk and clear screen,Partial,,CTL-CFG-03,EV-019,"CIS8 4.3,4.5 | CSF2 PR.PS-01",Only partial-strength controls are effective.
+ISO27001,A.7.8,Equipment siting and protection,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.7.9,Security of assets off-premises,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.7.10,Storage media,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.7.11,Supporting utilities,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.7.12,Cabling security,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.7.13,Equipment maintenance,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.7.14,Secure disposal or re-use of equipment,Satisfied,CTL-DAT-02,,EV-009,"CIS8 3.4,3.5 | SOC2 CC6.5,C1.2",
+ISO27001,A.8.1,User endpoint devices,Satisfied,CTL-CFG-03,,EV-019,"CIS8 4.3,4.5 | CSF2 PR.PS-01",
+ISO27001,A.8.2,Privileged access rights,Satisfied,CTL-IAM-04,,EV-014,CIS8 5.4 | CSF2 PR.AA-05 | SOC2 CC6.3,
+ISO27001,A.8.3,Information access restriction,Evidence stale,CTL-DAT-03,,EV-010,CIS8 3.3 | CSF2 PR.AA-05 | SOC2 CC6.1,Evidence for every mapped control is outside its validity window.
+ISO27001,A.8.4,Access to source code,Partial,,CTL-SDL-01,EV-035;EV-036,"CIS8 16.1,16.12 | CSF2 PR.PS-06 | SOC2 CC8.1",Only partial-strength controls are effective.
+ISO27001,A.8.5,Secure authentication,Satisfied with exceptions,CTL-IAM-03,,EV-013,"CIS8 6.3,6.4,6.5 | CSF2 PR.AA-03 | SOC2 CC6.1",Best full-strength control passed with exceptions.
+ISO27001,A.8.6,Capacity management,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.8.7,Protection against malware,Satisfied,CTL-CFG-02,,EV-018,"CIS8 10.1,10.2,10.3 | CSF2 PR.PS-05,DE.CM-09 | SOC2 CC6.8",
+ISO27001,A.8.8,Management of technical vulnerabilities,Satisfied,CTL-VUL-01,CTL-VUL-02,EV-020;EV-021,"CIS8 7.1,7.2,7.3,7.4,18.1,18.2 | CSF2 ID.RA-01,ID.RA-08,ID.IM-02,PR.PS-02 | SOC2 CC4.1,CC7.1",
+ISO27001,A.8.9,Configuration management,Satisfied,CTL-CFG-01,CTL-CFG-04,EV-017,"CIS8 4.1,4.2,4.6,4.7 | CSF2 PR.PS-01 | SOC2 CC5.2,CC7.1",
+ISO27001,A.8.10,Information deletion,Satisfied,CTL-DAT-02,,EV-009,"CIS8 3.4,3.5 | SOC2 CC6.5,C1.2",
+ISO27001,A.8.11,Data masking,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.8.12,Data leakage prevention,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.8.13,Information backup,Satisfied,CTL-BCK-01,CTL-BCK-02,EV-027;EV-028,"CIS8 11.1,11.2,11.3,11.4,11.5 | CSF2 PR.DS-11,RC.RP-03 | SOC2 A1.2,A1.3",
+ISO27001,A.8.14,Redundancy of information processing facilities,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.8.15,Logging,Satisfied,CTL-LOG-01,,EV-022,"CIS8 8.1,8.2,8.3,8.10 | CSF2 PR.PS-04 | SOC2 CC7.2",
+ISO27001,A.8.16,Monitoring activities,Satisfied,CTL-LOG-02,,EV-023,"CIS8 8.11,13.1 | CSF2 DE.CM-01,DE.CM-03,DE.AE-02,DE.AE-03,DE.AE-06 | SOC2 CC7.2,CC7.3",
+ISO27001,A.8.17,Clock synchronization,Satisfied,CTL-LOG-03,,EV-022,CIS8 8.4,
+ISO27001,A.8.18,Use of privileged utility programs,Partial,,CTL-IAM-04,EV-014,CIS8 5.4 | CSF2 PR.AA-05 | SOC2 CC6.3,Only partial-strength controls are effective.
+ISO27001,A.8.19,Installation of software on operational systems,Satisfied,CTL-AST-02,,EV-007,"CIS8 2.1,2.2,2.3 | CSF2 ID.AM-02,PR.PS-02",
+ISO27001,A.8.20,Networks security,Satisfied,CTL-NET-01,,EV-024,"CIS8 4.4,12.2 | CSF2 PR.IR-01 | SOC2 CC6.6",
+ISO27001,A.8.21,Security of network services,Partial,,CTL-NET-01,EV-024,"CIS8 4.4,12.2 | CSF2 PR.IR-01 | SOC2 CC6.6",Only partial-strength controls are effective.
+ISO27001,A.8.22,Segregation of networks,Satisfied,CTL-NET-01,,EV-024,"CIS8 4.4,12.2 | CSF2 PR.IR-01 | SOC2 CC6.6",
+ISO27001,A.8.23,Web filtering,Satisfied,CTL-NET-02,,EV-025,"CIS8 9.1,9.2 | SOC2 CC6.8",
+ISO27001,A.8.24,Use of cryptography,Satisfied,CTL-CRY-01,,EV-026,"CIS8 3.6,3.10,3.11 | CSF2 PR.DS-01,PR.DS-02 | SOC2 CC6.1,CC6.7",
+ISO27001,A.8.25,Secure development life cycle,Satisfied,CTL-SDL-01,,EV-035;EV-036,"CIS8 16.1,16.12 | CSF2 PR.PS-06 | SOC2 CC8.1",
+ISO27001,A.8.26,Application security requirements,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.8.27,Secure system architecture and engineering principles,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.8.28,Secure coding,Satisfied,CTL-SDL-01,,EV-035;EV-036,"CIS8 16.1,16.12 | CSF2 PR.PS-06 | SOC2 CC8.1",
+ISO27001,A.8.29,Security testing in development and acceptance,Partial,,CTL-VUL-02;CTL-SDL-01,EV-021;EV-035;EV-036,"CIS8 16.1,16.12,18.1,18.2 | CSF2 ID.RA-01,ID.IM-02,PR.PS-06 | SOC2 CC4.1,CC7.1,CC8.1",Only partial-strength controls are effective.
+ISO27001,A.8.30,Outsourced development,Excluded,,,,,No outsourced development; all software is built by employees.
+ISO27001,A.8.31,"Separation of development, test and production environments",Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.8.32,Change management,Satisfied,CTL-CHG-01,,EV-035,"CSF2 ID.RA-07 | SOC2 CC3.4,CC8.1",
+ISO27001,A.8.33,Test information,Unmapped,,,,,No common control is mapped to this requirement.
+ISO27001,A.8.34,Protection of information systems during audit testing,Unmapped,,,,,No common control is mapped to this requirement.
+SOC2,CC1.1,Commitment to integrity and ethical values,Unmapped,,,,,No common control is mapped to this requirement.
+SOC2,CC1.2,Board independence and oversight of internal control,Partial,,CTL-GOV-03,EV-003,"CSF2 GV.OV-01,GV.OV-02,ID.IM-01 | ISO27001 9.2.1,9.2.2,9.3.1,9.3.2,9.3.3,10.2,A.5.35",Only partial-strength controls are effective.
+SOC2,CC1.3,"Structures, reporting lines and authorities",Satisfied,CTL-GOV-02,,EV-002,"CSF2 GV.RR-01,GV.RR-02 | ISO27001 5.3,A.5.2,A.5.4",
+SOC2,CC1.4,"Commitment to attract, develop and retain competent people",Partial,,CTL-HR-01;CTL-HR-02,EV-033;EV-034,"CIS8 14.1,14.2,14.3,14.4,14.5,14.6,14.7,14.8 | CSF2 GV.RR-04,PR.AT-01 | ISO27001 7.2,7.3,A.6.1,A.6.3",Only partial-strength controls are effective.
+SOC2,CC1.5,Individuals held accountable for internal control,Unmapped,,,,,No common control is mapped to this requirement.
+SOC2,CC2.1,"Relevant, quality information supports internal control",Unmapped,,,,,No common control is mapped to this requirement.
+SOC2,CC2.2,Internal communication of objectives and responsibilities,Partial,,CTL-GOV-01;CTL-HR-01,EV-001;EV-033,"CIS8 14.1,14.2,14.3,14.4,14.5,14.6,14.7,14.8 | CSF2 GV.PO-01,GV.PO-02,PR.AT-01 | ISO27001 5.2,7.2,7.3,7.5.2,7.5.3,A.5.1,A.6.3",Only partial-strength controls are effective.
+SOC2,CC2.3,Communication with external parties,Unmapped,,,,,No common control is mapped to this requirement.
+SOC2,CC3.1,Objectives specified clearly enough to identify risks,Partial,,CTL-GOV-04;CTL-RSK-01,EV-004;EV-039,"CSF2 GV.OC-01,GV.OC-02,ID.RA-03,ID.RA-04,ID.RA-05 | ISO27001 4.1,4.2,4.3,4.4,6.1.1,6.1.2,6.2,8.2",Only partial-strength controls are effective.
+SOC2,CC3.2,Risks identified and analysed,Satisfied,CTL-RSK-01,,EV-004,"CSF2 ID.RA-03,ID.RA-04,ID.RA-05 | ISO27001 6.1.2,8.2",
+SOC2,CC3.3,Potential for fraud considered,Partial,,CTL-RSK-01,EV-004,"CSF2 ID.RA-03,ID.RA-04,ID.RA-05 | ISO27001 6.1.2,8.2",Only partial-strength controls are effective.
+SOC2,CC3.4,Significant changes identified and assessed,Partial,,CTL-CHG-01,EV-035,"CSF2 ID.RA-07 | ISO27001 6.3,A.8.32",Only partial-strength controls are effective.
+SOC2,CC4.1,Ongoing and/or separate evaluations of controls,Satisfied,CTL-GOV-03,CTL-VUL-02,EV-003;EV-021,"CIS8 18.1,18.2 | CSF2 GV.OV-01,GV.OV-02,ID.RA-01,ID.IM-01,ID.IM-02 | ISO27001 9.2.1,9.2.2,9.3.1,9.3.2,9.3.3,10.2,A.5.35,A.8.8,A.8.29",
+SOC2,CC4.2,Deficiencies evaluated and communicated,Satisfied,CTL-GOV-03,,EV-003,"CSF2 GV.OV-01,GV.OV-02,ID.IM-01 | ISO27001 9.2.1,9.2.2,9.3.1,9.3.2,9.3.3,10.2,A.5.35",
+SOC2,CC5.1,Control activities selected and developed,Unmapped,,,,,No common control is mapped to this requirement.
+SOC2,CC5.2,General controls over technology,Partial,,CTL-CFG-01,EV-017,"CIS8 4.1,4.2 | CSF2 PR.PS-01 | ISO27001 A.8.9",Only partial-strength controls are effective.
+SOC2,CC5.3,Controls deployed through policies and procedures,Satisfied,CTL-GOV-01,,EV-001,"CSF2 GV.PO-01,GV.PO-02 | ISO27001 5.2,7.5.2,7.5.3,A.5.1",
+SOC2,CC6.1,Logical access security over protected information assets,Partial,,CTL-AST-01;CTL-DAT-03;CTL-IAM-03;CTL-IAM-05;CTL-CRY-01,EV-006;EV-010;EV-013;EV-015;EV-026,"CIS8 1.1,1.2,3.3,3.6,3.10,3.11,5.2,6.3,6.4,6.5 | CSF2 ID.AM-01,PR.AA-03,PR.AA-05,PR.DS-01,PR.DS-02 | ISO27001 A.5.9,A.5.11,A.5.14,A.5.15,A.5.17,A.8.3,A.8.5,A.8.24",Only partial-strength controls are effective.
+SOC2,CC6.2,Users registered and authorised before access is granted,Deficient,CTL-IAM-01,CTL-IAM-02;CTL-IAM-06,EV-011;EV-012;EV-016,"CIS8 5.1,5.3,6.1,6.2 | CSF2 PR.AA-01,PR.AA-05 | ISO27001 A.5.15,A.5.16,A.5.18,A.6.5",Mapped control failed testing: CTL-IAM-02.
+SOC2,CC6.3,Access modified and removed; least privilege and segregation,Deficient,CTL-IAM-02,CTL-IAM-01;CTL-IAM-04,EV-011;EV-012;EV-014,"CIS8 5.1,5.3,5.4,6.1,6.2 | CSF2 PR.AA-01,PR.AA-05 | ISO27001 A.5.15,A.5.16,A.5.18,A.6.5,A.8.2,A.8.18",Mapped control failed testing: CTL-IAM-02.
+SOC2,CC6.4,Physical access to facilities and assets restricted,Satisfied,CTL-PHY-01,,EV-037,"CSF2 PR.AA-06 | ISO27001 A.7.1,A.7.2,A.7.4",
+SOC2,CC6.5,Protection maintained until assets are disposed of,Satisfied,CTL-DAT-02,,EV-009,"CIS8 3.4,3.5 | ISO27001 A.5.33,A.7.14,A.8.10",
+SOC2,CC6.6,Protection against threats from outside system boundaries,Satisfied,CTL-NET-01,,EV-024,"CIS8 4.4,12.2 | CSF2 PR.IR-01 | ISO27001 A.8.20,A.8.21,A.8.22",
+SOC2,CC6.7,Transmission and movement of information restricted and protected,Satisfied,CTL-CRY-01,,EV-026,"CIS8 3.6,3.10,3.11 | CSF2 PR.DS-01,PR.DS-02 | ISO27001 A.5.14,A.8.24",
+SOC2,CC6.8,Unauthorised or malicious software prevented or detected,Satisfied,CTL-CFG-02,CTL-NET-02,EV-018;EV-025,"CIS8 9.1,9.2,10.1,10.2,10.3 | CSF2 PR.PS-05,DE.CM-09 | ISO27001 A.8.7,A.8.23",
+SOC2,CC7.1,Configuration changes and new vulnerabilities detected,Satisfied,CTL-VUL-01,CTL-CFG-01;CTL-VUL-02,EV-017;EV-020;EV-021,"CIS8 4.1,4.2,7.1,7.2,7.3,7.4,18.1,18.2 | CSF2 ID.RA-01,ID.RA-08,ID.IM-02,PR.PS-01,PR.PS-02 | ISO27001 A.5.35,A.8.8,A.8.9,A.8.29",
+SOC2,CC7.2,System components monitored for anomalies,Satisfied,CTL-LOG-02,CTL-LOG-01,EV-022;EV-023,"CIS8 8.1,8.2,8.3,8.10,8.11,13.1 | CSF2 PR.PS-04,DE.CM-01,DE.CM-03,DE.AE-02,DE.AE-03,DE.AE-06 | ISO27001 A.5.25,A.6.8,A.8.15,A.8.16",
+SOC2,CC7.3,Security events evaluated to determine if they are incidents,Satisfied,CTL-LOG-02,,EV-023,"CIS8 8.11,13.1 | CSF2 DE.CM-01,DE.CM-03,DE.AE-02,DE.AE-03,DE.AE-06 | ISO27001 A.5.25,A.6.8,A.8.16",
+SOC2,CC7.4,Incidents responded to under a defined programme,Satisfied,CTL-IR-01,,EV-031,"CIS8 17.1,17.2,17.3 | CSF2 ID.IM-04,RS.MA-01,RS.CO-02 | ISO27001 A.5.24,A.5.26,A.5.27",
+SOC2,CC7.5,Recovery from identified incidents,Partial,,CTL-BCP-01;CTL-IR-01,EV-029;EV-030;EV-031,"CIS8 17.1,17.2,17.3 | CSF2 ID.IM-04,PR.IR-03,RS.MA-01,RS.CO-02,RC.RP-01 | ISO27001 A.5.24,A.5.26,A.5.27,A.5.29,A.5.30",Only partial-strength controls are effective.
+SOC2,CC8.1,"Changes authorised, designed, tested, approved and implemented",Satisfied,CTL-CHG-01,CTL-SDL-01,EV-035;EV-036,"CIS8 16.1,16.12 | CSF2 ID.RA-07,PR.PS-06 | ISO27001 6.3,A.8.4,A.8.25,A.8.28,A.8.29,A.8.32",
+SOC2,CC9.1,Risk mitigation for business disruption,Partial,CTL-BCP-01,CTL-RSK-02,EV-005;EV-029;EV-030,"CSF2 GV.RM-02,ID.RA-06,ID.IM-04,PR.IR-03,RC.RP-01 | ISO27001 6.1.3,8.3,A.5.29,A.5.30",Only partial-strength controls are effective; full-strength control(s) CTL-BCP-01 are stale.
+SOC2,CC9.2,Vendor and business partner risk managed,Not tested,CTL-TPR-01,,EV-032,"CIS8 15.1 | CSF2 GV.SC-05,GV.SC-06,GV.SC-07 | ISO27001 A.5.19,A.5.20,A.5.21,A.5.22,A.5.23",Evidence exists but has not been tested yet.
+SOC2,A1.1,Capacity managed to meet objectives,Unmapped,,,,,No common control is mapped to this requirement.
+SOC2,A1.2,"Environmental protections, backup and recovery infrastructure",Satisfied,CTL-BCK-01,,EV-027,"CIS8 11.1,11.2,11.3,11.4 | CSF2 PR.DS-11 | ISO27001 A.8.13",
+SOC2,A1.3,Recovery plan procedures tested,Evidence stale,CTL-BCP-01,CTL-BCK-02,EV-028;EV-029;EV-030,"CIS8 11.1,11.5 | CSF2 ID.IM-04,PR.IR-03,RC.RP-01,RC.RP-03 | ISO27001 A.5.29,A.5.30,A.8.13",Evidence for every mapped control is outside its validity window.
+SOC2,C1.1,Confidential information identified and protected,Satisfied,CTL-DAT-01,,EV-008,"CIS8 3.1,3.2 | CSF2 ID.AM-07 | ISO27001 A.5.12,A.5.13",
+SOC2,C1.2,Confidential information disposed of,Satisfied,CTL-DAT-02,,EV-009,"CIS8 3.4,3.5 | ISO27001 A.5.33,A.7.14,A.8.10",
+CSF2,GV.OC-01,Organizational Context,Satisfied,CTL-GOV-04,,EV-039,"ISO27001 4.1,4.2,4.3,4.4,6.1.1,6.2 | SOC2 CC3.1",
+CSF2,GV.OC-02,Organizational Context,Partial,,CTL-GOV-04,EV-039,"ISO27001 4.1,4.2,4.3,4.4,6.1.1,6.2 | SOC2 CC3.1",Only partial-strength controls are effective.
+CSF2,GV.OC-03,Organizational Context,Satisfied,CTL-GOV-05,,EV-040,"ISO27001 4.2,A.5.31,A.5.34",
+CSF2,GV.OC-04,Organizational Context,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.OC-05,Organizational Context,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.RM-01,Risk Management Strategy,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.RM-02,Risk Management Strategy,Partial,,CTL-RSK-02,EV-005,"ISO27001 6.1.3,8.3 | SOC2 CC9.1",Only partial-strength controls are effective.
+CSF2,GV.RM-03,Risk Management Strategy,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.RM-04,Risk Management Strategy,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.RM-05,Risk Management Strategy,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.RM-06,Risk Management Strategy,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.RM-07,Risk Management Strategy,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.RR-01,"Roles, Responsibilities, and Authorities",Partial,,CTL-GOV-02,EV-002,"ISO27001 5.3,A.5.2,A.5.4 | SOC2 CC1.3",Only partial-strength controls are effective.
+CSF2,GV.RR-02,"Roles, Responsibilities, and Authorities",Satisfied,CTL-GOV-02,,EV-002,"ISO27001 5.3,A.5.2,A.5.4 | SOC2 CC1.3",
+CSF2,GV.RR-03,"Roles, Responsibilities, and Authorities",Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.RR-04,"Roles, Responsibilities, and Authorities",Satisfied,CTL-HR-02,,EV-034,ISO27001 A.6.1 | SOC2 CC1.4,
+CSF2,GV.PO-01,Policy,Satisfied,CTL-GOV-01,,EV-001,"ISO27001 5.2,7.5.2,7.5.3,A.5.1 | SOC2 CC2.2,CC5.3",
+CSF2,GV.PO-02,Policy,Satisfied,CTL-GOV-01,,EV-001,"ISO27001 5.2,7.5.2,7.5.3,A.5.1 | SOC2 CC2.2,CC5.3",
+CSF2,GV.OV-01,Oversight,Satisfied,CTL-GOV-03,,EV-003,"ISO27001 9.2.1,9.2.2,9.3.1,9.3.2,9.3.3,10.2,A.5.35 | SOC2 CC1.2,CC4.1,CC4.2",
+CSF2,GV.OV-02,Oversight,Partial,,CTL-GOV-03,EV-003,"ISO27001 9.2.1,9.2.2,9.3.1,9.3.2,9.3.3,10.2,A.5.35 | SOC2 CC1.2,CC4.1,CC4.2",Only partial-strength controls are effective.
+CSF2,GV.OV-03,Oversight,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.SC-01,Cybersecurity Supply Chain Risk Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.SC-02,Cybersecurity Supply Chain Risk Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.SC-03,Cybersecurity Supply Chain Risk Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.SC-04,Cybersecurity Supply Chain Risk Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.SC-05,Cybersecurity Supply Chain Risk Management,Not tested,,CTL-TPR-01,EV-032,"CIS8 15.1 | ISO27001 A.5.19,A.5.20,A.5.21,A.5.22,A.5.23 | SOC2 CC9.2",Evidence exists but has not been tested yet.
+CSF2,GV.SC-06,Cybersecurity Supply Chain Risk Management,Not tested,CTL-TPR-01,,EV-032,"CIS8 15.1 | ISO27001 A.5.19,A.5.20,A.5.21,A.5.22,A.5.23 | SOC2 CC9.2",Evidence exists but has not been tested yet.
+CSF2,GV.SC-07,Cybersecurity Supply Chain Risk Management,Not tested,CTL-TPR-01,,EV-032,"CIS8 15.1 | ISO27001 A.5.19,A.5.20,A.5.21,A.5.22,A.5.23 | SOC2 CC9.2",Evidence exists but has not been tested yet.
+CSF2,GV.SC-08,Cybersecurity Supply Chain Risk Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.SC-09,Cybersecurity Supply Chain Risk Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,GV.SC-10,Cybersecurity Supply Chain Risk Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,ID.AM-01,Asset Management,Satisfied,CTL-AST-01,,EV-006,"CIS8 1.1,1.2 | ISO27001 A.5.9,A.5.11 | SOC2 CC6.1",
+CSF2,ID.AM-02,Asset Management,Satisfied,CTL-AST-02,,EV-007,"CIS8 2.1,2.2,2.3 | ISO27001 A.5.9,A.8.19",
+CSF2,ID.AM-03,Asset Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,ID.AM-04,Asset Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,ID.AM-05,Asset Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,ID.AM-07,Asset Management,Satisfied,CTL-DAT-01,,EV-008,"CIS8 3.1,3.2 | ISO27001 A.5.12,A.5.13 | SOC2 C1.1",
+CSF2,ID.AM-08,Asset Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,ID.RA-01,Risk Assessment,Satisfied,CTL-VUL-01,CTL-VUL-02,EV-020;EV-021,"CIS8 7.1,7.2,7.3,7.4,18.1,18.2 | ISO27001 A.5.35,A.8.8,A.8.29 | SOC2 CC4.1,CC7.1",
+CSF2,ID.RA-02,Risk Assessment,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,ID.RA-03,Risk Assessment,Partial,,CTL-RSK-01,EV-004,"ISO27001 6.1.2,8.2 | SOC2 CC3.1,CC3.2,CC3.3",Only partial-strength controls are effective.
+CSF2,ID.RA-04,Risk Assessment,Partial,,CTL-RSK-01,EV-004,"ISO27001 6.1.2,8.2 | SOC2 CC3.1,CC3.2,CC3.3",Only partial-strength controls are effective.
+CSF2,ID.RA-05,Risk Assessment,Satisfied,CTL-RSK-01,,EV-004,"ISO27001 6.1.2,8.2 | SOC2 CC3.1,CC3.2,CC3.3",
+CSF2,ID.RA-06,Risk Assessment,Satisfied,CTL-RSK-02,,EV-005,"ISO27001 6.1.3,8.3 | SOC2 CC9.1",
+CSF2,ID.RA-07,Risk Assessment,Satisfied,CTL-CHG-01,,EV-035,"ISO27001 6.3,A.8.32 | SOC2 CC3.4,CC8.1",
+CSF2,ID.RA-08,Risk Assessment,Partial,,CTL-VUL-01,EV-020,"CIS8 7.1,7.2,7.3,7.4 | ISO27001 A.8.8 | SOC2 CC7.1",Only partial-strength controls are effective.
+CSF2,ID.RA-09,Risk Assessment,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,ID.RA-10,Risk Assessment,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,ID.IM-01,Improvement,Partial,,CTL-GOV-03,EV-003,"ISO27001 9.2.1,9.2.2,9.3.1,9.3.2,9.3.3,10.2,A.5.35 | SOC2 CC1.2,CC4.1,CC4.2",Only partial-strength controls are effective.
+CSF2,ID.IM-02,Improvement,Satisfied,CTL-VUL-02,,EV-021,"CIS8 18.1,18.2 | ISO27001 A.5.35,A.8.8,A.8.29 | SOC2 CC4.1,CC7.1",
+CSF2,ID.IM-03,Improvement,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,ID.IM-04,Improvement,Satisfied,CTL-IR-01,CTL-BCP-01,EV-029;EV-030;EV-031,"CIS8 17.1,17.2,17.3 | ISO27001 A.5.24,A.5.26,A.5.27,A.5.29,A.5.30 | SOC2 CC7.4,CC7.5,CC9.1,A1.3",
+CSF2,PR.AA-01,"Identity Management, Authentication, and Access Control",Satisfied,CTL-IAM-01,CTL-IAM-06,EV-011;EV-016,"CIS8 5.1,5.3,6.1,6.2 | ISO27001 A.5.16,A.5.18,A.6.5 | SOC2 CC6.2,CC6.3",
+CSF2,PR.AA-02,"Identity Management, Authentication, and Access Control",Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,PR.AA-03,"Identity Management, Authentication, and Access Control",Satisfied with exceptions,CTL-IAM-03,CTL-IAM-05,EV-013;EV-015,"CIS8 5.2,6.3,6.4,6.5 | ISO27001 A.5.17,A.8.5 | SOC2 CC6.1",Best full-strength control passed with exceptions.
+CSF2,PR.AA-04,"Identity Management, Authentication, and Access Control",Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,PR.AA-05,"Identity Management, Authentication, and Access Control",Deficient,CTL-IAM-02,CTL-DAT-03;CTL-IAM-04,EV-010;EV-012;EV-014,"CIS8 3.3,5.1,5.3,5.4 | ISO27001 A.5.15,A.5.18,A.8.2,A.8.3,A.8.18 | SOC2 CC6.1,CC6.2,CC6.3",Mapped control failed testing: CTL-IAM-02.
+CSF2,PR.AA-06,"Identity Management, Authentication, and Access Control",Satisfied,CTL-PHY-01,,EV-037,"ISO27001 A.7.1,A.7.2,A.7.4 | SOC2 CC6.4",
+CSF2,PR.AT-01,Awareness and Training,Satisfied with exceptions,CTL-HR-01,,EV-033,"CIS8 14.1,14.2,14.3,14.4,14.5,14.6,14.7,14.8 | ISO27001 7.2,7.3,A.6.3 | SOC2 CC1.4,CC2.2",Best full-strength control passed with exceptions.
+CSF2,PR.AT-02,Awareness and Training,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,PR.DS-01,Data Security,Satisfied,CTL-CRY-01,,EV-026,"CIS8 3.6,3.10,3.11 | ISO27001 A.5.14,A.8.24 | SOC2 CC6.1,CC6.7",
+CSF2,PR.DS-02,Data Security,Satisfied,CTL-CRY-01,,EV-026,"CIS8 3.6,3.10,3.11 | ISO27001 A.5.14,A.8.24 | SOC2 CC6.1,CC6.7",
+CSF2,PR.DS-10,Data Security,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,PR.DS-11,Data Security,Satisfied,CTL-BCK-01,,EV-027,"CIS8 11.1,11.2,11.3,11.4 | ISO27001 A.8.13 | SOC2 A1.2",
+CSF2,PR.PS-01,Platform Security,Satisfied,CTL-CFG-01,CTL-CFG-03;CTL-CFG-04,EV-017;EV-019,"CIS8 4.1,4.2,4.3,4.5,4.6,4.7 | ISO27001 A.7.7,A.8.1,A.8.9 | SOC2 CC5.2,CC7.1",
+CSF2,PR.PS-02,Platform Security,Satisfied,CTL-VUL-01,CTL-AST-02,EV-007;EV-020,"CIS8 2.1,2.2,2.3,7.1,7.2,7.3,7.4 | ISO27001 A.5.9,A.8.8,A.8.19 | SOC2 CC7.1",
+CSF2,PR.PS-03,Platform Security,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,PR.PS-04,Platform Security,Satisfied,CTL-LOG-01,,EV-022,"CIS8 8.1,8.2,8.3,8.10 | ISO27001 A.8.15 | SOC2 CC7.2",
+CSF2,PR.PS-05,Platform Security,Partial,,CTL-CFG-02,EV-018,"CIS8 10.1,10.2,10.3 | ISO27001 A.8.7 | SOC2 CC6.8",Only partial-strength controls are effective.
+CSF2,PR.PS-06,Platform Security,Satisfied,CTL-SDL-01,,EV-035;EV-036,"CIS8 16.1,16.12 | ISO27001 A.8.4,A.8.25,A.8.28,A.8.29 | SOC2 CC8.1",
+CSF2,PR.IR-01,Technology Infrastructure Resilience,Satisfied,CTL-NET-01,,EV-024,"CIS8 4.4,12.2 | ISO27001 A.8.20,A.8.21,A.8.22 | SOC2 CC6.6",
+CSF2,PR.IR-02,Technology Infrastructure Resilience,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,PR.IR-03,Technology Infrastructure Resilience,Evidence stale,,CTL-BCP-01,EV-029;EV-030,"ISO27001 A.5.29,A.5.30 | SOC2 CC7.5,CC9.1,A1.3",Evidence for every mapped control is outside its validity window.
+CSF2,PR.IR-04,Technology Infrastructure Resilience,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,DE.CM-01,Continuous Monitoring,Satisfied,CTL-LOG-02,,EV-023,"CIS8 8.11,13.1 | ISO27001 A.5.25,A.6.8,A.8.16 | SOC2 CC7.2,CC7.3",
+CSF2,DE.CM-02,Continuous Monitoring,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,DE.CM-03,Continuous Monitoring,Partial,,CTL-LOG-02,EV-023,"CIS8 8.11,13.1 | ISO27001 A.5.25,A.6.8,A.8.16 | SOC2 CC7.2,CC7.3",Only partial-strength controls are effective.
+CSF2,DE.CM-06,Continuous Monitoring,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,DE.CM-09,Continuous Monitoring,Satisfied,CTL-CFG-02,,EV-018,"CIS8 10.1,10.2,10.3 | ISO27001 A.8.7 | SOC2 CC6.8",
+CSF2,DE.AE-02,Adverse Event Analysis,Satisfied,CTL-LOG-02,,EV-023,"CIS8 8.11,13.1 | ISO27001 A.5.25,A.6.8,A.8.16 | SOC2 CC7.2,CC7.3",
+CSF2,DE.AE-03,Adverse Event Analysis,Partial,,CTL-LOG-02,EV-023,"CIS8 8.11,13.1 | ISO27001 A.5.25,A.6.8,A.8.16 | SOC2 CC7.2,CC7.3",Only partial-strength controls are effective.
+CSF2,DE.AE-04,Adverse Event Analysis,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,DE.AE-06,Adverse Event Analysis,Satisfied,CTL-LOG-02,,EV-023,"CIS8 8.11,13.1 | ISO27001 A.5.25,A.6.8,A.8.16 | SOC2 CC7.2,CC7.3",
+CSF2,DE.AE-07,Adverse Event Analysis,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,DE.AE-08,Adverse Event Analysis,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.MA-01,Incident Management,Satisfied,CTL-IR-01,,EV-031,"CIS8 17.1,17.2,17.3 | ISO27001 A.5.24,A.5.26,A.5.27 | SOC2 CC7.4,CC7.5",
+CSF2,RS.MA-02,Incident Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.MA-03,Incident Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.MA-04,Incident Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.MA-05,Incident Management,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.AN-03,Incident Analysis,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.AN-06,Incident Analysis,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.AN-07,Incident Analysis,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.AN-08,Incident Analysis,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.CO-02,Incident Response Reporting and Communication,Partial,,CTL-IR-01,EV-031,"CIS8 17.1,17.2,17.3 | ISO27001 A.5.24,A.5.26,A.5.27 | SOC2 CC7.4,CC7.5",Only partial-strength controls are effective.
+CSF2,RS.CO-03,Incident Response Reporting and Communication,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.MI-01,Incident Mitigation,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RS.MI-02,Incident Mitigation,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RC.RP-01,Incident Recovery Plan Execution,Evidence stale,CTL-BCP-01,,EV-029;EV-030,"ISO27001 A.5.29,A.5.30 | SOC2 CC7.5,CC9.1,A1.3",Evidence for every mapped control is outside its validity window.
+CSF2,RC.RP-02,Incident Recovery Plan Execution,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RC.RP-03,Incident Recovery Plan Execution,Evidence stale,CTL-BCK-02,,EV-028,"CIS8 11.1,11.5 | ISO27001 A.8.13 | SOC2 A1.3",Evidence for every mapped control is outside its validity window.
+CSF2,RC.RP-04,Incident Recovery Plan Execution,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RC.RP-05,Incident Recovery Plan Execution,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RC.RP-06,Incident Recovery Plan Execution,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RC.CO-03,Incident Recovery Communication,Unmapped,,,,,No common control is mapped to this requirement.
+CSF2,RC.CO-04,Incident Recovery Communication,Unmapped,,,,,No common control is mapped to this requirement.
+CIS8,1.1,Inventory and Control of Enterprise Assets,Satisfied,CTL-AST-01,,EV-006,"CSF2 ID.AM-01 | ISO27001 A.5.9,A.5.11 | SOC2 CC6.1",
+CIS8,1.2,Inventory and Control of Enterprise Assets,Satisfied,CTL-AST-01,,EV-006,"CSF2 ID.AM-01 | ISO27001 A.5.9,A.5.11 | SOC2 CC6.1",
+CIS8,2.1,Inventory and Control of Software Assets,Satisfied,CTL-AST-02,,EV-007,"CSF2 ID.AM-02,PR.PS-02 | ISO27001 A.5.9,A.8.19",
+CIS8,2.2,Inventory and Control of Software Assets,Satisfied,CTL-AST-02,,EV-007,"CSF2 ID.AM-02,PR.PS-02 | ISO27001 A.5.9,A.8.19",
+CIS8,2.3,Inventory and Control of Software Assets,Satisfied,CTL-AST-02,,EV-007,"CSF2 ID.AM-02,PR.PS-02 | ISO27001 A.5.9,A.8.19",
+CIS8,3.1,Data Protection,Satisfied,CTL-DAT-01,,EV-008,"CSF2 ID.AM-07 | ISO27001 A.5.12,A.5.13 | SOC2 C1.1",
+CIS8,3.2,Data Protection,Partial,,CTL-DAT-01,EV-008,"CSF2 ID.AM-07 | ISO27001 A.5.12,A.5.13 | SOC2 C1.1",Only partial-strength controls are effective.
+CIS8,3.3,Data Protection,Evidence stale,CTL-DAT-03,,EV-010,"CSF2 PR.AA-05 | ISO27001 A.5.15,A.8.3 | SOC2 CC6.1",Evidence for every mapped control is outside its validity window.
+CIS8,3.4,Data Protection,Satisfied,CTL-DAT-02,,EV-009,"ISO27001 A.5.33,A.7.14,A.8.10 | SOC2 CC6.5,C1.2",
+CIS8,3.5,Data Protection,Satisfied,CTL-DAT-02,,EV-009,"ISO27001 A.5.33,A.7.14,A.8.10 | SOC2 CC6.5,C1.2",
+CIS8,3.6,Data Protection,Satisfied,CTL-CRY-01,,EV-026,"CSF2 PR.DS-01,PR.DS-02 | ISO27001 A.5.14,A.8.24 | SOC2 CC6.1,CC6.7",
+CIS8,4.1,Secure Configuration of Enterprise Assets and Software,Satisfied,CTL-CFG-01,,EV-017,"CSF2 PR.PS-01 | ISO27001 A.8.9 | SOC2 CC5.2,CC7.1",
+CIS8,4.2,Secure Configuration of Enterprise Assets and Software,Satisfied,CTL-CFG-01,,EV-017,"CSF2 PR.PS-01 | ISO27001 A.8.9 | SOC2 CC5.2,CC7.1",
+CIS8,4.3,Secure Configuration of Enterprise Assets and Software,Satisfied,CTL-CFG-03,,EV-019,"CSF2 PR.PS-01 | ISO27001 A.7.7,A.8.1",
+CIS8,4.4,Secure Configuration of Enterprise Assets and Software,Satisfied,CTL-NET-01,,EV-024,"CSF2 PR.IR-01 | ISO27001 A.8.20,A.8.21,A.8.22 | SOC2 CC6.6",
+CIS8,4.5,Secure Configuration of Enterprise Assets and Software,Satisfied,CTL-CFG-03,,EV-019,"CSF2 PR.PS-01 | ISO27001 A.7.7,A.8.1",
+CIS8,4.6,Secure Configuration of Enterprise Assets and Software,Satisfied,CTL-CFG-04,,EV-017,CSF2 PR.PS-01 | ISO27001 A.8.9,
+CIS8,4.7,Secure Configuration of Enterprise Assets and Software,Satisfied,CTL-CFG-04,,EV-017,CSF2 PR.PS-01 | ISO27001 A.8.9,
+CIS8,5.1,Account Management,Deficient,CTL-IAM-06,CTL-IAM-02,EV-012;EV-016,"CSF2 PR.AA-01,PR.AA-05 | ISO27001 A.5.15,A.5.16,A.5.18 | SOC2 CC6.2,CC6.3",Mapped control failed testing: CTL-IAM-02.
+CIS8,5.2,Account Management,Satisfied,CTL-IAM-05,,EV-015,CSF2 PR.AA-03 | ISO27001 A.5.17 | SOC2 CC6.1,
+CIS8,5.3,Account Management,Deficient,CTL-IAM-06,CTL-IAM-02,EV-012;EV-016,"CSF2 PR.AA-01,PR.AA-05 | ISO27001 A.5.15,A.5.16,A.5.18 | SOC2 CC6.2,CC6.3",Mapped control failed testing: CTL-IAM-02.
+CIS8,5.4,Account Management,Satisfied,CTL-IAM-04,,EV-014,"CSF2 PR.AA-05 | ISO27001 A.8.2,A.8.18 | SOC2 CC6.3",
+CIS8,6.1,Access Control Management,Satisfied,CTL-IAM-01,,EV-011,"CSF2 PR.AA-01 | ISO27001 A.5.16,A.5.18,A.6.5 | SOC2 CC6.2,CC6.3",
+CIS8,6.2,Access Control Management,Satisfied,CTL-IAM-01,,EV-011,"CSF2 PR.AA-01 | ISO27001 A.5.16,A.5.18,A.6.5 | SOC2 CC6.2,CC6.3",
+CIS8,6.3,Access Control Management,Satisfied with exceptions,CTL-IAM-03,,EV-013,CSF2 PR.AA-03 | ISO27001 A.8.5 | SOC2 CC6.1,Best full-strength control passed with exceptions.
+CIS8,6.4,Access Control Management,Satisfied with exceptions,CTL-IAM-03,,EV-013,CSF2 PR.AA-03 | ISO27001 A.8.5 | SOC2 CC6.1,Best full-strength control passed with exceptions.
+CIS8,6.5,Access Control Management,Satisfied with exceptions,CTL-IAM-03,,EV-013,CSF2 PR.AA-03 | ISO27001 A.8.5 | SOC2 CC6.1,Best full-strength control passed with exceptions.
+CIS8,7.1,Continuous Vulnerability Management,Satisfied,CTL-VUL-01,,EV-020,"CSF2 ID.RA-01,ID.RA-08,PR.PS-02 | ISO27001 A.8.8 | SOC2 CC7.1",
+CIS8,7.2,Continuous Vulnerability Management,Satisfied,CTL-VUL-01,,EV-020,"CSF2 ID.RA-01,ID.RA-08,PR.PS-02 | ISO27001 A.8.8 | SOC2 CC7.1",
+CIS8,7.3,Continuous Vulnerability Management,Satisfied,CTL-VUL-01,,EV-020,"CSF2 ID.RA-01,ID.RA-08,PR.PS-02 | ISO27001 A.8.8 | SOC2 CC7.1",
+CIS8,7.4,Continuous Vulnerability Management,Satisfied,CTL-VUL-01,,EV-020,"CSF2 ID.RA-01,ID.RA-08,PR.PS-02 | ISO27001 A.8.8 | SOC2 CC7.1",
+CIS8,8.1,Audit Log Management,Satisfied,CTL-LOG-01,,EV-022,CSF2 PR.PS-04 | ISO27001 A.8.15 | SOC2 CC7.2,
+CIS8,8.2,Audit Log Management,Satisfied,CTL-LOG-01,,EV-022,CSF2 PR.PS-04 | ISO27001 A.8.15 | SOC2 CC7.2,
+CIS8,8.3,Audit Log Management,Satisfied,CTL-LOG-01,,EV-022,CSF2 PR.PS-04 | ISO27001 A.8.15 | SOC2 CC7.2,
+CIS8,9.1,Email and Web Browser Protections,Partial,,CTL-NET-02,EV-025,ISO27001 A.8.23 | SOC2 CC6.8,Only partial-strength controls are effective.
+CIS8,9.2,Email and Web Browser Protections,Satisfied,CTL-NET-02,,EV-025,ISO27001 A.8.23 | SOC2 CC6.8,
+CIS8,10.1,Malware Defenses,Satisfied,CTL-CFG-02,,EV-018,"CSF2 PR.PS-05,DE.CM-09 | ISO27001 A.8.7 | SOC2 CC6.8",
+CIS8,10.2,Malware Defenses,Satisfied,CTL-CFG-02,,EV-018,"CSF2 PR.PS-05,DE.CM-09 | ISO27001 A.8.7 | SOC2 CC6.8",
+CIS8,10.3,Malware Defenses,Satisfied,CTL-CFG-02,,EV-018,"CSF2 PR.PS-05,DE.CM-09 | ISO27001 A.8.7 | SOC2 CC6.8",
+CIS8,11.1,Data Recovery,Partial,,CTL-BCK-01;CTL-BCK-02,EV-027;EV-028,"CSF2 PR.DS-11,RC.RP-03 | ISO27001 A.8.13 | SOC2 A1.2,A1.3",Only partial-strength controls are effective.
+CIS8,11.2,Data Recovery,Satisfied,CTL-BCK-01,,EV-027,CSF2 PR.DS-11 | ISO27001 A.8.13 | SOC2 A1.2,
+CIS8,11.3,Data Recovery,Satisfied,CTL-BCK-01,,EV-027,CSF2 PR.DS-11 | ISO27001 A.8.13 | SOC2 A1.2,
+CIS8,11.4,Data Recovery,Satisfied,CTL-BCK-01,,EV-027,CSF2 PR.DS-11 | ISO27001 A.8.13 | SOC2 A1.2,
+CIS8,12.1,Network Infrastructure Management,Unmapped,,,,,No common control is mapped to this requirement.
+CIS8,14.1,Security Awareness and Skills Training,Satisfied with exceptions,CTL-HR-01,,EV-033,"CSF2 PR.AT-01 | ISO27001 7.2,7.3,A.6.3 | SOC2 CC1.4,CC2.2",Best full-strength control passed with exceptions.
+CIS8,14.2,Security Awareness and Skills Training,Satisfied with exceptions,CTL-HR-01,,EV-033,"CSF2 PR.AT-01 | ISO27001 7.2,7.3,A.6.3 | SOC2 CC1.4,CC2.2",Best full-strength control passed with exceptions.
+CIS8,14.3,Security Awareness and Skills Training,Satisfied with exceptions,CTL-HR-01,,EV-033,"CSF2 PR.AT-01 | ISO27001 7.2,7.3,A.6.3 | SOC2 CC1.4,CC2.2",Best full-strength control passed with exceptions.
+CIS8,14.4,Security Awareness and Skills Training,Satisfied with exceptions,CTL-HR-01,,EV-033,"CSF2 PR.AT-01 | ISO27001 7.2,7.3,A.6.3 | SOC2 CC1.4,CC2.2",Best full-strength control passed with exceptions.
+CIS8,14.5,Security Awareness and Skills Training,Satisfied with exceptions,CTL-HR-01,,EV-033,"CSF2 PR.AT-01 | ISO27001 7.2,7.3,A.6.3 | SOC2 CC1.4,CC2.2",Best full-strength control passed with exceptions.
+CIS8,14.6,Security Awareness and Skills Training,Satisfied with exceptions,CTL-HR-01,,EV-033,"CSF2 PR.AT-01 | ISO27001 7.2,7.3,A.6.3 | SOC2 CC1.4,CC2.2",Best full-strength control passed with exceptions.
+CIS8,14.7,Security Awareness and Skills Training,Partial,,CTL-HR-01,EV-033,"CSF2 PR.AT-01 | ISO27001 7.2,7.3,A.6.3 | SOC2 CC1.4,CC2.2",Only partial-strength controls are effective.
+CIS8,14.8,Security Awareness and Skills Training,Partial,,CTL-HR-01,EV-033,"CSF2 PR.AT-01 | ISO27001 7.2,7.3,A.6.3 | SOC2 CC1.4,CC2.2",Only partial-strength controls are effective.
+CIS8,15.1,Service Provider Management,Not tested,CTL-TPR-01,,EV-032,"CSF2 GV.SC-05,GV.SC-06,GV.SC-07 | ISO27001 A.5.19,A.5.20,A.5.21,A.5.22,A.5.23 | SOC2 CC9.2",Evidence exists but has not been tested yet.
+CIS8,17.1,Incident Response Management,Satisfied,CTL-IR-01,,EV-031,"CSF2 ID.IM-04,RS.MA-01,RS.CO-02 | ISO27001 A.5.24,A.5.26,A.5.27 | SOC2 CC7.4,CC7.5",
+CIS8,17.2,Incident Response Management,Satisfied,CTL-IR-01,,EV-031,"CSF2 ID.IM-04,RS.MA-01,RS.CO-02 | ISO27001 A.5.24,A.5.26,A.5.27 | SOC2 CC7.4,CC7.5",
+CIS8,17.3,Incident Response Management,Satisfied,CTL-IR-01,,EV-031,"CSF2 ID.IM-04,RS.MA-01,RS.CO-02 | ISO27001 A.5.24,A.5.26,A.5.27 | SOC2 CC7.4,CC7.5",
