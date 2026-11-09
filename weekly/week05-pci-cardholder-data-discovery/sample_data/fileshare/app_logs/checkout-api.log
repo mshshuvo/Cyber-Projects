@@ -1,0 +1,8 @@
+2026-10-28T14:02:11Z INFO  checkout-api order=NB-120118 status=created amount=72.40
+2026-10-28T14:02:12Z DEBUG checkout-api POST /v2/payments body={"order":"NB-120118","card":{"number":"4242424242424242","exp":"08/28","cvc":"472"},"amount":72.40}
+2026-10-28T14:02:12Z INFO  checkout-api payment approved order=NB-120118 card=424242******4242 auth=OK3392
+2026-10-28T14:07:40Z INFO  checkout-api order=NB-120131 status=created amount=19.99
+2026-10-28T14:07:41Z DEBUG checkout-api POST /v2/payments body={"order":"NB-120131","card":{"number":"2223003122003222","exp":"02/30","cvc":"085"},"amount":19.99}
+2026-10-28T14:07:41Z WARN  checkout-api gateway retry order=NB-120131 attempt=2 trace=7f3a9c1e5b2d4f60
+2026-10-28T14:11:03Z ERROR checkout-api tokenisation timeout, falling back to direct auth pan=3530111333300000 exp=0529
+2026-10-28T14:15:22Z INFO  checkout-api healthcheck ok latency_ms=41 build=2026.10.27-1736452810000

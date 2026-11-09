@@ -1,0 +1,954 @@
+{
+  "root": "sample_data/fileshare",
+  "as_of": "2026-11-08",
+  "summary": {
+    "files_seen": 15,
+    "documents_scanned": 16,
+    "lines_scanned": 96,
+    "findings": 36,
+    "by_severity": {
+      "Critical": 12,
+      "High": 19,
+      "Medium": 5
+    },
+    "unique_pans": 14,
+    "unique_test_pans": 14,
+    "compliant_masked_pans": 5,
+    "suppressed": 3,
+    "coverage_gaps": 1
+  },
+  "requirements": {
+    "3.2.1": {
+      "title": "Account data storage kept to a minimum; retention and disposal defined and applied",
+      "findings": 22
+    },
+    "3.3.1": {
+      "title": "SAD is not stored after authorisation, even if encrypted",
+      "findings": 12
+    },
+    "3.3.1.1": {
+      "title": "Full track data is not stored after authorisation",
+      "findings": 2
+    },
+    "3.3.1.2": {
+      "title": "Card verification code is not stored after authorisation",
+      "findings": 9
+    },
+    "3.3.1.3": {
+      "title": "PIN and PIN block are not stored after authorisation",
+      "findings": 1
+    },
+    "3.4.1": {
+      "title": "PAN is masked when displayed (BIN and last four at most)",
+      "findings": 2
+    },
+    "3.5.1": {
+      "title": "PAN is rendered unreadable anywhere it is stored",
+      "findings": 22
+    },
+    "10.3.x": {
+      "title": "Log files are account data locations too: protect them (10.3) and purge clear-text values (3.5.1)",
+      "findings": 7
+    },
+    "12.5.2": {
+      "title": "PCI DSS scope (all locations of account data) documented and confirmed",
+      "findings": 22
+    }
+  },
+  "files": [
+    {
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location_class": "Office document / spreadsheet",
+      "container": "text",
+      "worst": "Critical",
+      "counts": {
+        "CVV": 5,
+        "PAN": 5
+      },
+      "unique_pans": 5,
+      "action": "Find the business process that needs a spreadsheet of card numbers and replace it with a token or the last four digits. Delete the file and any copies in email and sync folders."
+    },
+    {
+      "path": "app_logs/checkout-api.log",
+      "location_class": "Application / system log",
+      "container": "text",
+      "worst": "Critical",
+      "counts": {
+        "CVV": 2,
+        "PAN": 3
+      },
+      "unique_pans": 3,
+      "action": "Stop the leak at source: disable request/response body logging on payment paths and add a PAN/SAD redaction filter to the logger (see `chd_scan redact`). Purge affected logs, including copies in the SIEM and log archive (10.3.x, 3.5.1)."
+    },
+    {
+      "path": "pos/store014_terminal_trace.txt",
+      "location_class": "POS / terminal output",
+      "container": "text",
+      "worst": "Critical",
+      "counts": {
+        "TRACK_DATA": 2,
+        "PIN": 1
+      },
+      "unique_pans": 2,
+      "action": "Track data or PIN on disk points at a terminal, middleware or debug setting. Engage the POS vendor, confirm P2PE/SRED configuration, and treat as a potential compromise indicator."
+    },
+    {
+      "path": "support/ticket_export_2026-10.json",
+      "location_class": "Customer support / ticket / email",
+      "container": "text",
+      "worst": "Critical",
+      "counts": {
+        "CVV": 1,
+        "PAN": 2
+      },
+      "unique_pans": 2,
+      "action": "Customers paste card numbers into free text. Redact in the ticketing system, enable its PAN-masking or DLP feature, and train agents never to request card data by email or chat."
+    },
+    {
+      "path": "app_logs/checkout-api.log.1.gz",
+      "location_class": "Application / system log",
+      "container": "text",
+      "worst": "Critical",
+      "counts": {
+        "CVV": 1,
+        "PAN": 1
+      },
+      "unique_pans": 1,
+      "action": "Stop the leak at source: disable request/response body logging on payment paths and add a PAN/SAD redaction filter to the logger (see `chd_scan redact`). Purge affected logs, including copies in the SIEM and log archive (10.3.x, 3.5.1)."
+    },
+    {
+      "path": "pos/offline_queue.db",
+      "location_class": "Database export / backup",
+      "container": "sqlite",
+      "worst": "High",
+      "counts": {
+        "PAN": 3
+      },
+      "unique_pans": 3,
+      "action": "Find the source table. Tokenise or encrypt the column at source (3.5.1), purge exports beyond retention (3.2.1), and bring backup media into scope or out of reach."
+    },
+    {
+      "path": "archive/2024_q4_refunds.zip!refunds_2024q4.csv",
+      "location_class": "Archive / legacy copy",
+      "container": "text",
+      "worst": "High",
+      "counts": {
+        "PAN": 2
+      },
+      "unique_pans": 2,
+      "action": "Confirm whether a retention requirement applies (3.2.1). If not, securely delete. If so, move it into the CDE and encrypt it (3.5.1)."
+    },
+    {
+      "path": "legacy/crm_export_2023.csv",
+      "location_class": "Archive / legacy copy",
+      "container": "text",
+      "worst": "High",
+      "counts": {
+        "PAN": 2
+      },
+      "unique_pans": 2,
+      "action": "Confirm whether a retention requirement applies (3.2.1). If not, securely delete. If so, move it into the CDE and encrypt it (3.5.1)."
+    },
+    {
+      "path": "hr/corporate_card_request_form.docx",
+      "location_class": "Office document / spreadsheet",
+      "container": "office",
+      "worst": "High",
+      "counts": {
+        "PAN": 1
+      },
+      "unique_pans": 1,
+      "action": "Find the business process that needs a spreadsheet of card numbers and replace it with a token or the last four digits. Delete the file and any copies in email and sync folders."
+    },
+    {
+      "path": "db_exports/orders_2025_backup.sql",
+      "location_class": "Database export / backup",
+      "container": "text",
+      "worst": "Medium",
+      "counts": {
+        "PAN": 3
+      },
+      "unique_pans": 3,
+      "action": "Find the source table. Tokenise or encrypt the column at source (3.5.1), purge exports beyond retention (3.2.1), and bring backup media into scope or out of reach."
+    },
+    {
+      "path": "finance/settlement_2026-10.csv",
+      "location_class": "Office document / spreadsheet",
+      "container": "text",
+      "worst": "Medium",
+      "counts": {
+        "MASK_OVEREXPOSED": 2
+      },
+      "unique_pans": 0,
+      "action": "Find the business process that needs a spreadsheet of card numbers and replace it with a token or the last four digits. Delete the file and any copies in email and sync folders."
+    }
+  ],
+  "findings": [
+    {
+      "id": "CHD-001",
+      "severity": "Critical",
+      "kind": "CVV",
+      "path": "app_logs/checkout-api.log",
+      "location": "line 2",
+      "masked": "***",
+      "brand": null,
+      "confidence": "high",
+      "detail": "value labelled 'cvc' (3 chars)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.2",
+        "10.3.x"
+      ],
+      "location_class": "log",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-002",
+      "severity": "Critical",
+      "kind": "CVV",
+      "path": "app_logs/checkout-api.log",
+      "location": "line 5",
+      "masked": "***",
+      "brand": null,
+      "confidence": "high",
+      "detail": "value labelled 'cvc' (3 chars)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.2",
+        "10.3.x"
+      ],
+      "location_class": "log",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-003",
+      "severity": "Critical",
+      "kind": "CVV",
+      "path": "app_logs/checkout-api.log.1.gz",
+      "location": "line 1",
+      "masked": "***",
+      "brand": null,
+      "confidence": "high",
+      "detail": "value labelled 'cvc' (3 chars)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.2",
+        "10.3.x"
+      ],
+      "location_class": "log",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-004",
+      "severity": "Critical",
+      "kind": "CVV",
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location": "line 2",
+      "masked": "***",
+      "brand": null,
+      "confidence": "high",
+      "detail": "column 'cvv2' (3 chars)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.2"
+      ],
+      "location_class": "office",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-005",
+      "severity": "Critical",
+      "kind": "CVV",
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location": "line 3",
+      "masked": "***",
+      "brand": null,
+      "confidence": "high",
+      "detail": "column 'cvv2' (3 chars)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.2"
+      ],
+      "location_class": "office",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-006",
+      "severity": "Critical",
+      "kind": "CVV",
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location": "line 4",
+      "masked": "****",
+      "brand": null,
+      "confidence": "high",
+      "detail": "column 'cvv2' (4 chars)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.2"
+      ],
+      "location_class": "office",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-007",
+      "severity": "Critical",
+      "kind": "CVV",
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location": "line 5",
+      "masked": "***",
+      "brand": null,
+      "confidence": "high",
+      "detail": "column 'cvv2' (3 chars)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.2"
+      ],
+      "location_class": "office",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-008",
+      "severity": "Critical",
+      "kind": "CVV",
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location": "line 6",
+      "masked": "***",
+      "brand": null,
+      "confidence": "high",
+      "detail": "column 'cvv2' (3 chars)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.2"
+      ],
+      "location_class": "office",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-009",
+      "severity": "Critical",
+      "kind": "TRACK_DATA",
+      "path": "pos/store014_terminal_trace.txt",
+      "location": "line 3",
+      "masked": "510510******5100",
+      "brand": "Mastercard",
+      "confidence": "high",
+      "detail": "Track 2 equivalent (PAN, expiry, service code, discretionary data)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.1"
+      ],
+      "location_class": "pos",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-010",
+      "severity": "Critical",
+      "kind": "PIN",
+      "path": "pos/store014_terminal_trace.txt",
+      "location": "line 4",
+      "masked": "****************",
+      "brand": null,
+      "confidence": "high",
+      "detail": "value labelled 'pin_block' (16 chars)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.3"
+      ],
+      "location_class": "pos",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-011",
+      "severity": "Critical",
+      "kind": "TRACK_DATA",
+      "path": "pos/store014_terminal_trace.txt",
+      "location": "line 5",
+      "masked": "401288******1881",
+      "brand": "Visa",
+      "confidence": "high",
+      "detail": "Track 1 (PAN, name, expiry, service code, discretionary data)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.1"
+      ],
+      "location_class": "pos",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-012",
+      "severity": "Critical",
+      "kind": "CVV",
+      "path": "support/ticket_export_2026-10.json",
+      "location": "line 12",
+      "masked": "****",
+      "brand": null,
+      "confidence": "high",
+      "detail": "value labelled 'security code' (4 chars)",
+      "requirements": [
+        "3.3.1",
+        "3.3.1.2"
+      ],
+      "location_class": "support",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-013",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "app_logs/checkout-api.log",
+      "location": "line 2",
+      "masked": "424242******4242",
+      "brand": "Visa",
+      "confidence": "high",
+      "detail": "stored with SAD in the same record",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2",
+        "10.3.x"
+      ],
+      "location_class": "log",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-014",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "app_logs/checkout-api.log",
+      "location": "line 5",
+      "masked": "222300******3222",
+      "brand": "Mastercard",
+      "confidence": "high",
+      "detail": "stored with SAD in the same record",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2",
+        "10.3.x"
+      ],
+      "location_class": "log",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-015",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "app_logs/checkout-api.log",
+      "location": "line 7",
+      "masked": "353011******0000",
+      "brand": "JCB",
+      "confidence": "high",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2",
+        "10.3.x"
+      ],
+      "location_class": "log",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-016",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "app_logs/checkout-api.log.1.gz",
+      "location": "line 1",
+      "masked": "400005******5556",
+      "brand": "Visa",
+      "confidence": "high",
+      "detail": "stored with SAD in the same record",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2",
+        "10.3.x"
+      ],
+      "location_class": "log",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-017",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "archive/2024_q4_refunds.zip!refunds_2024q4.csv",
+      "location": "line 2",
+      "masked": "353011******0000",
+      "brand": "JCB",
+      "confidence": "high",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "archive",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-018",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "archive/2024_q4_refunds.zip!refunds_2024q4.csv",
+      "location": "line 3",
+      "masked": "601111******1117",
+      "brand": "Discover",
+      "confidence": "high",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "archive",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-019",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location": "line 2",
+      "masked": "411111******1111",
+      "brand": "Visa",
+      "confidence": "high",
+      "detail": "stored with SAD in the same record",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "office",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-020",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location": "line 3",
+      "masked": "555555******4444",
+      "brand": "Mastercard",
+      "confidence": "high",
+      "detail": "stored with SAD in the same record",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "office",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-021",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location": "line 4",
+      "masked": "378282*****0005",
+      "brand": "American Express",
+      "confidence": "high",
+      "detail": "stored with SAD in the same record",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "office",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-022",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location": "line 5",
+      "masked": "601111******1117",
+      "brand": "Discover",
+      "confidence": "high",
+      "detail": "stored with SAD in the same record",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "office",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-023",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "finance/chargebacks_2026Q3.csv",
+      "location": "line 6",
+      "masked": "401288******1881",
+      "brand": "Visa",
+      "confidence": "high",
+      "detail": "stored with SAD in the same record",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "office",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-024",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "hr/corporate_card_request_form.docx",
+      "location": "line 3",
+      "masked": "510510******5100",
+      "brand": "Mastercard",
+      "confidence": "high",
+      "detail": "grouped",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "office",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-025",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "legacy/crm_export_2023.csv",
+      "location": "line 2",
+      "masked": "424242******4242",
+      "brand": "Visa",
+      "confidence": "high",
+      "detail": "suppression 'legacy/*' not applied (expired 2026-06-30)",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "archive",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-026",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "legacy/crm_export_2023.csv",
+      "location": "line 3",
+      "masked": "371449*****8431",
+      "brand": "American Express",
+      "confidence": "high",
+      "detail": "suppression 'legacy/*' not applied (expired 2026-06-30)",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "archive",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-027",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "pos/offline_queue.db",
+      "location": "record 1",
+      "masked": "620000******0005",
+      "brand": "UnionPay",
+      "confidence": "high",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "db_export",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-028",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "pos/offline_queue.db",
+      "location": "record 2",
+      "masked": "362272****1667",
+      "brand": "Diners Club",
+      "confidence": "high",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "db_export",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-029",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "pos/offline_queue.db",
+      "location": "record 3",
+      "masked": "371449*****8431",
+      "brand": "American Express",
+      "confidence": "high",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "db_export",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-030",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "support/ticket_export_2026-10.json",
+      "location": "line 6",
+      "masked": "555555******4444",
+      "brand": "Mastercard",
+      "confidence": "high",
+      "detail": "grouped",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "support",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-031",
+      "severity": "High",
+      "kind": "PAN",
+      "path": "support/ticket_export_2026-10.json",
+      "location": "line 12",
+      "masked": "378282*****0005",
+      "brand": "American Express",
+      "confidence": "high",
+      "detail": "grouped; stored with SAD in the same record",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "support",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-032",
+      "severity": "Medium",
+      "kind": "PAN",
+      "path": "db_exports/orders_2025_backup.sql",
+      "location": "line 3",
+      "masked": "601100******9424",
+      "brand": "Discover",
+      "confidence": "medium",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "db_export",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-033",
+      "severity": "Medium",
+      "kind": "PAN",
+      "path": "db_exports/orders_2025_backup.sql",
+      "location": "line 4",
+      "masked": "411111******1111",
+      "brand": "Visa",
+      "confidence": "medium",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "db_export",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-034",
+      "severity": "Medium",
+      "kind": "PAN",
+      "path": "db_exports/orders_2025_backup.sql",
+      "location": "line 5",
+      "masked": "510510******5100",
+      "brand": "Mastercard",
+      "confidence": "medium",
+      "detail": "grouped",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "db_export",
+      "test_pan": true,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-035",
+      "severity": "Medium",
+      "kind": "MASK_OVEREXPOSED",
+      "path": "finance/settlement_2026-10.csv",
+      "location": "line 5",
+      "masked": "401288******1881",
+      "brand": "Visa",
+      "confidence": "high",
+      "detail": "shows first 10 and last 4 of 16 digits (maximum is first 8 and last 4)",
+      "requirements": [
+        "3.4.1"
+      ],
+      "location_class": "office",
+      "test_pan": false,
+      "suppressed_by": ""
+    },
+    {
+      "id": "CHD-036",
+      "severity": "Medium",
+      "kind": "MASK_OVEREXPOSED",
+      "path": "finance/settlement_2026-10.csv",
+      "location": "line 6",
+      "masked": "601111******1117",
+      "brand": "Discover",
+      "confidence": "high",
+      "detail": "shows first 10 and last 4 of 16 digits (maximum is first 8 and last 4)",
+      "requirements": [
+        "3.4.1"
+      ],
+      "location_class": "office",
+      "test_pan": false,
+      "suppressed_by": ""
+    }
+  ],
+  "suppressed": [
+    {
+      "id": "",
+      "severity": "Medium",
+      "kind": "PAN",
+      "path": "qa/fixtures/payment_test_cards.json",
+      "location": "line 5",
+      "masked": "411111******1111",
+      "brand": "Visa",
+      "confidence": "medium",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "other",
+      "test_pan": true,
+      "suppressed_by": "qa/fixtures/*"
+    },
+    {
+      "id": "",
+      "severity": "Medium",
+      "kind": "PAN",
+      "path": "qa/fixtures/payment_test_cards.json",
+      "location": "line 9",
+      "masked": "555555******4444",
+      "brand": "Mastercard",
+      "confidence": "medium",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "other",
+      "test_pan": true,
+      "suppressed_by": "qa/fixtures/*"
+    },
+    {
+      "id": "",
+      "severity": "Medium",
+      "kind": "PAN",
+      "path": "qa/fixtures/payment_test_cards.json",
+      "location": "line 13",
+      "masked": "378282*****0005",
+      "brand": "American Express",
+      "confidence": "medium",
+      "detail": "",
+      "requirements": [
+        "3.5.1",
+        "3.2.1",
+        "12.5.2"
+      ],
+      "location_class": "other",
+      "test_pan": true,
+      "suppressed_by": "qa/fixtures/*"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "path": "archive/vendor_handover_2025.zip!handover/customer_cards.xlsx",
+      "reason": "encrypted archive member; cannot be inspected. Encrypted is not the same as out of scope: confirm contents and key custody"
+    }
+  ],
+  "notes": [
+    {
+      "code": "SUPPRESSION_EXPIRED",
+      "severity": "High",
+      "subject": "legacy/*",
+      "message": "Expired 2026-06-30 (131 days ago); 2 finding(s) re-surfaced. Renew with fresh approval or remediate."
+    },
+    {
+      "code": "SUPPRESSION_UNUSED",
+      "severity": "Low",
+      "subject": "tokenization/*",
+      "message": "Matched nothing in this scan; remove it so the register reflects reality."
+    },
+    {
+      "code": "SUPPRESSION_INVALID",
+      "severity": "High",
+      "subject": "reports/*",
+      "message": "Not applied: missing 'approved_by'."
+    },
+    {
+      "code": "COVERAGE_GAP",
+      "severity": "High",
+      "subject": "archive/vendor_handover_2025.zip!handover/customer_cards.xlsx",
+      "message": "encrypted archive member; cannot be inspected. Encrypted is not the same as out of scope: confirm contents and key custody"
+    }
+  ]
+}

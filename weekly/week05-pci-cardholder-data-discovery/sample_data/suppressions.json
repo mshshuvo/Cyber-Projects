@@ -1,0 +1,33 @@
+{
+  "suppressions": [
+    {
+      "path": "qa/fixtures/*",
+      "kinds": [
+        "PAN"
+      ],
+      "reason": "QA fixtures contain published test PANs only; verified by QA lead, environment segmented from CDE",
+      "approved_by": "ISO / CISO delegate",
+      "ticket": "RISK-2026-031",
+      "expires": "2027-06-30"
+    },
+    {
+      "path": "legacy/*",
+      "reason": "Legacy CRM decommissioning in progress",
+      "approved_by": "Head of IT",
+      "ticket": "RISK-2025-114",
+      "expires": "2026-06-30"
+    },
+    {
+      "path": "tokenization/*",
+      "reason": "Token vault migration exports",
+      "approved_by": "ISO",
+      "ticket": "RISK-2026-007",
+      "expires": "2027-01-31"
+    },
+    {
+      "path": "reports/*",
+      "reason": "Finance said it's fine",
+      "expires": "2027-12-31"
+    }
+  ]
+}

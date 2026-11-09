@@ -1,0 +1,20 @@
+[
+  {
+    "ticket": "SUP-88213",
+    "channel": "email",
+    "subject": "Double charge?",
+    "body": "Hi, I think I was charged twice. My card is 5555 5555 5555 4444 exp 08/28. Please refund one."
+  },
+  {
+    "ticket": "SUP-88240",
+    "channel": "chat",
+    "subject": "Payment failing",
+    "body": "tried my amex 3782-822463-10005 three times, security code: 9921, still failing"
+  },
+  {
+    "ticket": "SUP-88251",
+    "channel": "email",
+    "subject": "Order status",
+    "body": "Order NB-119987, tracking 1Z999AA10123456784. Phone 902-555-0143."
+  }
+]
